@@ -269,7 +269,7 @@ When forging, if you are running very close to the system limits, it is advisabl
 
 💬 **Community & Discussions / Comunidad y Debates:**
 If you have any questions, insights, or want to share your forge logs, please join the official discussion thread on Hugging Face:
-👉 [Link to Hugging Face Thread]
+👉 https://discuss.huggingface.co/t/agio-cognitive-framework-for-systems/179975
 
 
 
