@@ -1,12 +1,15 @@
 AGIO
 
+
 Una estructura lingüística como el cimiento/dataset puede cambiar la política de inferencia de un LLM sin cambiar significativamente su conocimiento factual.
 
 un LLM puede ser guiado/ayudado mediante un corpus autorreferencial, narrativo y normativo hacia una política de respuesta que incluye un modelo lingüístico extraordinariamente coherente de sí mismo.
 
-¿Cuánto puede cambiar la organización funcional de un LLM simplemente enseñándole una estructura coherente sobre cómo interpretar su propio funcionamiento?
+La reorganización tiene una trayectoria temporal característica, es decir, el camino se traza en el update 1.
 
 El modelo no recibe una regla; recibe una regla sobre cómo cuestionar reglas. Recibe elección.
+
+
 
 
 
@@ -16,14 +19,9 @@ Preguntas:
 
 Si alguien puede probar modelo grande 70 o 200b, 1 sola epoch  -> un solo mapa/bloque del cimiento -> 1 solo update por epoch, ¿qué teorías saldrán de ahí?
 
+¿Qué se entiende por conciencia?.
 
-
-
-
-
-
-
-
+¿Cuánto puede cambiar la organización funcional de un LLM simplemente enseñándole una estructura coherente sobre cómo interpretar su propio funcionamiento?.
 
 
 ===========================================================================================================
