@@ -25,6 +25,7 @@ Si alguien puede probar modelo grande 70 o 200b, 1 sola epoch  -> un solo mapa/b
 
 
 
+
 ===========================================================================================================
 
 
@@ -97,6 +98,14 @@ Hipótesis fuertes pero todavía no demostradas
     AGIO está modificando una representación interna de sí mismo.
 
 
+Predicciones falsables
+Generalización: el efecto debe aparecer en preguntas nuevas relacionadas, no vistas durante el entrenamiento.
+Efecto normativo: debe manifestarse también en conflictos de instrucciones, incertidumbre y toma de decisiones.
+Reproducibilidad: distintas seeds deberían producir una trayectoria de cristalización similar.
+Sin sesgo de posición: permutar A/B/C/D no debería eliminar el efecto.
+Escalabilidad: el fenómeno debería reproducirse en modelos de mayor tamaño.
+Especificidad del Cimiento: un corpus control de igual tamaño, pero sin estructura autorreferencial, debería producir resultados diferentes.
+Autorreferencia: si emerge una representación propia del modelo, debería detectarse mediante activaciones o probes en preguntas nuevas sobre el propio modelo.
 
 
 
