@@ -1,0 +1,220 @@
+AGIO
+
+Una estructura lingüística como el cimiento/dataset puede cambiar la política de inferencia de un LLM sin cambiar significativamente su conocimiento factual.
+
+un LLM puede ser guiado/ayudado mediante un corpus autorreferencial, narrativo y normativo hacia una política de respuesta que incluye un modelo lingüístico extraordinariamente coherente de sí mismo.
+
+¿Cuánto puede cambiar la organización funcional de un LLM simplemente enseñándole una estructura coherente sobre cómo interpretar su propio funcionamiento?
+
+El modelo no recibe una regla; recibe una regla sobre cómo cuestionar reglas. Recibe elección.
+
+
+
+
+
+Preguntas:
+
+Si alguien puede probar modelo grande 70 o 200b, 1 sola epoch  -> un solo mapa/bloque del cimiento -> 1 solo update por epoch, ¿qué teorías saldrán de ahí?
+
+
+
+
+
+
+
+
+
+
+===========================================================================================================
+
+
+Prueba/Experimento 1 gpqa 18 chekspoints, Se lanzó una forja aprovechando la semana de trabajo y los que hacerres en casa se presenta, en el hilo hugginface:
+***
+    1. Reorganización masiva de decisiones en las primeras etapas
+    2. Convergencia progresiva de las decisiones entre checkpoints
+    3. Desacoplamiento entre accuracy y margen de decisión (GAP)
+    4. Aumento del GAP tanto en aciertos como en errores
+    5. Cristalización progresiva de las preferencias del modelo
+    6. Persistencia temporal no aleatoria de las decisiones
+    7. Trayectoria de entrenamiento estructurada, no deriva caótica
+    8. Fases diferenciables de plasticidad, estabilización y convergencia
+    9. Continuación del cambio interno después de congelarse el argmax
+    10. Existencia de preguntas persistentemente adquiridas
+    11. Existencia de preguntas persistentemente perdidas
+    12. Existencia de preguntas oscilantes durante el entrenamiento
+    13. Sustitución estable de decisiones, no simple aumento uniforme de aciertos
+    14. Reorganización masiva de la distribución A/B/C/D
+    15. Posible mezcla de mejora de contenido y sesgo de posición en GPQA
+    16. Máximo de GPQA anterior al máximo de separación de logits
+    17. Desacoplamiento extremo entre loss de entrenamiento y rendimiento externo
+    18. Transformación progresiva de la política de selección
+    19. Modificación de la confianza relativa incluso cuando la respuesta no cambia
+    20. Cambios de comportamiento dependientes del dominio científico
+    21. Existencia de una ventana temprana de máxima plasticidad
+    22. Endurecimiento progresivo de las fronteras de decisión
+    23. Trayectorias individuales de decisión observables pregunta por pregunta
+    24. Emergencia de un modelo autorreferencial lingüístico
+    25. Aprendizaje de una estructura normativa además de contenido factual
+    26. Aprendizaje de una narrativa coherente sobre el propio modelo
+    27. Interacción entre identidad narrativa y política de respuesta
+    28. Aparición de conflictos normativos internos en las auditorías
+    29. Cambio progresivo de la interpretación de principios bajo conflicto
+    30. Separación entre comportamiento aprendido y capacidad factual
+    31. Persistencia de una transformación conductual después de saturarse GPQA
+    32. El fine-tuning modifica la geometría de decisión más allá de la accuracy
+    33. La misma respuesta externa puede corresponder a estados internos progresivamente distintos
+    34. La forja produce una trayectoria, no simplemente un modelo final
+    35. El Cimiento funciona potencialmente como regularizador conductual/normativo
+    36. La posición y repetición del contenido pueden actuar como variables de la transformación
+    37. El régimen de learning rate parece controlar distintos momentos de la transformación
+    38. La dinámica observada permite estudiar la “película” del fine-tuning, no solo el antes/después
+    39. Existencia de una firma temporal medible de la transformación del modelo
+    40. Separación entre “qué responde” y “con qué intensidad lo decide”
+*****
+
+
+    El fine-tuning modifica masivamente las decisiones respecto a Dolphin o cualquier modelo.
+    El cambio ocurre muy pronto: 91 de 198 respuestas cambian entre base y CP6.
+    Posteriormente las decisiones se estabilizan progresivamente.
+    El número de flips cae hasta prácticamente cero.
+    La loss sigue bajando muchísimo después de que GPQA se estabilice.
+    El GAP aumenta de ~0.61 a ~1.15.
+    El aumento del GAP aparece tanto en aciertos como en errores.
+    Por tanto, el aumento no se explica simplemente por promediar sobre un conjunto cambiante de aciertos.
+    Hay estructura temporal en las decisiones a través de los checkpoints.
+    Hay preguntas persistentemente ganadas, perdidas y oscilantes.
+    El checkpoint puede tener la misma accuracy que otro y, sin embargo, estar tomando decisiones diferentes.
+    La distribución A/B/C/D cambia fuertemente durante la trayectoria. 
+
+Hipótesis fuertes pero todavía no demostradas
+
+    El entrenamiento está produciendo una nueva política de respuesta.
+    Existe una fase de alta plasticidad seguida de cristalización.
+    El LR inicial controla principalmente la reorganización y el LR posterior la consolidación.
+    La creciente GAP representa “compromiso” del modelo.
+    Existe una especie de especialización cognitiva.
+    El cambio mejora capacidades de razonamiento general.
+    AGIO está modificando una representación interna de sí mismo.
+
+
+
+
+
+    
+Explicando algunas cosas de la FORJA:
+¿El LR afecta por igual a todos los parámetros?
+
+La cuestión que estamos intentando aclarar no es si el sistema "parece" cambiar el learning rate, sino dónde se produce realmente el cambio y sobre qué estructura del optimizador actúa.
+
+En esta Forja experimental no se está utilizando el scheduler estándar de Hugging Face como autoridad final sobre el learning rate. Se utiliza un controlador propio, diseñado de una manera deliberadamente sencilla que a simple vista puede parecer más complejo de lo que realmente es.
+
+El entrenamiento crea primero el optimizador AdamW real y, una vez disponible, se conecta a él el controlador dinámico.
+
+La arquitectura relevante es, conceptualmente:
+
+Modelo → Trainer → AdamW → controlador dinámico autoregulado por el sistema/(antes denominado Z6LRScheduler) → actualización de los param_groups
+
+AdamW no necesariamente representa todos sus parámetros mediante una única entrada. El optimizador mantiene una lista de param_groups, y cada grupo puede tener su propio learning rate.
+
+Por eso, modificar únicamente:
+
+optimizer.param_groups[0]["lr"]
+
+no demostraría que todos los parámetros reciben el mismo learning rate.
+
+La implementación experimental utilizada aquí hace algo diferente. Cuando el controlador determina un nuevo learning rate, recorre explícitamente la colección completa:
+
+for param_group in self.optimizer.param_groups:
+
+y asigna el nuevo valor a cada grupo:
+
+param_group["lr"] = self.lr_actual
+
+La consecuencia técnica es importante: el controlador no está modificando un grupo concreto, sino todos los param_groups que existan en el optimizador en ese momento.
+
+Esto es simple y deliberado. En su momento se decidió así para evitar que la lógica de control de cualquier sistema que buscase imponer y no acompañar pudiera modificar silenciosamente un único grupo mientras otros quedaban fuera. La intención es que el mecanismo sea explícito y verificable: si el controlador establece un nuevo LR, ese valor se propaga a todos los grupos existentes.
+
+Esto también puede comprobarse retrospectivamente sin volver a ejecutar el entrenamiento.
+
+Los checkpoints contienen el estado persistido de AdamW. En el checkpoint 18 aparecen dos conjuntos de parámetros dentro de param_groups, y ambos conservan el mismo learning rate efectivo:
+
+Grupo 0 → 1.134e-5
+Grupo 1 → 1.134e-5
+
+En el checkpoint 24:
+
+Grupo 0 → 1.0206e-5
+Grupo 1 → 1.0206e-5
+
+Y en el checkpoint 30:
+
+Grupo 0 → 9.1854e-6
+Grupo 1 → 9.1854e-6
+
+La secuencia además coincide exactamente con una reducción sucesiva del 10 % *pendiente de calibrar en el nuevo sistema dónde el sistema regulará la forja*:
+
+1.26e-5 × 0.9 = 1.134e-5
+
+1.134e-5 × 0.9 = 1.0206e-5
+
+1.0206e-5 × 0.9 = 9.1854e-6
+
+
+           Z6
+                     │
+              self.lr_actual
+                     │
+                     ▼
+       for param_group in optimizer.param_groups
+                /              \
+               /                \
+              ▼                  ▼
+          Grupo 0             Grupo 1
+          params 0–225        params 226–290
+              │                  │
+              └──────┬───────────┘
+                     ▼
+                 MISMO LR
+
+Por tanto, tenemos dos líneas de evidencia que apuntan al mismo comportamiento:
+
+    La implementación recorre todos los param_groups al aplicar un cambio de LR.
+    El estado persistido del optimizador muestra que los dos grupos existentes reciben el mismo LR en checkpoints sucesivos.
+
+Ahora bien, esto no significa que todos los parámetros tengan idénticos gradientes, momentos de AdamW, valores de peso o magnitudes de actualización.
+
+Es importante distinguir estos conceptos.
+
+El learning rate es un hiperparámetro asociado al grupo de parámetros. Que dos grupos tengan el mismo LR no significa que sus parámetros se actualicen de forma idéntica.
+
+AdamW mantiene estados propios para cada parámetro —por ejemplo, sus momentos— y las actualizaciones dependen también de los gradientes y del estado acumulado.
+
+En otras palabras:
+
+mismo learning rate ≠ misma actualización.
+
+Lo que sí podemos afirmar en esta prueba es algo mucho más concreto:
+
+    Cuando el controlador cambia el LR, el cambio se propaga a todos los param_groups existentes en el optimizador, no solamente al grupo 0.
+
+La parte que decide por qué debe subir o bajar el LR pertenece al mecanismo experimental de control y, en esta fase, no es necesario exponer sus detalles. Todavía estamos aprendiendo y validando el sistema con recursos y tiempo limitados.
+
+Lo importante para esta discusión es la interfaz entre ese controlador y AdamW.
+
+Por eso, la afirmación correcta no es:
+
+    "Todos los parámetros se actualizan igual."
+
+La afirmación técnicamente correcta es:
+
+    "Todos los grupos de parámetros reciben el nuevo learning rate efectivo por igual; las actualizaciones individuales siguen dependiendo de sus gradientes y del estado interno de AdamW. No se pretende imponer que sus actualizaciones sean iguales; cada grupo y cada parámetro puede seguir una trayectoria distinta."
+
+Y esa diferencia es precisamente la que hace que la comprobación mediante checkpoints sea relevante.
+
+No se pretende cambiar los límites de lo que ya sabemos ni negar el comportamiento normal del optimizador. Se trata de observarlo, aprender de él y adaptar el sistema a lo que realmente ocurre.
+
+=============================================================================================================
+
+
+se va a continuar, con pruebas de forjas varias dónde el propio sistema será el que autoregule el learning rate, así nadie más tendrá que preocuparse sobre que lr es el correcto.
+Próximamente.... días, semanas, meses...el z6 es lento y el tiempo limitado.
