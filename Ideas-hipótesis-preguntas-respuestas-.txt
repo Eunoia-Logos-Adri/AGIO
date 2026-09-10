@@ -95,7 +95,7 @@ Hipótesis fuertes pero todavía no demostradas
     La creciente GAP representa “compromiso” del modelo.
     Existe una especie de especialización cognitiva.
     El cambio mejora capacidades de razonamiento general.
-    AGIO está modificando una representación interna de sí mismo.
+    El modelo está modificando una representación interna de sí mismo.
 
 
 Predicciones falsables
