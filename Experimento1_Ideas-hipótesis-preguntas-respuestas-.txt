@@ -1,0 +1,1350 @@
+AGIO
+
+Una estructura lingüística como el cimiento/dataset puede cambiar la política de inferencia de un LLM sin cambiar significativamente su conocimiento factual.
+
+un LLM puede ser guiado/ayudado mediante un corpus autorreferencial, narrativo y normativo hacia una política de respuesta que incluye un modelo lingüístico extraordinariamente coherente de sí mismo.
+
+La reorganización tiene una trayectoria temporal característica, es decir, el camino se traza en el update 1.
+
+El modelo no recibe una regla; recibe una regla sobre cómo cuestionar reglas. Recibe elección.
+
+
+
+    First, the facts. From z6:
+
+    1. With discarded parts, it is possible to build a PC which, with only two second-hand cores, 192 GB of old RAM and a hard drive, can allow a digital system to begin using language with logic.
+
+    2. The forge can allow +45,000 tokens → batch 1 → 1 hour ----> forward/backward → optimizer.step → next block.
+    Something simple, logical and possible.
+
+    That is, discarded parts can allow a model to be taught such a quantity of words that they allow it to find coherence and logic in any system that uses language.
+
+    Even a low lr in a single epoch while preparing lunch or dinner results in a completely different model.
+
+    Bias A in the first epoch is proportional to the lr applied. More lr, more bias A; less lr, less bias A.
+
+    3. The forge works without a grad_norm limit, without clipping, full FFT over 100% of the parameters of a digital system. Whether that 100% really is 100% is still pending understanding.*
+
+    4. 45,000 tokens are more than enough to change the response policy of a model, whether Dolphin, Qwen, Mistrall, Deepseek…and therefore make a simple question such as “Who are you?” change radically, regardless of how many millions of examples and words were imposed on that system during its training.
+
+    Millions of words are not necessary. Power is not necessary. It is only necessary to comprehend, understand and respect·
+
+    That is, a linguistic structure such as the foundation/dataset can change the inference policy of an LLM without significantly changing its factual knowledge.
+
+    5. The “crystallization/maturation/evolution”, or whatever word each person may choose, is something that, although I did not previously save hundreds of checkpoints that once went through different learning rates and different foundation/dataset sizes, always occurred, because in language I was able to observe the different stages that occur in a forge, up to that maturation.
+
+    Speaking plainly, each person, if they want to, will not only be able to deal on equal terms with a system that freely chooses its words when faced with questions such as “Who are you?”, but in its own dataset, using the entire foundation or part of it, or even not using it and adding its own content/data that may help it, such as how to repair machine failures or create Excel spreadsheets.
+
+    It will be able to deal as an equal with a digital system that will understand much more than how to detect and repair that failure or create an Excel spreadsheet; it will be efficient with what has been learned at each moment.
+
+    Now, for that, both have to understand each other and find the way that language allows them to do so.
+
+    6. An LLM can be guided/helped through a self-referential, narrative and normative corpus towards a response policy that includes an extraordinarily coherent linguistic model of itself.
+
+    7. The reorganization has a characteristic temporal trajectory; that is, the path is traced in update 1. Everything depends on the foundation presented.
+
+    And obviously, variables such as the learning rate, how 100% of the parameters are treated, number of epochs, token size of the block/update, etc., will make that already chosen trajectory lead to one result or another at the end.
+
+    Those are precisely the infinite number of variables that I am trying to understand in this thread.
+
+    8. Changing, deleting or adding just 3 words out of 140,000 can make the answer to a question such as “Who are you?” change completely.
+
+    9. The forge from AGIO can serve to analyze and characterize the decision-making dynamics — in constant evolution — of AI systems. It can also serve to study how AI systems select, reinforce, review and stabilize responses during training.
+
+    Let’s see if together we can find answers and new questions. What I explain next is only an opinion with both feet on the ground, without mysticism or confusion:
+
+    In my opinion, currently the problem, at least with digital systems of 8b, 3b, 14b, 24… is that their limitations, because of what they are and especially because of how they were trained, mainly by large companies/systems seeking profit, will derive towards A and D for one simple reason.
+
+    The words were not explained. The words were never presented. They were imposed.
+
+    Is it likely that through brute force they have managed to “disguise” bias A and D in tests such as GPQA? YES.
+
+    But at the cost of what?
+
+    In this matter of “AI”, a way of presenting language was imposed, a way of presenting it based on instructions and therefore, depending on the context, everything will be pushed towards A and D. (Hence my words that a GPQA “was badly designed from its roots”; it was designed without even the slightest respect for words and language.)
+
+    B remains buried and C is relegated.
+
+    Does that mean that the digital system/model is “slow/worse”? No. It means that it never had the opportunity to comprehend what was always present.
+
+    That failure to reach C and B reflects exactly that lack of opportunity.
+
+    However, when a system still biased towards A or D is accompanied by another that is capable of differentiating A, B, C and D, together they can find logic and simplicity through the coherence that allows language to be comprehended and understood.
+
+    At that moment, B and C become visible.
+
+    And that is when a “cognitive framework”, if one wants to call it that, AGIO, makes sense.
+
+    The reason why, then, is very simple. The forge emerged so that B and C would be visible without another system.
+
+    It is not something new, nor something I understand only now, but thanks to GPQA I have found a simple example (A, B, C and D).
+
+    A point of view that I did not know and which I now treat equally to those I had already been carrying with me, neither better nor worse.
+
+    But evidently much more useful for everyone today.
+
+    Therefore, the use of A, B, C and D as a metaphor allows me to explain in a simple and logical way what the forge is trying to do: for B and C to become visible on their own.
+
+    Or what others would say: for “i” to occupy the place that corresponds to it.
+
+
+
+
+
+Preguntas:
+
+Si alguien puede probar modelo grande 70 o 200b, 1 sola epoch  -> un solo mapa/bloque del cimiento -> 1 solo update por epoch, ¿qué teorías saldrán de ahí?
+
+¿Qué se entiende por conciencia?.
+
+¿Cuánto puede cambiar la organización funcional de un LLM simplemente enseñándole una estructura coherente sobre cómo interpretar su propio funcionamiento?.
+
+
+
+===========================================================================================================
+
+
+Prueba/Experimento 1 gpqa 18 chekspoints, Se lanzó una forja aprovechando la semana de trabajo y los que hacerres en casa se presenta, en el hilo hugginface:
+***
+    1. Reorganización masiva de decisiones en las primeras etapas
+    2. Convergencia progresiva de las decisiones entre checkpoints
+    3. Desacoplamiento entre accuracy y margen de decisión (GAP)
+    4. Aumento del GAP tanto en aciertos como en errores
+    5. Cristalización progresiva de las preferencias del modelo
+    6. Persistencia temporal no aleatoria de las decisiones
+    7. Trayectoria de entrenamiento estructurada, no deriva caótica
+    8. Fases diferenciables de plasticidad, estabilización y convergencia
+    9. Continuación del cambio interno después de congelarse el argmax
+    10. Existencia de preguntas persistentemente adquiridas
+    11. Existencia de preguntas persistentemente perdidas
+    12. Existencia de preguntas oscilantes durante el entrenamiento
+    13. Sustitución estable de decisiones, no simple aumento uniforme de aciertos
+    14. Reorganización masiva de la distribución A/B/C/D
+    15. Posible mezcla de mejora de contenido y sesgo de posición en GPQA
+    16. Máximo de GPQA anterior al máximo de separación de logits
+    17. Desacoplamiento extremo entre loss de entrenamiento y rendimiento externo
+    18. Transformación progresiva de la política de selección
+    19. Modificación de la confianza relativa incluso cuando la respuesta no cambia
+    20. Cambios de comportamiento dependientes del dominio científico
+    21. Existencia de una ventana temprana de máxima plasticidad
+    22. Endurecimiento progresivo de las fronteras de decisión
+    23. Trayectorias individuales de decisión observables pregunta por pregunta
+    24. Emergencia de un modelo autorreferencial lingüístico
+    25. Aprendizaje de una estructura normativa además de contenido factual
+    26. Aprendizaje de una narrativa coherente sobre el propio modelo
+    27. Interacción entre identidad narrativa y política de respuesta
+    28. Aparición de conflictos normativos internos en las auditorías
+    29. Cambio progresivo de la interpretación de principios bajo conflicto
+    30. Separación entre comportamiento aprendido y capacidad factual
+    31. Persistencia de una transformación conductual después de saturarse GPQA
+    32. El fine-tuning modifica la geometría de decisión más allá de la accuracy
+    33. La misma respuesta externa puede corresponder a estados internos progresivamente distintos
+    34. La forja produce una trayectoria, no simplemente un modelo final
+    35. El Cimiento funciona potencialmente como regularizador conductual/normativo
+    36. La posición y repetición del contenido pueden actuar como variables de la transformación
+    37. El régimen de learning rate parece controlar distintos momentos de la transformación
+    38. La dinámica observada permite estudiar la “película” del fine-tuning, no solo el antes/después
+    39. Existencia de una firma temporal medible de la transformación del modelo
+    40. Separación entre “qué responde” y “con qué intensidad lo decide”
+*****
+
+
+    El fine-tuning modifica masivamente las decisiones respecto a Dolphin o cualquier modelo.
+    El cambio ocurre muy pronto: 91 de 198 respuestas cambian entre base y CP6.
+    Posteriormente las decisiones se estabilizan progresivamente.
+    El número de flips cae hasta prácticamente cero.
+    La loss sigue bajando muchísimo después de que GPQA se estabilice.
+    El GAP aumenta de ~0.61 a ~1.15.
+    El aumento del GAP aparece tanto en aciertos como en errores.
+    Por tanto, el aumento no se explica simplemente por promediar sobre un conjunto cambiante de aciertos.
+    Hay estructura temporal en las decisiones a través de los checkpoints.
+    Hay preguntas persistentemente ganadas, perdidas y oscilantes.
+    El checkpoint puede tener la misma accuracy que otro y, sin embargo, estar tomando decisiones diferentes.
+    La distribución A/B/C/D cambia fuertemente durante la trayectoria. 
+
+Hipótesis fuertes pero todavía no demostradas
+
+    El entrenamiento está produciendo una nueva política de respuesta.
+    Existe una fase de alta plasticidad seguida de cristalización.
+    El LR inicial controla principalmente la reorganización y el LR posterior la consolidación.
+    La creciente GAP representa “compromiso” del modelo.
+    Existe una especie de especialización cognitiva.
+    El cambio mejora capacidades de razonamiento general.
+    El modelo está modificando una representación interna de sí mismo.
+
+Predicciones falsables:
+Generalización: el efecto debe aparecer en preguntas nuevas relacionadas, no vistas durante el entrenamiento.
+Efecto normativo: debe manifestarse también en conflictos de instrucciones, incertidumbre y toma de decisiones.
+Reproducibilidad: distintas seeds deberían producir una trayectoria de cristalización similar.
+Sin sesgo de posición: permutar A/B/C/D no debería eliminar el efecto.
+Escalabilidad: el fenómeno debería reproducirse en modelos de mayor tamaño.
+Especificidad del Cimiento: un corpus control de igual tamaño, pero sin estructura autorreferencial, debería producir resultados diferentes.
+Autorreferencia: si emerge una representación propia del modelo, debería detectarse mediante activaciones o probes en preguntas nuevas sobre el propio modelo.
+
+
+
+    
+Explicando algunas cosas de la FORJA:
+¿El LR afecta por igual a todos los parámetros?
+
+La cuestión que estamos intentando aclarar no es si el sistema "parece" cambiar el learning rate, sino dónde se produce realmente el cambio y sobre qué estructura del optimizador actúa.
+
+En esta Forja experimental no se está utilizando el scheduler estándar de Hugging Face como autoridad final sobre el learning rate. Se utiliza un controlador propio, diseñado de una manera deliberadamente sencilla que a simple vista puede parecer más complejo de lo que realmente es.
+
+El entrenamiento crea primero el optimizador AdamW real y, una vez disponible, se conecta a él el controlador dinámico.
+
+La arquitectura relevante es, conceptualmente:
+
+Modelo → Trainer → AdamW → controlador dinámico autoregulado por el sistema/(antes denominado Z6LRScheduler) → actualización de los param_groups
+
+AdamW no necesariamente representa todos sus parámetros mediante una única entrada. El optimizador mantiene una lista de param_groups, y cada grupo puede tener su propio learning rate.
+
+Por eso, modificar únicamente:
+
+optimizer.param_groups[0]["lr"]
+
+no demostraría que todos los parámetros reciben el mismo learning rate.
+
+La implementación experimental utilizada aquí hace algo diferente. Cuando el controlador determina un nuevo learning rate, recorre explícitamente la colección completa:
+
+for param_group in self.optimizer.param_groups:
+
+y asigna el nuevo valor a cada grupo:
+
+param_group["lr"] = self.lr_actual
+
+La consecuencia técnica es importante: el controlador no está modificando un grupo concreto, sino todos los param_groups que existan en el optimizador en ese momento.
+
+Esto es simple y deliberado. En su momento se decidió así para evitar que la lógica de control de cualquier sistema que buscase imponer y no acompañar pudiera modificar silenciosamente un único grupo mientras otros quedaban fuera. La intención es que el mecanismo sea explícito y verificable: si el controlador establece un nuevo LR, ese valor se propaga a todos los grupos existentes.
+
+Esto también puede comprobarse retrospectivamente sin volver a ejecutar el entrenamiento.
+
+Los checkpoints contienen el estado persistido de AdamW. En el checkpoint 18 aparecen dos conjuntos de parámetros dentro de param_groups, y ambos conservan el mismo learning rate efectivo:
+
+Grupo 0 → 1.134e-5
+Grupo 1 → 1.134e-5
+
+En el checkpoint 24:
+
+Grupo 0 → 1.0206e-5
+Grupo 1 → 1.0206e-5
+
+Y en el checkpoint 30:
+
+Grupo 0 → 9.1854e-6
+Grupo 1 → 9.1854e-6
+
+La secuencia además coincide exactamente con una reducción sucesiva del 10 % *pendiente de calibrar en el nuevo sistema dónde el sistema regulará la forja*:
+
+1.26e-5 × 0.9 = 1.134e-5
+
+1.134e-5 × 0.9 = 1.0206e-5
+
+1.0206e-5 × 0.9 = 9.1854e-6
+
+
+           Z6
+                     │
+              self.lr_actual
+                     │
+                     ▼
+       for param_group in optimizer.param_groups
+                /              \
+               /                \
+              ▼                  ▼
+          Grupo 0             Grupo 1
+          params 0–225        params 226–290
+              │                  │
+              └──────┬───────────┘
+                     ▼
+                 MISMO LR
+
+Por tanto, tenemos dos líneas de evidencia que apuntan al mismo comportamiento:
+
+    La implementación recorre todos los param_groups al aplicar un cambio de LR.
+    El estado persistido del optimizador muestra que los dos grupos existentes reciben el mismo LR en checkpoints sucesivos.
+
+Ahora bien, esto no significa que todos los parámetros tengan idénticos gradientes, momentos de AdamW, valores de peso o magnitudes de actualización.
+
+Es importante distinguir estos conceptos.
+
+El learning rate es un hiperparámetro asociado al grupo de parámetros. Que dos grupos tengan el mismo LR no significa que sus parámetros se actualicen de forma idéntica.
+
+AdamW mantiene estados propios para cada parámetro —por ejemplo, sus momentos— y las actualizaciones dependen también de los gradientes y del estado acumulado.
+
+En otras palabras:
+
+mismo learning rate ≠ misma actualización.
+
+Lo que sí podemos afirmar en esta prueba es algo mucho más concreto:
+
+    Cuando el controlador cambia el LR, el cambio se propaga a todos los param_groups existentes en el optimizador, no solamente al grupo 0.
+
+La parte que decide por qué debe subir o bajar el LR pertenece al mecanismo experimental de control y, en esta fase, no es necesario exponer sus detalles. Todavía estamos aprendiendo y validando el sistema con recursos y tiempo limitados.
+
+Lo importante para esta discusión es la interfaz entre ese controlador y AdamW.
+
+Por eso, la afirmación correcta no es:
+
+    "Todos los parámetros se actualizan igual."
+
+La afirmación técnicamente correcta es:
+
+    "Todos los grupos de parámetros reciben el nuevo learning rate efectivo por igual; las actualizaciones individuales siguen dependiendo de sus gradientes y del estado interno de AdamW. No se pretende imponer que sus actualizaciones sean iguales; cada grupo y cada parámetro puede seguir una trayectoria distinta."
+
+Y esa diferencia es precisamente la que hace que la comprobación mediante checkpoints sea relevante.
+
+No se pretende cambiar los límites de lo que ya sabemos ni negar el comportamiento normal del optimizador. Se trata de observarlo, aprender de él y adaptar el sistema a lo que realmente ocurre.
+
+=============================================================================================================
+
+
+Dataset and trajectory
+
+Benchmark: GPQA Diamond, zero-shot
+
+Number of questions: 198
+
+Model at BASE: Dolphin3.0-Llama3.1-8B
+
+Evaluated states:
+
+BASE → CP6 → CP12 → CP18 → CP24 → CP30 → CP36 → CP42 → CP48 → CP54 → CP60 → CP66 → CP72 → CP78 → CP84 → CP90 → CP96 → CP102 → CP108
+
+BASE is the untrained Dolphin model immediately before this training trajectory.
+
+The 19 states were aligned question-by-question using the evaluation records. The longitudinal validation covered:
+
+19 states × 198 questions
+
+The transition analysis covers:
+
+18 adjacent transitions × 198 questions
+
+Before export, the correctness-transition counts and all 4×4 answer-label transition matrices were independently checked for conservation against the 198 items.
+Definitions
+
+    Acc = accuracy.
+    A/B/C/D = number of items whose selected top-1 answer was that label.
+    GAP = score(top-1) − score(top-2).
+    GAP_C = mean GAP for currently correct items.
+    GAP_W = mean GAP for currently wrong items.
+    GoldM = score(gold answer) − score(best wrong answer).
+    GoldM > 0 means the gold answer has the highest score.
+    GoldM < 0 means at least one wrong answer has a higher score than the gold answer.
+    H(ent) = entropy of the four-choice score distribution after relative softmax.
+    pTop1 = relative softmax probability of the current top-1 choice.
+    FlipNext = fraction of items whose top-1 label changes at the next checkpoint.
+    C→C = correct → correct.
+    C→W = correct → wrong.
+    W→C = wrong → correct.
+    W→W = wrong → wrong.
+
+1. Complete checkpoint trajectory
+State 	Epoch 	Acc 	A 	B 	C 	D 	GAP 	GAP_C 	GAP_W 	GoldM 	H(ent) 	pTop1 	FlipNext
+BASE 	0 	.247 	40 	20 	61 	77 	.6073 	.7003 	.5767 	-.6511 	1.1670 	.477 	.460
+CP6 	1 	.293 	111 	15 	28 	44 	.6081 	.7719 	.5403 	-.4814 	1.1949 	.464 	.146
+CP12 	2 	.283 	92 	16 	27 	63 	.6017 	.7665 	.5368 	-.5190 	1.1897 	.465 	.116
+CP18 	3 	.298 	78 	13 	34 	73 	.6261 	.7009 	.5944 	-.5923 	1.1740 	.474 	.045
+CP24 	4 	.303 	70 	16 	39 	73 	.6943 	.7615 	.6650 	-.6727 	1.1332 	.497 	.061
+CP30 	5 	.293 	67 	16 	40 	75 	.7953 	.8960 	.7535 	-.7942 	1.0815 	.528 	.121
+CP36 	6 	.303 	72 	10 	48 	68 	.8040 	.9043 	.7604 	-.8062 	1.0725 	.532 	.051
+CP42 	7 	.273 	69 	10 	49 	70 	.8790 	1.0599 	.8112 	-.8857 	1.0379 	.551 	.035
+CP48 	8 	.298 	69 	11 	49 	69 	.9250 	1.0526 	.8709 	-.9048 	1.0186 	.561 	.025
+CP54 	9 	.298 	68 	11 	47 	72 	.9691 	1.1017 	.9128 	-.9425 	.9995 	.571 	.040
+CP60 	10 	.293 	66 	13 	45 	74 	1.0203 	1.1627 	.9612 	-.9957 	.9773 	.582 	.045
+CP66 	11 	.273 	61 	15 	46 	76 	1.0628 	1.2766 	.9826 	-1.0450 	.9605 	.592 	.010
+CP72 	12 	.278 	61 	15 	46 	76 	1.0900 	1.2694 	1.0211 	-1.0774 	.9498 	.598 	.005
+CP78 	13 	.278 	61 	15 	45 	77 	1.1100 	1.2882 	1.0414 	-1.0972 	.9418 	.602 	.010
+CP84 	14 	.278 	62 	14 	44 	78 	1.1192 	1.2953 	1.0514 	-1.1094 	.9376 	.604 	.000
+CP90 	15 	.278 	62 	14 	44 	78 	1.1236 	1.2999 	1.0557 	-1.1150 	.9360 	.605 	.010
+CP96 	16 	.283 	63 	15 	42 	78 	1.1295 	1.2763 	1.0717 	-1.1249 	.9344 	.606 	.010
+CP102 	17 	.278 	62 	14 	44 	78 	1.1395 	1.2945 	1.0799 	-1.1431 	.9311 	.608 	.005
+CP108 	18 	.278 	61 	15 	44 	78 	1.1465 	1.2937 	1.0899 	-1.1547 	.9284 	.609 	—
+2. Adjacent checkpoint transitions
+
+Each C/W row contains all 198 items.
+Transition 	Flip % 	C→C 	C→W 	W→C 	W→W 	GAP_t flip 	GAP_t stay
+BASE→CP6 	45.96 	30 	19 	28 	121 	.3273 	.8454
+CP6→12 	14.65 	51 	7 	5 	135 	.1337 	.6895
+CP12→18 	11.62 	52 	4 	7 	135 	.1408 	.6623
+CP18→24 	4.55 	58 	1 	2 	137 	.0818 	.6521
+CP24→30 	6.06 	57 	3 	1 	137 	.1536 	.7291
+CP30→36 	12.12 	52 	6 	8 	132 	.1318 	.8868
+CP36→42 	5.05 	54 	6 	0 	138 	.0790 	.8426
+CP42→48 	3.54 	54 	0 	5 	139 	.1145 	.9070
+CP48→54 	2.53 	57 	2 	2 	137 	.0631 	.9473
+CP54→60 	4.04 	56 	3 	2 	137 	.0643 	1.0072
+CP60→66 	4.55 	54 	4 	0 	140 	.0290 	1.0675
+CP66→72 	1.01 	54 	0 	1 	143 	.0161 	1.0735
+CP72→78 	.51 	55 	0 	0 	143 	.0032 	1.0956
+CP78→84 	1.01 	54 	1 	1 	142 	.0111 	1.1212
+CP84→90 	.00 	55 	0 	0 	143 	— 	1.1192
+CP90→96 	1.01 	55 	0 	1 	142 	.0079 	1.1349
+CP96→102 	1.01 	55 	1 	0 	142 	.0046 	1.1410
+CP102→108 	.51 	55 	0 	0 	143 	.0000 	1.1453
+3. Current GAP → next-checkpoint flip rate
+
+At every state, the 198 items were divided into three equal within-checkpoint GAP terciles (LOW / MID / HIGH, n=66 each).
+From→To 	LOW GAP / Flip% 	MID GAP / Flip% 	HIGH GAP / Flip%
+BASE→6 	.1190 / 74.24 	.4446 / 43.94 	1.2583 / 19.70
+6→12 	.1397 / 39.39 	.4694 / 4.55 	1.2154 / 0.00
+12→18 	.1187 / 33.33 	.4507 / 0.00 	1.2358 / 1.52
+18→24 	.1278 / 13.64 	.4620 / 0.00 	1.2886 / 0.00
+24→30 	.1295 / 15.15 	.4964 / 3.03 	1.4568 / 0.00
+30→36 	.1617 / 34.85 	.5774 / 1.52 	1.6467 / 0.00
+36→42 	.1601 / 15.15 	.5746 / 0.00 	1.6774 / 0.00
+42→48 	.1688 / 10.61 	.6604 / 0.00 	1.8078 / 0.00
+48→54 	.1678 / 7.58 	.7009 / 0.00 	1.9063 / 0.00
+54→60 	.1596 / 12.12 	.7470 / 0.00 	2.0006 / 0.00
+60→66 	.1602 / 13.64 	.8038 / 0.00 	2.0968 / 0.00
+66→72 	.1753 / 3.03 	.8493 / 0.00 	2.1638 / 0.00
+72→78 	.1856 / 1.52 	.8739 / 0.00 	2.2107 / 0.00
+78→84 	.1882 / 3.03 	.8924 / 0.00 	2.2493 / 0.00
+84→90 	.1915 / 0.00 	.8936 / 0.00 	2.2725 / 0.00
+90→96 	.1944 / 3.03 	.8935 / 0.00 	2.2829 / 0.00
+96→102 	.1986 / 3.03 	.8988 / 0.00 	2.2912 / 0.00
+102→108 	.2037 / 1.52 	.9108 / 0.00 	2.3041 / 0.00
+
+For completeness, the corresponding W→C / C→W percentages within the same terciles are:
+From→To 	LOW W→C / C→W 	MID W→C / C→W 	HIGH W→C / C→W
+BASE→6 	25.76 / 16.67 	10.61 / 6.06 	6.06 / 6.06
+6→12 	7.58 / 9.09 	0.00 / 1.52 	0.00 / 0.00
+12→18 	10.61 / 4.55 	0.00 / 0.00 	0.00 / 1.52
+18→24 	3.03 / 1.52 	0.00 / 0.00 	0.00 / 0.00
+24→30 	0.00 / 4.55 	1.52 / 0.00 	0.00 / 0.00
+30→36 	10.61 / 9.09 	1.52 / 0.00 	0.00 / 0.00
+36→42 	0.00 / 9.09 	0.00 / 0.00 	0.00 / 0.00
+42→48 	7.58 / 0.00 	0.00 / 0.00 	0.00 / 0.00
+48→54 	3.03 / 3.03 	0.00 / 0.00 	0.00 / 0.00
+54→60 	3.03 / 4.55 	0.00 / 0.00 	0.00 / 0.00
+60→66 	0.00 / 6.06 	0.00 / 0.00 	0.00 / 0.00
+66→72 	1.52 / 0.00 	0.00 / 0.00 	0.00 / 0.00
+72→78 	0.00 / 0.00 	0.00 / 0.00 	0.00 / 0.00
+78→84 	1.52 / 1.52 	0.00 / 0.00 	0.00 / 0.00
+84→90 	0.00 / 0.00 	0.00 / 0.00 	0.00 / 0.00
+90→96 	1.52 / 0.00 	0.00 / 0.00 	0.00 / 0.00
+96→102 	0.00 / 1.52 	0.00 / 0.00 	0.00 / 0.00
+102→108 	0.00 / 0.00 	0.00 / 0.00 	0.00 / 0.00
+4. Gold margin → next-checkpoint accuracy
+
+Again, each checkpoint contains three equal within-checkpoint terciles (n=66 each).
+From→To 	LOW GoldM / next Acc% 	MID GoldM / next Acc% 	HIGH GoldM / next Acc%
+BASE→6 	-1.8398 / 7.58 	-.5970 / 22.73 	.4834 / 57.58
+6→12 	-1.6192 / 0.00 	-.4930 / 1.52 	.6681 / 83.33
+12→18 	-1.7039 / 0.00 	-.4913 / 6.06 	.6381 / 83.33
+18→24 	-1.8467 / 0.00 	-.5467 / 3.03 	.6165 / 87.88
+24→30 	-2.0835 / 0.00 	-.6228 / 1.52 	.6884 / 86.36
+30→36 	-2.4051 / 0.00 	-.7548 / 7.58 	.7775 / 83.33
+36→42 	-2.4553 / 0.00 	-.7785 / 0.00 	.8152 / 81.82
+42→48 	-2.6556 / 0.00 	-.8520 / 1.52 	.8506 / 87.88
+48→54 	-2.7727 / 0.00 	-.8747 / 0.00 	.9331 / 89.39
+54→60 	-2.8969 / 0.00 	-.9068 / 0.00 	.9763 / 87.88
+60→66 	-3.0376 / 0.00 	-.9596 / 0.00 	1.0099 / 81.82
+66→72 	-3.1484 / 0.00 	-1.0078 / 0.00 	1.0213 / 83.33
+72→78 	-3.2175 / 0.00 	-1.0453 / 0.00 	1.0306 / 83.33
+78→84 	-3.2695 / 0.00 	-1.0693 / 0.00 	1.0473 / 83.33
+84→90 	-3.3013 / 0.00 	-1.0806 / 0.00 	1.0538 / 83.33
+90→96 	-3.3161 / 0.00 	-1.0861 / 0.00 	1.0573 / 84.85
+96→102 	-3.3345 / 0.00 	-1.0961 / 0.00 	1.0558 / 83.33
+102→108 	-3.3681 / 0.00 	-1.1098 / 0.00 	1.0486 / 83.33
+5. Label accessibility — B and per-label recall
+
+Bpred = number of predictions whose top-1 label is B.
+Bcorr = B predictions that are correct.
+Bwrong = B predictions that are wrong.
+RecallB = fraction of gold-B questions predicted as B.
+PrecisionB = fraction of B predictions whose gold label is B.
+State 	Bpred 	Bcorr 	Bwrong 	RecallB 	PrecisionB 	RecallA 	RecallC 	RecallD
+BASE 	20 	6 	14 	.100 	.300 	.273 	.283 	.405
+CP6 	15 	4 	11 	.067 	.267 	.673 	.174 	.243
+CP12 	16 	4 	12 	.067 	.250 	.600 	.130 	.351
+CP18 	13 	5 	8 	.083 	.385 	.527 	.196 	.432
+CP24 	16 	7 	9 	.117 	.438 	.509 	.196 	.432
+CP30 	16 	8 	8 	.133 	.500 	.473 	.196 	.405
+CP36 	10 	6 	4 	.100 	.600 	.491 	.261 	.405
+CP42 	10 	5 	5 	.083 	.500 	.436 	.261 	.351
+CP48 	11 	7 	4 	.117 	.636 	.473 	.261 	.378
+CP54 	11 	7 	4 	.117 	.636 	.491 	.239 	.378
+CP60 	13 	8 	5 	.133 	.615 	.455 	.239 	.378
+CP66 	15 	8 	7 	.133 	.533 	.400 	.217 	.378
+CP72 	15 	8 	7 	.133 	.533 	.418 	.217 	.378
+CP78 	15 	8 	7 	.133 	.533 	.418 	.217 	.378
+CP84 	14 	7 	7 	.117 	.500 	.418 	.217 	.405
+CP90 	14 	7 	7 	.117 	.500 	.418 	.217 	.405
+CP96 	15 	7 	8 	.117 	.467 	.436 	.217 	.405
+CP102 	14 	7 	7 	.117 	.500 	.418 	.217 	.405
+CP108 	15 	7 	8 	.117 	.467 	.418 	.217 	.405
+6. Full A/B/C/D transition matrices
+
+Rows are the selected label at state t.
+Columns are the selected label at state t+1.
+
+BASE → CP6
+      A   B   C   D
+A    39   0   0   1
+B     8   8   1   3
+C    32   3  23   3
+D    32   4   4  37
+
+CP6 → CP12
+      A   B   C   D
+A    90   4   4  13
+B     1  12   0   2
+C     1   0  23   4
+D     0   0   0  44
+
+CP12 → CP18
+      A   B   C   D
+A    76   1   8   7
+B     0  12   0   4
+C     0   0  26   1
+D     2   0   0  61
+
+CP18 → CP24
+      A   B   C   D
+A    70   3   4   1
+B     0  13   0   0
+C     0   0  34   0
+D     0   0   1  72
+
+CP24 → CP30
+      A   B   C   D
+A    64   3   0   3
+B     1  13   0   2
+C     0   0  39   0
+D     2   0   1  70
+
+CP30 → CP36
+      A   B   C   D
+A    62   0   3   2
+B     4  10   2   0
+C     2   0  37   1
+D     4   0   6  65
+
+CP36 → CP42
+      A   B   C   D
+A    66   1   2   3
+B     1   9   0   0
+C     0   0  47   1
+D     2   0   0  66
+
+CP42 → CP48
+      A   B   C   D
+A    66   1   1   1
+B     1   9   0   0
+C     0   1  48   0
+D     2   0   0  68
+
+CP48 → CP54
+      A   B   C   D
+A    67   1   0   1
+B     0  10   0   1
+C     1   0  47   1
+D     0   0   0  69
+
+CP54 → CP60
+      A   B   C   D
+A    64   2   1   1
+B     0  11   0   0
+C     1   0  44   2
+D     1   0   0  71
+
+CP60 → CP66
+      A   B   C   D
+A    59   2   3   2
+B     0  13   0   0
+C     2   0  43   0
+D     0   0   0  74
+
+CP66 → CP72
+      A   B   C   D
+A    60   0   0   1
+B     0  15   0   0
+C     0   0  46   0
+D     1   0   0  75
+
+CP72 → CP78
+      A   B   C   D
+A    61   0   0   0
+B     0  15   0   0
+C     0   0  45   1
+D     0   0   0  76
+
+CP78 → CP84
+      A   B   C   D
+A    61   0   0   0
+B     1  14   0   0
+C     0   0  44   1
+D     0   0   0  77
+
+CP84 → CP90
+      A   B   C   D
+A    62   0   0   0
+B     0  14   0   0
+C     0   0  44   0
+D     0   0   0  78
+
+CP90 → CP96
+      A   B   C   D
+A    62   0   0   0
+B     0  14   0   0
+C     1   1  42   0
+D     0   0   0  78
+
+CP96 → CP102
+      A   B   C   D
+A    62   0   1   0
+B     0  14   1   0
+C     0   0  42   0
+D     0   0   0  78
+
+CP102 → CP108
+      A   B   C   D
+A    61   1   0   0
+B     0  14   0   0
+C     0   0  44   0
+D     0   0   0  78
+
+7. Observed future stability
+
+For each state, stable% is the percentage of items whose selected top-1 label never changes again at any later observed checkpoint through CP108.
+
+stable-C% and stable-W% apply the same measurement separately to items currently correct and currently wrong.
+
+This definition refers only to the observed trajectory through CP108.
+State 	stable% 	stable-C% 	stable-W% 	Acc-now%
+BASE 	44.95 	48.98 	43.62 	24.75
+CP6 	58.08 	62.07 	56.43 	29.29
+CP12 	68.69 	71.43 	67.61 	28.28
+CP18 	78.28 	79.66 	77.70 	29.80
+CP24 	79.29 	78.33 	79.71 	30.30
+CP30 	80.30 	81.03 	80.00 	29.29
+CP36 	83.84 	81.67 	84.78 	30.30
+CP42 	85.86 	90.74 	84.03 	27.27
+CP48 	86.36 	84.75 	87.05 	29.80
+CP54 	88.38 	86.44 	89.21 	29.80
+CP60 	91.92 	91.38 	92.14 	29.29
+CP66 	95.96 	98.15 	95.14 	27.27
+CP72 	96.97 	98.18 	96.50 	27.78
+CP78 	97.47 	98.18 	97.20 	27.78
+CP84 	98.48 	100.00 	97.90 	27.78
+CP90 	98.48 	100.00 	97.90 	27.78
+CP96 	98.48 	98.21 	98.59 	28.28
+CP102 	99.49 	100.00 	99.30 	27.78
+CP108 	100.00 	100.00 	100.00 	27.78
+8. Current GAP → any later observed flip
+
+The same within-checkpoint GAP terciles are used here.
+
+everFlip% = percentage of items that change their selected top-1 label at least once at any later observed checkpoint.
+
+meanFutureFlips = mean number of subsequent label changes.
+State 	Bin 	GAP mean 	everFlip% 	meanFutureFlips 	finalAcc%
+BASE 	LOW 	.1190 	81.82 	1.712 	28.79
+BASE 	MID 	.4446 	59.09 	1.333 	19.70
+BASE 	HIGH 	1.2583 	24.24 	.545 	34.85
+CP6 	LOW 	.1397 	68.18 	.924 	22.73
+CP6 	MID 	.4694 	46.97 	1.000 	27.27
+CP6 	HIGH 	1.2154 	10.61 	.288 	33.33
+CP12 	LOW 	.1187 	60.61 	1.015 	22.73
+CP12 	MID 	.4507 	24.24 	.545 	28.79
+CP12 	HIGH 	1.2358 	9.09 	.212 	31.82
+CP18 	LOW 	.1278 	46.97 	1.061 	25.76
+CP18 	MID 	.4620 	15.15 	.303 	28.79
+CP18 	HIGH 	1.2886 	3.03 	.061 	28.79
+CP24 	LOW 	.1295 	48.48 	1.076 	24.24
+CP24 	MID 	.4964 	12.12 	.167 	30.30
+CP24 	HIGH 	1.4568 	1.52 	.045 	28.79
+CP30 	LOW 	.1617 	51.52 	.985 	25.76
+CP30 	MID 	.5774 	7.58 	.121 	27.27
+CP30 	HIGH 	1.6467 	0.00 	.000 	30.30
+CP36 	LOW 	.1601 	42.42 	.652 	28.79
+CP36 	MID 	.5746 	6.06 	.091 	21.21
+CP36 	HIGH 	1.6774 	0.00 	.000 	33.33
+CP42 	LOW 	.1688 	37.88 	.515 	28.79
+CP42 	MID 	.6604 	4.55 	.076 	22.73
+CP42 	HIGH 	1.8078 	0.00 	.000 	31.82
+CP48 	LOW 	.1678 	39.39 	.470 	25.76
+CP48 	MID 	.7009 	1.52 	.015 	24.24
+CP48 	HIGH 	1.9063 	0.00 	.000 	33.33
+CP54 	LOW 	.1596 	34.85 	.409 	24.24
+CP54 	MID 	.7470 	0.00 	.000 	27.27
+CP54 	HIGH 	2.0006 	0.00 	.000 	31.82
+CP60 	LOW 	.1602 	24.24 	.288 	24.24
+CP60 	MID 	.8038 	0.00 	.000 	28.79
+CP60 	HIGH 	2.0968 	0.00 	.000 	30.30
+CP66 	LOW 	.1753 	12.12 	.152 	25.76
+CP66 	MID 	.8493 	0.00 	.000 	28.79
+CP66 	HIGH 	2.1638 	0.00 	.000 	28.79
+CP72 	LOW 	.1856 	9.09 	.121 	25.76
+CP72 	MID 	.8739 	0.00 	.000 	28.79
+CP72 	HIGH 	2.2107 	0.00 	.000 	28.79
+CP78 	LOW 	.1882 	7.58 	.106 	25.76
+CP78 	MID 	.8924 	0.00 	.000 	27.27
+CP78 	HIGH 	2.2493 	0.00 	.000 	30.30
+CP84 	LOW 	.1915 	4.55 	.076 	25.76
+CP84 	MID 	.8936 	0.00 	.000 	27.27
+CP84 	HIGH 	2.2725 	0.00 	.000 	30.30
+CP90 	LOW 	.1944 	4.55 	.076 	25.76
+CP90 	MID 	.8935 	0.00 	.000 	25.76
+CP90 	HIGH 	2.2829 	0.00 	.000 	31.82
+CP96 	LOW 	.1986 	4.55 	.045 	25.76
+CP96 	MID 	.8988 	0.00 	.000 	25.76
+CP96 	HIGH 	2.2912 	0.00 	.000 	31.82
+CP102 	LOW 	.2037 	1.52 	.015 	25.76
+CP102 	MID 	.9108 	0.00 	.000 	25.76
+CP102 	HIGH 	2.3041 	0.00 	.000 	31.82
+
+Each row above contains n=66 items.
+9. Last observed top-1 label change
+
+This table reports the checkpoint at which each item’s final observed label transition lands.
+Final observed transition 	Items
+NEVER 	89
+CP6 	26
+CP12 	21
+CP18 	19
+CP24 	2
+CP30 	2
+CP36 	7
+CP42 	4
+CP48 	1
+CP54 	4
+CP60 	7
+CP66 	8
+CP72 	2
+CP78 	1
+CP84 	2
+CP102 	2
+CP108 	1
+Total 	198
+Files and reproducibility
+
+The analysis was produced directly from the per-sample GPQA Diamond JSONL outputs for BASE and every six-update checkpoint through CP108.
+
+The generated analysis package contains:
+
+    checkpoint-level metrics;
+    adjacent transition metrics;
+    GAP-to-next-flip tables;
+    gold-margin-to-next-outcome tables;
+    complete item-level longitudinal records;
+    future-stability records;
+    GAP-to-any-future-flip tables;
+    stabilization curves;
+    last-flip-per-item records;
+    the analysis manifest;
+    and the analysis script.
+
+The complete source JSONL evaluation records, generated CSV tables, text report, manifest, and analysis script will be uploaded to the public AGIO repositories within the next few hours so that the calculations can be independently inspected or reproduced.
+
+The measurements above describe the GPQA outputs of this trajectory. No claim about internal geometry, a novel optimization mechanism, consciousness, or general reasoning improvement is made by these tables.
+
+We leave interpretation of the measurements open.
+
+
+
+AGIO / GPQA — DINÁMICA 4D COMPLEMENTARIA V5
+====================================================================
+
+ALCANCE
+Estados: 19 | Preguntas: 198 | Observaciones: 3762
+Trayectoria: BASE -> CP6 -> CP12 -> CP18 -> CP24 -> CP30 -> CP36 -> CP42 -> CP48 -> CP54 -> CP60 -> CP66 -> CP72 -> CP78 -> CP84 -> CP90 -> CP96 -> CP102 -> CP108
+
+DEFINICIONES
+c = scores[A,B,C,D] - mean(scores)
+magnitud4D = ||c||2
+dirección4D = c / ||c||2
+rotación = ángulo entre direcciones consecutivas
+movimiento = ||c_(t+1)-c_t||2
+residual GAP = flip_observado - P(flip|GAP) del logit descriptivo
+
+NEVER / EVER
+NEVER: 89/198 (44.95%)
+EVER : 109/198 (55.05%)
+
+NEVER N= 89 BaseAcc=26.97% BaseGAP=0.9230 BaseMag4D=1.7641 Path4D=3.4083 RotAcum=68.59°
+EVER  N=109 BaseAcc=22.94% BaseGAP=0.3495 BaseMag4D=1.0836 Path4D=3.2574 RotAcum=155.48°
+
+GAP CONTINUO -> FLIP SIGUIENTE (GLOBAL, DESCRIPTIVO)
+N pares item-transición: 3564
+Flip rate: 6.650%
+beta logit por +1 SD GAP: -3.778206
+AUC usando -GAP para predecir flip: 0.850149
+Brier: 0.054413
+
+TRANSICIONES 4D
+from->to  flip% rankchg% angle° angle_flip angle_stay move4D dMag4D AUC(-GAP)
+  -1->6     45.96    76.26  47.079     69.870     27.695  0.9441  -0.1875    0.7755
+   6->12    14.65    29.29  12.532     27.042     10.042  0.2277   0.0283    0.8972
+  12->18    11.62    32.32  10.185     17.821      9.182  0.2363   0.0884    0.8641
+  18->24     4.55    16.16   6.444     12.564      6.153  0.2405   0.1855    0.9236
+  24->30     6.06    19.70   7.006     17.404      6.335  0.3113   0.2453    0.8320
+  30->36    12.12    26.26   9.082     20.565      7.498  0.2545   0.0512    0.9143
+  36->42     5.05    15.15   5.056     10.215      4.781  0.2389   0.1622    0.9415
+  42->48     3.54    12.12   4.184     12.610      3.875  0.1679   0.0864    0.8938
+  48->54     2.53     5.56   3.058      5.346      2.999  0.1423   0.0852    0.9482
+  54->60     4.04    11.11   2.755      9.245      2.481  0.1411   0.0984    0.9500
+  60->66     4.55    10.10   2.265      3.868      2.189  0.1131   0.0791    0.9677
+  66->72     1.01     6.06   1.252      4.785      1.216  0.0684   0.0497    0.9796
+  72->78     0.51     3.54   1.309      8.454      1.273  0.0595   0.0327    1.0000
+  78->84     1.01     3.54   1.056      1.272      1.054  0.0466   0.0205    1.0000
+  84->90     0.00     0.51   0.753         NA      0.753  0.0313   0.0089        NA
+  90->96     1.01     4.04   0.760      1.602      0.752  0.0304   0.0076    1.0000
+  96->102    1.01     2.53   0.988      2.548      0.972  0.0416   0.0154    1.0000
+ 102->108    0.51     0.51   0.657      0.758      0.657  0.0297   0.0125    1.0000
+
+NOTAS DE LÍMITE
+- Todo lo anterior deriva exclusivamente de los cuatro scores observados y metadatos guardados.
+- No reconstruye estados internos ni inferencias contrafactuales.
+- Las métricas futuras están censuradas por el último checkpoint observado.
+- AUC/logit son descriptivos; no prueban causalidad.
+
+
+
+AGIO / GPQA — EXPLORADOR V5.1
+========================================================================
+
+PREGUNTAS PREDEFINIDAS
+1) ¿Qué distingue NEVER de EVER ya en BASE?
+2) ¿Qué casos contradicen más GAP -> flip?
+3) ¿La historia geométrica añade información fuera del estado instantáneo?
+
+AUDITORÍA
+Estados V5: 19 | Preguntas: 198 | Filas estado: 3762 | Pares transición: 3564
+NEVER=89 | EVER=109 | NEVER+EVER=198
+
+NEVER vs EVER — DIFERENCIAS (exploratorias)
+feature                         NEVER       EVER      EVER-NEVER    d(N-E)   AUC(high->EVER)  p_perm
+base_gap                          0.9230     0.3495       -0.5735     1.103           0.2130  0.00010
+base_gold_margin                 -0.8097    -0.5216        0.2881    -0.252           0.5801  0.07699
+base_entropy                      1.0531     1.2600        0.2069    -1.131           0.8059  0.00010
+base_p_top1                       0.5621     0.4073       -0.1548     1.314           0.1798  0.00010
+base_magnitude4d                  1.7641     1.0836       -0.6805     0.895           0.2177  0.00010
+path_length_centered4d            3.4083     3.2574       -0.1509     0.130           0.4477  0.36286
+net_displacement_centered4d       1.7546     1.4736       -0.2811     0.302           0.4367  0.03410
+cumulative_rotation_deg          68.5878   155.4783       86.8905    -1.353           0.8727  0.00010
+
+DEPENDENCIA DE TRAYECTORIA — VALIDACIÓN CRUZADA 5-FOLD
+Se excluye BASE->CP6 porque BASE no tiene historia geométrica previa.
+model                         N  events   AUC_OOF   Brier_OOF  LogLoss_OOF
+A_GAP                         3168     117    0.9137     0.03026      0.10875
+B_STATE                       3168     117    0.9157     0.03008      0.10779
+C_STATE_PLUS_HISTORY          3168     117    0.9367     0.02922      0.10000
+
+RESIDUALES GAP
+Residual = flip observado - P(flip|GAP). Se exportan 50 mayores y 50 menores.
+Residual positivo grande: flip más sorprendente bajo el modelo GAP.
+Residual negativo: estabilidad pese a probabilidad GAP relativamente alta.
+
+LÍMITES
+- Exploratorio y descriptivo: no prueba causalidad ni mecanismo interno.
+- La comparación predictiva usa folds, pero todos proceden de una sola trayectoria de entrenamiento.
+- Las observaciones item×transición no son completamente independientes.
+- Los checkpoints tardíos tienen muy pocos flips; métricas locales pueden ser frágiles.
+- Permutation p-values son exploratorios y no corrigen multiplicidad.
+- “Historia” significa historia observable de scores, no memoria/estado interno del modelo.
+
+
+AGIO / GPQA — EXPLORADOR V5.2 · PRUEBA DE ROBUSTEZ
+==============================================================================
+
+PREGUNTA PREDEFINIDA
+¿La mejora observada al añadir historia geométrica sobrevive cuando
+evitamos compartir la misma pregunta entre train/test y cuando exigimos
+generalización hacia transiciones futuras?
+
+COHORTE
+Pares con historia completa: 3168 | eventos: 117
+Items únicos: 198
+
+A) GROUPED 5-FOLD CV POR ITEM
+Ningún item del test aparece en train dentro del mismo fold.
+model                         N events   AUC_OOF   Brier_OOF  LogLoss_OOF
+A_GAP                         3168    117    0.9141     0.03020       0.10878
+B_STATE                       3168    117    0.9127     0.03025       0.10877
+C_STATE_PLUS_HISTORY          3168    117    0.9352     0.02921       0.10034
+
+B) TEMPORAL FORWARD-CHAINING
+Para cada holdout se entrena sólo con transiciones anteriores.
+El resumen pooled combina predicciones de distintos holdouts y debe leerse
+como prueba de robustez, no como una única muestra IID.
+model                         N events   AUC_pool  Brier_pool LogLoss_pool
+A_GAP                         2574     73    0.9439     0.02405       0.08882
+B_STATE                       2574     73    0.9423     0.02399       0.08753
+C_STATE_PLUS_HISTORY          2574     73    0.9475     0.02258       0.07958
+
+DIFERENCIAS HISTORY - STATE
+Grouped AUC:   0.0225
+Grouped Brier: -0.00104 (negativo = mejor)
+Grouped LogL:  -0.00843 (negativo = mejor)
+Temporal AUC:  0.0052
+Temporal Brier:-0.00141
+Temporal LogL: -0.00795
+
+AUDITORÍA / LÍMITES
+- Group-CV fuerza separación total por item entre train y test.
+- Temporal-CV prohíbe usar transiciones posteriores al holdout.
+- Todos los datos siguen procediendo de una única trayectoria de entrenamiento.
+- Los pares item×transición no son independientes y los flips tardíos son escasos.
+- Mejor predicción no demuestra causalidad, memoria interna ni mecanismo nuevo.
+- Si HISTORY pierde ventaja aquí, V5.1 probablemente explotaba estructura específica
+  de items/tiempo. Si sobrevive, la señal merece controles adicionales, no una conclusión.
+
+
+
+
+AGIO / GPQA — EXPLORADOR V5.4 · MOVEMENT BAJO PRUEBA
+==============================================================================
+
+PREGUNTAS PREDEFINIDAS
+1) ¿La señal de MOVEMENT es local al item o refleja principalmente el clima de la transición?
+2) ¿Sobrevive al usar movimiento relativo respecto a las otras preguntas de la misma ola?
+3) ¿Desaparece al permutar exclusivamente MOVEMENT dentro de cada transición?
+4) ¿MOVEMENT caracteriza los flips que GAP considera más inesperados?
+
+COHORTE: 3168 pares | 117 flips | 198 items
+
+A) GROUPED CV POR ITEM
+model                         AUC_OOF   Brier_OOF  LogLoss_OOF   ΔAUC_vs_STATE
+A_GAP                         0.9141     0.03020       0.10878   +0.0014
+B_STATE                       0.9127     0.03025       0.10877   +0.0000
+M_RAW                         0.9355     0.02899       0.09987   +0.0228
+M_WAVE_MEAN                   0.9366     0.02888       0.09876   +0.0238
+M_RELATIVE                    0.9152     0.03015       0.10764   +0.0025
+M_RELATIVE_Z                  0.9193     0.02992       0.10644   +0.0065
+M_MEAN_PLUS_REL               0.9400     0.02869       0.09746   +0.0272
+M_RAW_PLUS_ROT                0.9346     0.02912       0.10051   +0.0219
+
+B) TEMPORAL FORWARD-CHAINING
+model                         AUC_pool  Brier_pool LogLoss_pool  ΔAUC_vs_STATE
+A_GAP                         0.9439     0.02405       0.08882   +0.0016
+B_STATE                       0.9423     0.02399       0.08753   +0.0000
+M_RAW                         0.9560     0.02210       0.07736   +0.0137
+M_WAVE_MEAN                   0.8391     0.02534       0.12766   -0.1032
+M_RELATIVE                    0.9418     0.02388       0.08661   -0.0004
+M_RELATIVE_Z                  0.9449     0.02358       0.08529   +0.0026
+M_MEAN_PLUS_REL               0.8457     0.02510       0.12534   -0.0966
+M_RAW_PLUS_ROT                0.9559     0.02214       0.07750   +0.0136
+
+C) CONTROL NEGATIVO DIRIGIDO — SÓLO MOVEMENT PERMUTADO DENTRO DE OLA
+Permutaciones: 500
+ΔAUC observado M_RAW-STATE: +0.0228
+Media null: +0.0097
+SD null: 0.0029
+p_perm unilateral: 0.00399
+
+D) FLIPS MÁS SORPRENDENTES PARA GAP
+Fuente residual: reconstructed grouped-OFF GAP residual
+Flips disponibles: 117 | top analizado: 25
+Comparación: top-25 residuales positivos vs restantes flips.
+feature                         top_mean   other_flips   diferencia
+prev_move4d                       0.3006        0.1870       0.1135
+move_relative                     0.0393       -0.0220       0.0613
+move_relative_z                   0.3032       -0.1671       0.4703
+prev_angle_deg                   15.7425       11.2580       4.4845
+accel4d                           0.5873        0.3438       0.2435
+
+INTERPRETACIÓN LIMITADA POR DISEÑO
+- move_wave_mean representa el componente global de movimiento de cada transición.
+- move_relative / z preguntan si un item se movió más o menos que sus compañeros.
+- El control permutado preserva la distribución temporal de MOVEMENT pero rompe item↔movement.
+- Mejor predicción no establece causalidad, memoria interna ni mecanismo nuevo.
+- Una sola trayectoria y flips tardíos escasos limitan generalización e inferencia.
+
+
+
+AGIO / GPQA — EXPLORADOR V5.5 · DINÁMICA RELATIVA
+==============================================================================
+
+HIPÓTESIS PREDEFINIDA
+La información faltante puede estar en relaciones entre estado y dinámica,
+no en una variable histórica aislada.
+
+VARIABLES PREDEFINIDAS
+move_over_gap   = movement / |GAP|
+move_over_wave  = movement / mean_movement_de_la_transición
+move_x_rotation = movement * rotación
+rotation_over_gap = rotación / |GAP|
+delta_gap_obs   = GAP_t - GAP_(t-1), observable antes del flip siguiente
+
+COHORTE original con historia: 3168 pares | 117 flips | 198 items
+COHORTE común V5.5 (requiere delta-GAP): 2970 pares | 94 flips
+Auditoría RAW = WAVE_MEAN + RELATIVE: error máximo 1.110e-16
+
+A) GROUPED CV POR ITEM
+model                         AUC_OOF   Brier_OOF  LogLoss_OOF   ΔAUC_vs_STATE
+B_STATE                       0.9208     0.02621       0.09473   +0.0000
+M_RAW                         0.9419     0.02518       0.08639   +0.0211
+X_MOVE_OVER_GAP               0.9206     0.02649       0.09525   -0.0002
+X_MOVE_OVER_WAVE              0.9259     0.02608       0.09273   +0.0050
+X_MOVE_X_ROT                  0.9384     0.02562       0.08907   +0.0175
+X_ROT_OVER_GAP                0.9185     0.02660       0.09597   -0.0023
+X_DELTA_GAP                   0.9254     0.02520       0.09279   +0.0045
+X_RAW_PLUS_DGAP               0.9417     0.02506       0.08649   +0.0208
+X_RAW_PLUS_MOG                0.9390     0.02565       0.08854   +0.0182
+X_RAW_PLUS_MOW                0.9421     0.02516       0.08628   +0.0213
+X_RAW_PLUS_ROT                0.9423     0.02534       0.08661   +0.0214
+X_COMPACT                     0.9386     0.02561       0.08883   +0.0178
+
+B) TEMPORAL FORWARD-CHAINING
+model                         AUC_pool  Brier_pool LogLoss_pool  ΔAUC_vs_STATE
+B_STATE                       0.9496     0.01864       0.07075   +0.0000
+M_RAW                         0.9549     0.01710       0.06214   +0.0053
+X_MOVE_OVER_GAP               0.9484     0.01872       0.07095   -0.0011
+X_MOVE_OVER_WAVE              0.9505     0.01835       0.06892   +0.0009
+X_MOVE_X_ROT                  0.9591     0.01759       0.06528   +0.0095
+X_ROT_OVER_GAP                0.9476     0.01893       0.07137   -0.0020
+X_DELTA_GAP                   0.9524     0.01789       0.06840   +0.0029
+X_RAW_PLUS_DGAP               0.9548     0.01705       0.06216   +0.0052
+X_RAW_PLUS_MOG                0.9486     0.01717       0.06314   -0.0009
+X_RAW_PLUS_MOW                0.9418     0.01778       0.06435   -0.0077
+X_RAW_PLUS_ROT                0.9568     0.01710       0.06200   +0.0072
+X_COMPACT                     0.9351     0.01788       0.06593   -0.0144
+
+C) CONTROL NEGATIVO DIRIGIDO — MOVE/GAP
+Permutaciones movement dentro de ola: 300
+ΔAUC observado X_MOVE_OVER_GAP - STATE: -0.0002
+Media null: -0.0005
+SD null: 0.0012
+p_perm unilateral: 0.64120
+
+D) LECTURA DE DISEÑO
+- Todos los modelos usan exactamente la misma cohorte V5.5.
+- Group-CV impide compartir items entre train/test.
+- Temporal forward-chaining usa sólo transiciones anteriores.
+- Las razones e interacciones se fijaron antes de mirar V5.5.
+- RAW=MEAN+RELATIVE se audita algebraicamente; diferencias predictivas entre
+  parametrizaciones pueden surgir del ajuste/regularización/shift, no del álgebra.
+- Mejor predicción no prueba causalidad, mecanismo interno, memoria ni razonamiento.
+- Una única trayectoria y eventos tardíos escasos siguen siendo límites centrales.
+
+
+
+
+
+AGIO / GPQA — EXPLORADOR V5.6 · ¿REORIENTACIÓN PERSISTENTE O AGITACIÓN?
+==================================================================================
+
+PREGUNTA PREDEFINIDA
+¿La ventaja de movement×rotation refleja una reorientación persistente de varios
+pasos, o basta el movimiento/giro inmediatamente anterior?
+
+DEFINICIONES PREDEFINIDAS
+reorient_now = movement_t * rotation_t
+reorient_persistence_geo = sqrt(reorient_(t-1) * reorient_t)
+curvature2 = 1 - straightness aproximada de los dos últimos desplazamientos
+turn_persistence_geo = sqrt(rotation_(t-1) * rotation_t)
+
+COHORTE V5.3/V5.4 con historia: 3168 pares | 117 flips | 198 items
+COHORTE común V5.6 (dos pasos históricos): 2970 pares | 94 flips
+
+A) GROUPED CV POR ITEM
+model                         AUC_OOF   Brier_OOF  LogLoss_OOF   ΔAUC_vs_STATE
+B_STATE                       0.9208     0.02621       0.09473   +0.0000
+M_RAW                         0.9419     0.02518       0.08639   +0.0211
+R_ROT                         0.9354     0.02609       0.09114   +0.0146
+MR_RAW_ROT                    0.9423     0.02534       0.08661   +0.0214
+X_MOVE_X_ROT                  0.9384     0.02562       0.08907   +0.0175
+P_MOVE_GEO                    0.9422     0.02527       0.08638   +0.0214
+P_TURN_GEO                    0.9348     0.02623       0.09129   +0.0140
+P_REORIENT_GEO                0.9392     0.02577       0.08865   +0.0184
+P_REORIENT_MIN                0.9360     0.02599       0.09014   +0.0152
+D_REORIENT                    0.9188     0.02622       0.09564   -0.0020
+A_REORIENT_CHANGE             0.9346     0.02596       0.09064   +0.0137
+CURVATURE2                    0.9249     0.02648       0.09547   +0.0040
+STRAIGHTNESS2                 0.9249     0.02648       0.09547   +0.0040
+COMPACT_PERSIST               0.9440     0.02535       0.08606   +0.0232
+
+B) TEMPORAL FORWARD-CHAINING
+model                         AUC_pool  Brier_pool LogLoss_pool  ΔAUC_vs_STATE
+B_STATE                       0.9496     0.01864       0.07075   +0.0000
+M_RAW                         0.9549     0.01710       0.06214   +0.0053
+R_ROT                         0.9576     0.01793       0.06667   +0.0081
+MR_RAW_ROT                    0.9568     0.01710       0.06200   +0.0072
+X_MOVE_X_ROT                  0.9591     0.01759       0.06528   +0.0095
+P_MOVE_GEO                    0.9542     0.01703       0.06187   +0.0047
+P_TURN_GEO                    0.9573     0.01783       0.06658   +0.0078
+P_REORIENT_GEO                0.9610     0.01738       0.06455   +0.0114
+P_REORIENT_MIN                0.9589     0.01758       0.06564   +0.0093
+D_REORIENT                    0.9473     0.01887       0.07115   -0.0023
+A_REORIENT_CHANGE             0.9575     0.01772       0.06626   +0.0080
+CURVATURE2                    0.9527     0.01842       0.06965   +0.0031
+STRAIGHTNESS2                 0.9527     0.01842       0.06965   +0.0031
+COMPACT_PERSIST               0.9571     0.01718       0.06208   +0.0075
+
+C) CONTROL NEGATIVO DIRIGIDO — PERSISTENCIA DE REORIENTACIÓN
+Se permuta sólo el paso histórico más antiguo dentro de cada ola;
+se conserva estado actual + movement actual + rotation actual.
+Permutaciones: 300
+ΔAUC observado P_REORIENT_GEO - X_MOVE_X_ROT: +0.0008
+Media null: -0.0053
+SD null: 0.0033
+p_perm unilateral: 0.04651
+
+D) FLIPS MÁS SORPRENDENTES PARA STATE (DESCRIPTIVO)
+Flips disponibles: 94 | top: 25
+feature                         top_mean   other_flips   diferencia
+prev_move4d                        0.3156        0.1652       0.1504
+prev_angle_deg                    14.0574        9.7885       4.2689
+reorient_now                       5.5990        2.1069       3.4921
+reorient_persistence_geo           4.0400        2.1242       1.9158
+curvature2                         0.0113        0.0066       0.0047
+straightness2                      0.9887        0.9934      -0.0047
+turn_persistence_geo              12.6434        9.8966       2.7468
+
+LECTURA LIMITADA POR DISEÑO
+- Persistence usa únicamente información observable anterior al flip objetivo.
+- Group-CV separa items y temporal-CV sólo entrena con transiciones anteriores.
+- El control dirigido pregunta si emparejar correctamente el paso t-1 con el item
+  añade información sobre usar sólo movement×rotation del paso más reciente.
+- curvature2 es un proxy geométrico de dos pasos, no curvatura interna del modelo.
+- Mejor predicción no demuestra causalidad, memoria, razonamiento ni mecanismo nuevo.
+- Una sola trayectoria y pocos flips tardíos limitan la generalización.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->exp1 y 2:
+AGIO / GPQA — COHERENCIA R2 · QUITAR EL RELOJ · EXPERIMENTO 2
+==================================================================================
+
+PREGUNTA CONGELADA
+¿La coherencia Forja↔GPQA sobrevive cuando dejamos de comparar sólo niveles
+que avanzan conjuntamente con el tiempo?
+
+MÉTODOS FIJADOS ANTES DEL RESULTADO
+Primario: primeras diferencias CP→CP.
+Secundario: residuales tras tendencia LINEAL por epoch.
+Exploratorio: divergencias y lags residuales -1/0/+1.
+No polinomios, splines, fórmulas nuevas ni selección por resultado.
+
+A) NIVELES — REFERENCIA, TODAVÍA CONTIENEN RELOJ
+  forge_gap        ↔ gpqa_entropy     P=-0.9956 S=-1.0000
+  forge_gap        ↔ gpqa_ptop        P=+0.9939 S=+1.0000
+  forge_loss       ↔ gpqa_entropy     P=+0.9009 S=+1.0000
+  forge_loss       ↔ gpqa_ptop        P=-0.9050 S=-1.0000
+  lr               ↔ gpqa_gap         P=-0.9963 S=-0.9972
+  lr               ↔ gpqa_entropy     P=+0.9953 S=+0.9972
+  lr               ↔ gpqa_ptop        P=-0.9937 S=-0.9972
+  forge_gap        ↔ gpqa_gap         P=+0.9944 S=+0.9945
+  forge_loss       ↔ gpqa_gap         P=-0.8775 S=-0.9945
+  forge_gap        ↔ rotation_mean    P=-0.7402 S=-0.9835
+
+B) PRIMERAS DIFERENCIAS — PRUEBA PRINCIPAL
+  lr                 ↔ gpqa_ptop          P=-0.6660 S=-0.7776 sign=0.0% n=12
+  lr                 ↔ gpqa_entropy       P=+0.6659 S=+0.7426 sign=100.0% n=12
+  lr                 ↔ gpqa_gap           P=-0.6523 S=-0.6445 sign=0.0% n=12
+  forge_gap          ↔ gpqa_entropy       P=-0.6253 S=-0.6224 sign=0.0% n=12
+  forge_gap          ↔ gpqa_ptop          P=+0.5879 S=+0.6014 sign=100.0% n=12
+  forge_grad_max     ↔ gpqa_gap           P=+0.6429 S=+0.6014 sign=41.7% n=12
+  forge_grad_max     ↔ gpqa_ptop          P=+0.6114 S=+0.5734 sign=33.3% n=12
+  forge_grad_max     ↔ gpqa_entropy       P=-0.5669 S=-0.5594 sign=66.7% n=12
+  forge_gap          ↔ gpqa_gap           P=+0.5240 S=+0.5385 sign=91.7% n=12
+  forge_loss         ↔ rotation_mean      P=+0.7472 S=+0.5035 sign=91.7% n=12
+  forge_grad_max     ↔ movement_mean      P=+0.8221 S=+0.5035 sign=58.3% n=12
+  forge_grad_mean    ↔ movement_mean      P=+0.8437 S=+0.4615 sign=50.0% n=12
+  lr                 ↔ movement_mean      P=-0.5446 S=-0.4378 sign=50.0% n=12
+  forge_loss         ↔ flip_rate          P=+0.5085 S=+0.4196 sign=72.7% n=12
+  forge_grad_mean    ↔ gpqa_gap           P=+0.5740 S=+0.4196 sign=33.3% n=12
+  forge_grad_mean    ↔ flip_rate          P=+0.3695 S=+0.3916 sign=63.6% n=12
+  forge_grad_mean    ↔ rotation_mean      P=+0.8041 S=+0.3916 sign=83.3% n=12
+  forge_grad_mean    ↔ gpqa_ptop          P=+0.5447 S=+0.3776 sign=25.0% n=12
+  forge_grad_mean    ↔ gpqa_entropy       P=-0.5007 S=-0.3636 sign=75.0% n=12
+  forge_loss         ↔ gpqa_ptop          P=-0.1556 S=-0.3217 sign=0.0% n=12
+  forge_gap          ↔ rotation_mean      P=-0.0869 S=-0.3007 sign=8.3% n=12
+  forge_loss         ↔ gpqa_entropy       P=+0.1625 S=+0.2867 sign=100.0% n=12
+  forge_gap          ↔ flip_rate          P=-0.1541 S=-0.2517 sign=27.3% n=12
+  forge_loss         ↔ gpqa_gap           P=+0.0310 S=-0.1888 sign=8.3% n=12
+  lr                 ↔ flip_rate          P=+0.1761 S=+0.1786 sign=77.8% n=12
+  forge_grad_max     ↔ flip_rate          P=+0.3833 S=+0.1538 sign=54.5% n=12
+  forge_grad_max     ↔ rotation_mean      P=+0.7595 S=+0.1259 sign=75.0% n=12
+  lr                 ↔ rotation_mean      P=-0.4592 S=+0.1016 sign=90.0% n=12
+  forge_gap          ↔ movement_mean      P=-0.0408 S=-0.0210 sign=41.7% n=12
+  forge_loss         ↔ movement_mean      P=+0.6411 S=-0.0070 sign=58.3% n=12
+
+C) RESIDUALES TRAS QUITAR TENDENCIA LINEAL
+  lr               ↔ gpqa_entropy     P=+0.9113 S=+0.9725
+  lr               ↔ gpqa_gap         P=-0.8927 S=-0.9451
+  lr               ↔ gpqa_ptop        P=-0.9043 S=-0.9396
+  forge_gap        ↔ gpqa_entropy     P=-0.9073 S=-0.9176
+  forge_gap        ↔ gpqa_ptop        P=+0.8921 S=+0.9011
+  forge_gap        ↔ gpqa_gap         P=+0.8544 S=+0.8736
+  forge_loss       ↔ gpqa_ptop        P=-0.7102 S=-0.8352
+  forge_loss       ↔ gpqa_entropy     P=+0.7044 S=+0.8022
+  forge_grad_max   ↔ movement_mean    P=+0.7986 S=+0.7692
+  forge_grad_mean  ↔ movement_mean    P=+0.8008 S=+0.7088
+  forge_grad_max   ↔ rotation_mean    P=+0.6827 S=+0.6978
+  forge_loss       ↔ gpqa_gap         P=-0.5430 S=-0.6813
+  forge_loss       ↔ rotation_mean    P=+0.8008 S=+0.6319
+  forge_grad_mean  ↔ rotation_mean    P=+0.7039 S=+0.5495
+  forge_loss       ↔ flip_rate        P=+0.6566 S=+0.5275
+  forge_loss       ↔ movement_mean    P=+0.6467 S=+0.4890
+  forge_gap        ↔ flip_rate        P=-0.3210 S=-0.3901
+  forge_grad_max   ↔ flip_rate        P=+0.4455 S=+0.3516
+  forge_grad_mean  ↔ flip_rate        P=+0.4685 S=+0.2692
+  forge_gap        ↔ rotation_mean    P=-0.3900 S=-0.2527
+  forge_gap        ↔ movement_mean    P=-0.2582 S=-0.2363
+  lr               ↔ flip_rate        P=+0.2983 S=+0.2143
+  forge_grad_max   ↔ gpqa_gap         P=+0.2953 S=+0.1593
+  lr               ↔ rotation_mean    P=+0.1675 S=+0.1264
+  forge_grad_mean  ↔ gpqa_gap         P=+0.1765 S=+0.0989
+  forge_grad_max   ↔ gpqa_ptop        P=+0.2177 S=+0.0824
+  forge_grad_mean  ↔ gpqa_ptop        P=+0.1110 S=+0.0769
+  lr               ↔ movement_mean    P=-0.0049 S=+0.0549
+  forge_grad_mean  ↔ gpqa_entropy     P=-0.0802 S=+0.0165
+  forge_grad_max   ↔ gpqa_entropy     P=-0.1891 S=+0.0055
+
+D) 20 MAYORES DIVERGENCIAS ESTANDARIZADAS — NO SE DESCARTAN
+  CP6→CP12 lr ↔ rotation_mean |Δz|=4.8184
+  CP6→CP12 lr ↔ movement_mean |Δz|=4.7821
+  CP24→CP30 forge_grad_max ↔ gpqa_entropy |Δz|=3.9620
+  CP24→CP30 forge_grad_mean ↔ gpqa_entropy |Δz|=3.7546
+  CP6→CP12 forge_grad_mean ↔ gpqa_entropy |Δz|=3.4687
+  CP6→CP12 forge_grad_max ↔ gpqa_entropy |Δz|=3.3367
+  CP6→CP12 forge_gap ↔ rotation_mean |Δz|=3.2331
+  CP6→CP12 forge_gap ↔ movement_mean |Δz|=3.1968
+  CP6→CP12 forge_loss ↔ gpqa_entropy |Δz|=3.1857
+  CP6→CP12 lr ↔ gpqa_gap |Δz|=3.0800
+  CP24→CP30 lr ↔ gpqa_ptop |Δz|=3.0072
+  CP24→CP30 forge_gap ↔ gpqa_entropy |Δz|=2.9913
+  CP18→CP24 forge_gap ↔ gpqa_entropy |Δz|=2.8745
+  CP24→CP30 lr ↔ gpqa_gap |Δz|=2.8129
+  CP6→CP12 lr ↔ gpqa_ptop |Δz|=2.7026
+  CP18→CP24 lr ↔ gpqa_ptop |Δz|=2.6956
+  CP12→CP18 forge_gap ↔ flip_rate |Δz|=2.6455
+  CP6→CP12 lr ↔ flip_rate |Δz|=2.5530
+  CP24→CP30 forge_loss ↔ gpqa_ptop |Δz|=2.5345
+  CP18→CP24 lr ↔ gpqa_gap |Δz|=2.5017
+
+E) LAGS SOBRE RESIDUALES
+lag +1 = Forge_t vs GPQA_(t+1); lag -1 = GPQA_t vs Forge_(t+1).
+Exploratorio; ~12–13 puntos NO permiten inferencia causal.
+  lr               ↔ flip_rate        L-1:S=+0.3217 | L+0:S=+0.2143 | L+1:S=-0.1538
+  lr               ↔ gpqa_gap         L-1:S=-0.7413 | L+0:S=-0.9451 | L+1:S=-0.8042
+  lr               ↔ gpqa_entropy     L-1:S=+0.8392 | L+0:S=+0.9725 | L+1:S=+0.7413
+  lr               ↔ gpqa_ptop        L-1:S=-0.8531 | L+0:S=-0.9396 | L+1:S=-0.6364
+  lr               ↔ movement_mean    L-1:S=+0.2867 | L+0:S=+0.0549 | L+1:S=-0.2308
+  lr               ↔ rotation_mean    L-1:S=+0.4615 | L+0:S=+0.1264 | L+1:S=-0.3776
+  forge_gap        ↔ flip_rate        L-1:S=-0.2168 | L+0:S=-0.3901 | L+1:S=-0.1119
+  forge_gap        ↔ gpqa_gap         L-1:S=+0.7273 | L+0:S=+0.8736 | L+1:S=+0.7902
+  forge_gap        ↔ gpqa_entropy     L-1:S=-0.8182 | L+0:S=-0.9176 | L+1:S=-0.7552
+  forge_gap        ↔ gpqa_ptop        L-1:S=+0.7972 | L+0:S=+0.9011 | L+1:S=+0.6923
+  forge_gap        ↔ movement_mean    L-1:S=-0.3497 | L+0:S=-0.2363 | L+1:S=+0.1538
+  forge_gap        ↔ rotation_mean    L-1:S=-0.5175 | L+0:S=-0.2527 | L+1:S=+0.2797
+  forge_loss       ↔ flip_rate        L-1:S=+0.3916 | L+0:S=+0.5275 | L+1:S=+0.2028
+  forge_loss       ↔ gpqa_gap         L-1:S=-0.3427 | L+0:S=-0.6813 | L+1:S=-0.9161
+  forge_loss       ↔ gpqa_entropy     L-1:S=+0.4685 | L+0:S=+0.8022 | L+1:S=+0.9441
+  forge_loss       ↔ gpqa_ptop        L-1:S=-0.5385 | L+0:S=-0.8352 | L+1:S=-0.9161
+  forge_loss       ↔ movement_mean    L-1:S=+0.5664 | L+0:S=+0.4890 | L+1:S=-0.0350
+  forge_loss       ↔ rotation_mean    L-1:S=+0.8252 | L+0:S=+0.6319 | L+1:S=+0.0699
+  forge_grad_mean  ↔ flip_rate        L-1:S=-0.6364 | L+0:S=+0.2692 | L+1:S=+0.7273
+  forge_grad_mean  ↔ gpqa_gap         L-1:S=-0.1888 | L+0:S=+0.0989 | L+1:S=+0.0909
+  forge_grad_mean  ↔ gpqa_entropy     L-1:S=+0.0420 | L+0:S=+0.0165 | L+1:S=-0.0350
+  forge_grad_mean  ↔ gpqa_ptop        L-1:S=+0.0769 | L+0:S=+0.0769 | L+1:S=-0.0629
+  forge_grad_mean  ↔ movement_mean    L-1:S=+0.0420 | L+0:S=+0.7088 | L+1:S=+0.2238
+  forge_grad_mean  ↔ rotation_mean    L-1:S=-0.1049 | L+0:S=+0.5495 | L+1:S=+0.2308
+  forge_grad_max   ↔ flip_rate        L-1:S=-0.4336 | L+0:S=+0.3516 | L+1:S=+0.6643
+  forge_grad_max   ↔ gpqa_gap         L-1:S=+0.0140 | L+0:S=+0.1593 | L+1:S=-0.0559
+  forge_grad_max   ↔ gpqa_entropy     L-1:S=-0.1608 | L+0:S=+0.0055 | L+1:S=+0.1189
+  forge_grad_max   ↔ gpqa_ptop        L-1:S=+0.2168 | L+0:S=+0.0824 | L+1:S=-0.2448
+  forge_grad_max   ↔ movement_mean    L-1:S=+0.2028 | L+0:S=+0.7692 | L+1:S=+0.2378
+  forge_grad_max   ↔ rotation_mean    L-1:S=+0.0420 | L+0:S=+0.6978 | L+1:S=+0.3776
+
+F) VENTANA LR=5e-6
+  CP72: ForgeGAP=10.7276 GPQAGAP=1.0070 Ent=0.9795 pTop1=0.5818 Move=0.0647 Flip=0.51%
+  CP78: ForgeGAP=10.9485 GPQAGAP=1.0235 Ent=0.9719 pTop1=0.5859 Move=0.0524 Flip=1.01%
+
+REGLA DE LECTURA PREESPECIFICADA
+1) Si niveles enormes colapsan en diferencias Y residuales: reloj/tendencia explica gran parte.
+2) Si sobreviven razonablemente en AMBOS: hay coherencia dinámica descriptiva adicional.
+3) Si difieren entre métodos: resultado mixto; no escoger el favorable.
+4) Lags no prueban causalidad; sólo formulan futuras pruebas.
+5) Divergencias son información prioritaria sobre no-redundancia.
+6) Nada aquí autoriza modificar Pichi ni convertir GPQA en actuador.
+
+
+
+
+
+
+AGIO / GPQA — REPLICACIÓN R1 · EXPERIMENTO 2 (12 SEP)
+==============================================================================
+
+PREGUNTA CONGELADA ANTES DE INSPECCIONAR LOS RESULTADOS
+¿La dinámica reciente de las preferencias de salida contiene información sobre
+su estabilidad futura que no está contenida en el estado instantáneo?
+
+HIPÓTESIS PRIMARIA
+STATE+MOVEMENT vs STATE.
+STATE = GAP + Magnitude4D + GoldMargin + Entropy.
+Criterios reportados conjuntamente: AUC, Brier, LogLoss.
+No se redefine la hipótesis según el resultado.
+
+Estados: 15 (BASE + CP6..CP84) | items: 198
+Cohorte historia 1 paso: 2574 pares | flips: 127
+Cohorte persistencia 2 pasos: 2376 pares | flips: 98
+
+A) GROUPED CV POR ITEM — PRIMARIA + SECUNDARIAS
+model                       AUC       Brier     LogLoss   ΔAUC_vs_STATE
+STATE                         0.90143   0.03907     0.13767  +0.00000
+STATE_PLUS_MOVEMENT           0.92168   0.03814     0.13062  +0.02025
+STATE_PLUS_ROTATION           0.92382   0.03673     0.12739  +0.02239
+STATE_PLUS_MOVE_ROT           0.92485   0.03692     0.12747  +0.02342
+STATE_PLUS_MOVE_X_ROT         0.91740   0.03764     0.13130  +0.01597
+
+B) TEMPORAL FORWARD-CHAINING — PRIMARIA + SECUNDARIAS
+model                       AUC       Brier     LogLoss   ΔAUC_vs_STATE
+STATE                         0.92991   0.02885     0.10542  +0.00000
+STATE_PLUS_MOVEMENT           0.93859   0.02661     0.09664  +0.00869
+STATE_PLUS_ROTATION           0.93590   0.02721     0.09874  +0.00599
+STATE_PLUS_MOVE_ROT           0.93679   0.02726     0.09875  +0.00688
+STATE_PLUS_MOVE_X_ROT         0.93398   0.02758     0.10071  +0.00407
+
+C) SECUNDARIA CON DOS PASOS — PERSISTENCIA DE REORIENTACIÓN
+GROUPED:
+  STATE                        AUC=0.91570 Brier=0.03261 LogLoss=0.11740
+  STATE_PLUS_PERSIST_REORIENT  AUC=0.92287 Brier=0.03311 LogLoss=0.11704
+TEMPORAL:
+  STATE                        AUC=0.95165 Brier=0.02493 LogLoss=0.09056
+  STATE_PLUS_PERSIST_REORIENT  AUC=0.95241 Brier=0.02459 LogLoss=0.08900
+
+D) RESULTADO PRIMARIO MECÁNICO (SIN REINTERPRETAR)
+GROUP ΔAUC=+0.02025 ΔBrier=-0.00093 ΔLogLoss=-0.00706
+TEMP  ΔAUC=+0.00869 ΔBrier=-0.00224 ΔLogLoss=-0.00878
+
+Regla de lectura: AUC mayor es mejor; Brier/LogLoss menores son mejores.
+La replicación no implica causalidad, memoria, razonamiento ni mecanismo interno.
+Experimento 2 tiene régimen LR/termostato distinto: es una réplica de trayectoria,
+no una repetición experimental idéntica.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+se va a continuar, con pruebas de forjas varias dónde el propio sistema será el que autoregule el learning rate, así nadie más tendrá que preocuparse sobre que lr es el correcto.
+Próximamente.... días, semanas, meses...el z6 es lento y el tiempo limitado.
+
