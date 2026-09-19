@@ -24,7 +24,7 @@ Ese templado, admitirá cambios tras la forja del experimento 4. Mi intuición y
 La nueva forja tendra:
 1. métricas funcionales ampliadas, no interfieren, son para observar.
 2. Termostato-Pichi simple respetando al sistema.
-3. Oportunidad para el lenguaje del sistema con 3 posibilidades diferentes epoch a epoch.
+3. Oportunidad para el lenguaje del sistema con 3 posibilidades diferentes epoch a epoch. (esta nueva pieza implica, la imposibilidad por primera vez de reproducir forjas al 100%)
 4. El templado de la forja.
 
 
