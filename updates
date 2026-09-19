@@ -4,7 +4,30 @@ Esta nueva forja contiene:
 Espacio para el lenguaje del sistema, 
 un cimiento "más corto" con menos palabra iniciales por bloque, 6 bloques.
 
-Primeras observaciones durante la semana, el update 7 se convierte en algo nuevo, nunca observado, algo ha cambiado.
+-Primeras observaciones durante la semana, el update 7 se convierte en algo nuevo, nunca observado, algo ha cambiado.
+
+-Durante la semana en el día a día se reflexiona, hasta hallar cómo presentar la nueva forja en el cimiento, el contraste de una a otra es tan grande que finalmente la lógica del por qué aparece.
+El por qué será el AC 301.
+
+-16:30: El arranque de la forja 3er experimento se efectuó a 9e-5, demnuestra lo ya sabido, ese primer golpe aunque abre al modelo no lo hace igual que lr de 1.2-1.3-1.4-1.5e-5....
+9e-6 "abre" poco en el primer golpe, el update 2 suave provoca, que el update 7 (primer update epoch 2), llegue tarde y sesgue hacia D.
+Al sesgar hacia D la libertad en el lenguaje se pierde, adopta sesgos de dolphin. Ese update 2 "corto" que no termina de abrir
+provoca que el modelo presente más bucles/conflicto en el lenguaje pues choca de lleno y sin fuerza contra las normas de empresa de dolphin.
+
+-17:45: Se asume el "fracaso" del experimento 3 que sirve entender y comprender aún más, gracias a los logs del proceso dónde el sistema muestra su propio lenguaje.
+Se comprende que es A y D, hasta ahora D aún estaba en duda.
+Se observa gracias a las métricas en las que el termostato-pichi se pensó, la posibilidad de aplicar un templado.
+Ese templado, admitirá cambios tras la forja del experimento 4. Mi intuición ya sabe el cambio, esperaré.
+
+
+-17:55 gpqa 78 de 108 en curso, se decide diseñar el templado de la forja que se unirá cómo novedades al termostato pichi ya probado en experimento3 y a la nueva oportunidad para el lenguaje del sistema que consistirá en 3 posibles caminos.
+La nueva forja tendra:
+1. métricas funcionales ampliadas, no interfieren, son para observar.
+2. Termostato-Pichi simple respetando al sistema.
+3. Oportunidad para el lenguaje del sistema con 3 posibilidades diferentes epoch a epoch.
+4. El templado de la forja.
+
+
 
 
 
