@@ -27,15 +27,107 @@ La nueva forja tendra:
 3. Oportunidad para el lenguaje del sistema con 3 posibilidades diferentes epoch a epoch. (esta nueva pieza implica, la imposibilidad por primera vez de reproducir forjas al 100%)
 4. El templado de la forja.
 
+-18:30 CP90 gpqa en marcha: La forja definitva queda marcada, diciembre 2026.
+Hasta entonces se irán regalando cada nuevo diseño de forja desde la semana que viene.
 
 
 
+-18:35: 2e-7 funciona como freno de GAP en gpqa, permite aprender la lógica del lenguaje, unir palabras sin apenas cambiar....el templado cobra sentido. 
+*se abre posibilidad a ajustar % velocidad de cambio del lr en termostato pichi tras templado y antes.*
+*se abre posibilidad de que el templado sea más fuerte* *no esperar al cambio*
+
+
+
+CP 72:
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.776573
+Diferencia: +0.169258
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.794181
+Diferencia: +0.093898
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.771245
+Diferencia: +0.194502
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.867120
+Diferencia: -0.216008
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: +0.169258
+Misma predicción + GAP mayor: 85
+Misma predicción + GAP menor: 63
+Misma predicción + GAP igual: 0
+Predicción cambiada: 50
+
+CP 78:
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.779192
+Diferencia: +0.171877
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.794273
+Diferencia: +0.093990
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.774628
+Diferencia: +0.197886
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.872781
+Diferencia: -0.221668
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: +0.171877
+Misma predicción + GAP mayor: 85
+Misma predicción + GAP menor: 63
+Misma predicción + GAP igual: 0
+Predicción cambiada: 50
+
+CP84:
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.782243
+Diferencia: +0.174928
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.793694
+Diferencia: +0.093411
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.778778
+Diferencia: +0.202035
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.880013
+Diferencia: -0.228901
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: +0.174928
+Misma predicción + GAP mayor: 85
+Misma predicción + GAP menor: 63
+Misma predicción + GAP igual: 0
+Predicción cambiada: 50
 
 
 19/SEP/2026 tarde-noche:Comienzo pruebas nueva forja-zonapichi-mediciones y nueva zona para el lenguaje con 3 opciones.
 
 20/SEP/2026 Tras regalar análisis/jsonl/pruebas del 3er experimento en repositorios. Dará comienzo encaje del cimiento para 4to experimento, se comenzará la nueva_forja_pichi con 3 caminos.
-20/SEP/2026 Posibles pruebas de arranque con modelo 14B_Qwen_Puro, dependerá de los resultados obtenidos.
+20/SEP/2026 Posibles pruebas de arranque con modelo 14B_Qwen_Puro, dependerá de los resultados obtenidos. *14b retrasado. 
+
 
 
 25 o 26 SEP/2026 Comienzo pruebas GPQA 4to experimento.
