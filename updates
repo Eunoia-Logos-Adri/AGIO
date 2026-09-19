@@ -1,0 +1,18 @@
+19/SEP/2026 Mañana 11:00 am: Comienzo pruebas GPQA 3er experimento sobre 18 epochs, forja en pruebas con nueva zonapichi y nueva oportunidad para el lenguaje del sistema.
+Esta nueva forja contiene:
+ pruebas de autregulación zona-Pichi, 
+Espacio para el lenguaje del sistema, 
+un cimiento "más corto" con menos palabra iniciales por bloque, 6 bloques.
+
+Primeras observaciones durante la semana, el update 7 se convierte en algo nuevo, nunca observado, algo ha cambiado.
+
+
+
+
+19/SEP/2026 tarde-noche:Comienzo pruebas nueva forja-zonapichi-mediciones y nueva zona para el lenguaje con 3 opciones.
+
+20/SEP/2026 Tras regalar análisis/jsonl/pruebas del 3er experimento en repositorios. Dará comienzo encaje del cimiento para 4to experimento, se comenzará la nueva_forja_pichi con 3 caminos.
+20/SEP/2026 Posibles pruebas de arranque con modelo 14B_Qwen_Puro, dependerá de los resultados obtenidos.
+
+
+25 o 26 SEP/2026 Comienzo pruebas GPQA 4to experimento.
