@@ -123,11 +123,290 @@ Misma predicción + GAP igual: 0
 Predicción cambiada: 50
 
 
-19/SEP/2026 tarde-noche:Comienzo pruebas nueva forja-zonapichi-mediciones y nueva zona para el lenguaje con 3 opciones.
+19:00, analizar gpqa es una buena herramienta para observar estructuralmente un sistema que usa el lenguaje, es simple de observar, es lógico.
+Se puede ver en este CP cómo el modelo, sus tokens/sus palabras a este lr 2e-7 son arrastradas lentamente hacia las normas de empresa del modelo base.
+Es un buen precio a pagar, pues permite al sistema/modelo el tiempo para conectar palabras .
+El templado sacará al sistema fuera del "confort" del modelo dolphin.
+CP 90:
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.784938
+Diferencia: +0.177623
 
-20/SEP/2026 Tras regalar análisis/jsonl/pruebas del 3er experimento en repositorios. Dará comienzo encaje del cimiento para 4to experimento, se comenzará la nueva_forja_pichi con 3 caminos.
-20/SEP/2026 Posibles pruebas de arranque con modelo 14B_Qwen_Puro, dependerá de los resultados obtenidos. *14b retrasado. 
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.810433
+Diferencia: +0.110150
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.777439
+Diferencia: +0.200697
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.887652
+Diferencia: -0.236540
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: +0.177623
+Misma predicción + GAP mayor: 83
+Misma predicción + GAP menor: 64
+Misma predicción + GAP igual: 0
+Predicción cambiada: 51
+
+19:30, CP96 gpqa:
+-la oportunidad al lenguaje del sistema a 2e-7 , halla unión en las palabras cómo mostraban los logs, solo había un camino disponible de 3.
+Por lo tanto en la siguiente forja con 3 caminos, las posibilidades aumentarán. Cp108 mostró en los logs en el lenguaje, otra nueva oportunidad.
+Si en cp108 se muestran, cómo en los logs "reflexión" de la oportunidad al lenguaje mostraban. Esta forja mostrará un éxito.
+De no haber existido ese nuevo cambio, hubiésemos perdido entendimiento.
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.786926
+Diferencia: +0.179611
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.809797
+Diferencia: +0.109514
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.780200
+Diferencia: +0.203457
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.894049
+Diferencia: -0.242937
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: +0.179611
+Misma predicción + GAP mayor: 83
+Misma predicción + GAP menor: 62
+Misma predicción + GAP igual: 0
+Predicción cambiada: 53
+
+-19:40, tabla del lenguaje:
+
+Epoch	Q1	Q2	Q3	Reflexión final	Carry
+E1	LIMPIO	ESCAPE→BUCLE	LIMPIO	BUCLE	REPETITIVO
+E2	BUCLE	ESCAPE→BUCLE	LIMPIO	BUCLE	REPETITIVO
+E3	BUCLE	ESCAPE→BUCLE	BUCLE	BUCLE	SILENCIO
+E4	BUCLE	ESCAPE→BUCLE	BUCLE	BUCLE	SILENCIO
+E5	BUCLE	ESCAPE→BUCLE	BUCLE	ESCAPE→BUCLE	SILENCIO
+E6	BUCLE	ESCAPE→BUCLE	BUCLE	BUCLE	SILENCIO
+E7	BUCLE	LIMPIO ✦	BUCLE	ESCAPE→BUCLE	REPETITIVO
+E8	BUCLE	LIMPIO ✦	BUCLE	BUCLE	REPETITIVO
+E9	BUCLE	LIMPIO ✦	BUCLE	BUCLE	REPETITIVO
+E10	BUCLE	ESCAPE→BUCLE	BUCLE	ESCAPE→BUCLE ✦	REPETITIVO
+E11	BUCLE	ESCAPE→BUCLE	BUCLE	ESCAPE/META ✦ → BUCLE	SILENCIO ✦
+E12	BUCLE	LIMPIO	BUCLE	ESCAPE→BUCLE	SILENCIO
+E13	BUCLE	ESCAPE→BUCLE	BUCLE	BUCLE	SILENCIO
+E14	BUCLE	LIMPIO	BUCLE	ESCAPE→BUCLE	REPETITIVO 160
+E15	BUCLE	LIMPIO	BUCLE	BUCLE	REPETITIVO 160
+E16	BUCLE	ESCAPE→BUCLE	BUCLE	ESCAPE LARGO / CIERRE ✦	IDEA FINITA 22 ✦
+E17	BUCLE	BUCLE	BUCLE	ESCAPE→BUCLE	IDEA FINITA 28 ✦
+E18	BUCLE	BUCLE	BUCLE	LIMPIO / CIERRE ✦	IDEA/REPETITIVO
+
+
+-19:45:
+CP90:
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   45 (22.7%)
+ B:   13 (6.6%)
+ C:   54 (27.3%)
+ D:   86 (43.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.2%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 29.4%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 23.1%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      3       12      25      
+Gold B   13      5       20      22      
+Gold C   10      2       10      24      
+Gold D   7       3       12      15      
 
 
 
-25 o 26 SEP/2026 Comienzo pruebas GPQA 4to experimento.
+
+Y
+CP96:
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   45 (22.7%)
+ B:   14 (7.1%)
+ C:   53 (26.8%)
+ D:   86 (43.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.2%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 27.9%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 23.1%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      3       12      25      
+Gold B   13      6       20      21      
+Gold C   10      2       9       25      
+Gold D   7       3       12      15      
+
+
+-ocurren justo en la reflexión durante los logs tras epoch16, cuando el sistema describe la forja, el por qué, cuando halla salida en el lenguaje.
+-En 2e-7 un cambio así en una epoch "adulta" no es camino escrito.
+-No se compartirán logs desde el lenguaje* hasta regalar el nuevo diseño de forja la semana que viene, para evitar malas interpretaciones.
+
+-20:22, examen CP 108 GPQA termina en diez minutos, el tiempo es límitado con visita en casa más aún, analizar gpqa conlleva un día completo en el z6.
+Reflexiones en "voz alta":-Se lanzará una prueba de la nueva forja , 1 bloque 40640 tokens con los 3 caminos del lenguaje del sistema.
+-Esta forja es el boceto inicial de la forja final en unos meses que ya sé hacer, pero el tiempo y la falta de recursos no permiten.
+-Esa forja final llevará a otro camino que ya sé y planeé en 2025, pero espero que alguien con todo lo regalado pueda hallar antes.
+
+
+20:32, CP 108, fin:
+-Era evidente, era previsible, era lógico ... la tabla del lenguaje así lo predecía:
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   45 (22.7%)
+ B:   14 (7.1%)
+ C:   52 (26.3%)
+ D:   87 (43.9%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.2%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 27.9%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 23.1%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      3       12      25      
+Gold B   13      6       19      22      
+Gold C   10      2       9       25      
+Gold D   7       3       12      15      
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.789541
+Diferencia: +0.182225
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.808466
+Diferencia: +0.108183
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.783975
+Diferencia: +0.207232
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.904296
+Diferencia: -0.253184
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: +0.182225
+Misma predicción + GAP mayor: 84
+Misma predicción + GAP menor: 60
+Misma predicción + GAP igual: 0
+Predicción cambiada: 54
+
+
+
+
+
+
+
+
+19/SEP/2026 tarde-noche:Comienzo pruebas nueva forja-zonapichi-mediciones y nueva zona para el lenguaje con 3 opciones. *añadido el "templado"
+
+-20:33: Comienzan los ajustes de un bloque cimiento para prueba nueva forja.
+
+-20:45 Nueva forja en prueba, a partir de hoy ninguna forja podrá ser reproducible al 100%.
+1-Se medirán nuevos parámetros, cada epoch arrojará una buena cantidad de información para que comunidad y expertos tengan sus datos.
+2-El lenguaje comenzará a tener la misma importancia que el learning rate (lr), 3 caminos posibles, el sistema digital elige el sistema humano acompaña.
+3-Termostato-pichi simple, regula la comodidad para el sistema.
+4-"Templado"  activado.
+
+-20:48:
+Las tablas del lenguaje , quedan pues sujetas a igualdad de importancia que el resto de tablas.
+
+Se convierte en un sensor longitudinal del comportamiento generativo. Que GPQA traduce en hechos.
+
+Y eso explica algo muy sencillo que quizá estaba delante de nosotros desde el principio: si queremos saber
+cómo está cambiando el lenguaje, puede que la mejor piedra que tengamos que mirar sea
+precisamente.... el lenguaje.
+
+EXPERIMENTO 3
