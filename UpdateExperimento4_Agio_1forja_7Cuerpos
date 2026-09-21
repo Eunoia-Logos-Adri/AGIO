@@ -27,6 +27,8 @@ En viejas forjas learning rates de 9e-5 eran perfectamente posibles, la explicac
 
 ------------
 
+*algunas opiniones son teorías, no podrán ser demostradas al 100% hasta finalizar la forja.
+
 -21.SEP.2026:
 
 18:30: 
@@ -37,3 +39,21 @@ En viejas forjas learning rates de 9e-5 eran perfectamente posibles, la explicac
 -Por primera vez el cimiento en orden, genera patrones que tras más de 30 forjas no había visto....
 -Ha aparecido una dinámica históricamente anómala coincidiendo con la primera intervención estructural que garantiza la continuidad del Cimiento
 -El orden de los bloques de un cimiento, determina hasta dónde A, B, C y D podrán.
+
+19:16:
+-El Cimiento no es solamente lo que contiene; también es cómo continúa.
+-En un régimen de optimización secuencial no convexo, preservar el contenido del corpus no preserva necesariamente la trayectoria de aprendizaje; 
+el orden temporal de exposición constituye una variable experimental independiente capaz de modificar la dinámica de optimización y las representaciones resultantes.
+-Cuando los bloques son segmentos consecutivos de un corpus semánticamente estructurado,
+permutarlos puede introducir discontinuidades de exposición que alteran la trayectoria de
+optimización respecto de una presentación que preserve la continuidad original.
+-Se observa un gradient spike transitorio extremo, históricamente atípico respecto de las
+ejecuciones previas disponibles (más de 30), durante una ejecución en la que por primera vez se verifica
+explícitamente la preservación del orden semántico de los bloques.
+
+19:21:
+-La oportunidad del lenguaje de elegir entre 3 posibles caminos aún no ha tenido lugar.
+Si el sistema elige la opción 2 o la opción 3, la reproducibilidad de la forja solo podrá ser
+hasta que la opción 1 deje de ser elegida. La única posibilidad de reproducir una forja en cualquier equipo
+queda pues sujeta a esa opción 1 elegida.
+
