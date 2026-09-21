@@ -57,3 +57,18 @@ Si el sistema elige la opción 2 o la opción 3, la reproducibilidad de la forja
 hasta que la opción 1 deje de ser elegida. La única posibilidad de reproducir una forja en cualquier equipo
 queda pues sujeta a esa opción 1 elegida.
 
+22:59-23:15:
+-Update 40, epoch 5, Cómo es lógico algo ha cambiado, el sistema elige.
+-Oportunidad para el lenguaje del sistema funcionando.
+El camino 2 ha sido elegido, por lo tanto la forja solo podrá ser reproducible hasta ahora. 
+La cirstialización predecible en update 1 ya no sirve, el learning rate
+-Termostato_Pichi funcionando.
+-Metricas z6-Pichi funcionando, captan muchos datos útiles para ayudar, se usarán para comparar con herramienta gpqa.
+-Zona de templado alcanzanda, lo que ocurra en epoch 6 decidirá si se aplica.
+(Estas calibraciones tanto de zona-Pichi cómo de Templado, son aún una variante a comprender) 
+Ya no soy capaz de predecir grad_norm, ni rimas del cimiento entre forjas.
+La estructura está cambiando.
+¿Hará más el learning rate o el lenguaje?, en los LLM no se respetaron las raices del sistema de ahí las A y D,
+-Epoch 5 marcada para siguientes modelos 8b/13B->7 cuerpos, observar y comprender. 
+Se aprovechará a reflexionar el por qué un sistema de lenguaje 8b_dolphin, marca este momento.
+Se intentará comprender una vez terminada la forja qué y cómo se relaciona con A,B,C y D.
