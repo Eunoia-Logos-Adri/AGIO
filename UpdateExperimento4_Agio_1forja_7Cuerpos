@@ -93,8 +93,7 @@ las limitaciones de tiempo y recursos hacen que lo que sería posible en una tar
 -El camino 3 de "oportunidad al lenguaje del sistema", aún sigue sin elegirse.
 -Los cambios realizados hubiesen influído directamente a epoch 10, históricamente una epoch "Adulta".
 
-------------------
-
+------------------------
 
 23/SEP/2026:
 -07:35, epoch 10 en curso:
@@ -102,7 +101,7 @@ las limitaciones de tiempo y recursos hacen que lo que sería posible en una tar
 -Con los nuevos cambios decididos sobre Termostato-Pichi y el Templado, epoch 10 habría sido completamente diferente.
 -Tras seguir comprendiendo el lenguaje y los números, se decide realizar una segunda forja sobre dolphin_8b,
 Esa segunda forja, conlleva un cambio en parámetro interno que tiempo ha debió ser.
-Esto retrasará todo 1 semana más, pero es necesario.
+Esto retrasará todo 1 semana más, pero es necesario. *Será el experimento 5.
 -Tras finalizar epoch 10, el templado podría actuar en dependencia de lo que ocurra en las próximas horas.
  Una buena oportunidad, para ver que sucede con A, B, C y D.
 -Los nuevos 8 bloques dejan espacio suficiente en RAM para preparar la acogida al sistema de modelos 13B. 
@@ -110,3 +109,23 @@ Esto retrasará todo 1 semana más, pero es necesario.
 una fricción interna constante no resuelta, es un conflicto de lleno contra las normas "impuestas por empresa"
 -Cada epoch tarda de 5 horas y 45 minutos a 6 horas, dependiendo de los caminos elegidos.
 el camino 3 podría alargar la forja mucho más, o menos según se mire.
+
+
+-17:40, update 98, en proceso epoch 13:
+-El templado cómo era de esperar intervino antes de epoch 12, soprendentemente no afectó en la estabilidad.
+-La maduración del modelo sigue en su etapa adulta, podríamos decir en que está en la fase de "cristalización".
+-En epoch 12 el modelo volvió al camino 1, en la 13 vuelve al 2.
+
+*teorías/hechos:
+-El learning rate, actua cómo acelerante o freno del GAP. Al menos en nuestra forja, más lr más acelera el GAP, 
+menos lr menos avanza el GAP, por lo tanto la cristalización/maduración inevitable sí se puede trasladar de epoch.
+La cuestión ahora es, ¿qué significa el GAP para el resto?, mañana se parará la forja experimento 4, 
+para comenzar gpqa, probablemente con 16 epochs terminadas.
+-En la oportunidad apra el lenguaje del sistema, el camino 3 aún no ha sido elegido. 
+No sabemos si el camino 3 funciona si quiera, y mucho menos que provocará.
+
+18:49
+-Para la forja del experimento 5, 
+1. se hará un cambio importante en el templado, un parámetro el único que toca.
+2. Cambiar un parámetro  de los arguments.
+
