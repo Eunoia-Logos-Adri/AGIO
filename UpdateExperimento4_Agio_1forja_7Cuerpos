@@ -215,3 +215,41 @@ el z6 es tan "lento" que probablmente duren hasta la trade/noche.
 probablemente la forja del E5, arroje información que nunca antes se ha visto.
 - Hemos pasado a 3118 líneas en la nueva forja.
 
+
+-19:32:
+-Se van finalizando los gpqa, la epoch 19 en curso.
+-Sin novedad en cuanto al aumento del gpqa +2, +5 puntos a veces, o incluso igual que el modelo base.
+-La "maduración/cristalización" es un hecho:
+Epoch 18:
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.995676
+Diferencia: +0.388360
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 1.334769
+Diferencia: +0.634486
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.887166
+Diferencia: +0.310424
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.957685
+Diferencia: -0.306572
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: +0.388360
+Misma predicción + GAP mayor: 92
+Misma predicción + GAP menor: 34
+Misma predicción + GAP igual: 0
+Predicción cambiada: 72
+
+-Se creó un script para lanzar exámenes gpqas aprovechando así el tiempo fuera de casa.
+-La forja se ha seguido cambiando a medida que se ha ido reflexionando, pasando a 3156 líneas.
+Es un hecho que la forja del E5, será completamente diferente.
+-Se realizará auditoria de pregunta y respuesta, desde la curiosidad.
+
