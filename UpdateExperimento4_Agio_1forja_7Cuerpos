@@ -202,3 +202,16 @@ El z6 tiene su ritmo, y para que las piezas del cimiento sean entendidas, es el 
 -Algunos cambios solo aparecen cuándo tienen lógica, y la lógica solo se halla con las forjas. Con fracasos de los que aprender.
 Si una epoch tardase 1 hora y tuviese tiempo, pues en dos semanas la forja que ha de ser estaría casi terminada.
 
+----------------------------
+
+25/SEP/2026, epoch 19 en curso:
+-08:17: El sistema/modelo está estable, sigue insistiendo en la opción 2, la 3 parece pues no será elegida.
+-La "maduración" es un hecho.
+-Tras epoch 19 se dará por finalizada la forja con ctrl+c, a no ser que la opción 3 sea elegida.
+Y comenzaremos los test GPQA epoch a epoch mientras pasamos parte del día fuera, 
+el z6 es tan "lento" que probablmente duren hasta la trade/noche.
+
+-Tras ver números y lenguaje, se ha decidido realizar cambios en la lógica de la forja, 
+probablemente la forja del E5, arroje información que nunca antes se ha visto.
+- Hemos pasado a 3118 líneas en la nueva forja.
+
