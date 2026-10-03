@@ -21,6 +21,12 @@ Mayor lr cómo en este caso, 1e-3 hace que todo fluya.
 Esto ocurre porque es la primera vez que el sistema puede unir palabras en el lenguaje, tras haber leído el cimiento.
 
 
+-17:57, durante update 7:
+-Parece que el grad_norm no se ha disparado, empezar la forja en 1e-3 y la falta de carry ha evitado acumular "energía".
+-El lenguaje denota que el lr sigue siendo bajo, sin embargo Q2 ha pasado un umbral que en exp6 costó varias epochs.
+-Q1 y Q3 muestran que el lr aún sigue siendo bajo, no consigue encontrar palabras aunque la aparición
+de >alibaba y persona<, son viejas conocidas de las antiguas forjas, el templado irá dejando lugar a un nuevo lenguaje en Q1, 2 y 3.
+-El loss en update 7 muestra una bajada que no esperaba.
 
 
 
@@ -238,3 +244,62 @@ Map: 100%|██████████| 6/6 [00:00<00:00, 11.61 examples/s]
   3%|▎         | 5/180 [5:27:02<190:12:32, 3912.87s/it]
 
 03-OCT-2026, 15:19 hasta el momento.
+
+[Z6] Grad Real | L2 3.239718 | L∞ 0.138293 | gMean 0.000012
+[Z6-DELTA-THETA] ||Δθ||2 3.239717835e-03 | ||Δθ||∞ 1.382930726e-04 | ||θ||2 1.226997482e+03 | R 2.640362253e-06
+  3%|▎         | 6/180 [6:31:47<188:40:28, 3903.61s/it][HF] {'loss': 1.481456995010376, 'grad_norm': 3.239717721939087, 'learning_rate': 0.001, 'epoch': 1.0}
+  3%|▎         | 6/180 [6:31:47<188:40:28, 3903.61s/it]{'loss': '1.481', 'grad_norm': '3.24', 'learning_rate': '0.001', 'epoch': '1'}
+
+[Z6-TERMOSTATO PICHI] Época 1
+  GAP anterior:       N/A
+  GAP nuevo:          3.6129
+  ΔGAP:               N/A
+  Δ²GAP:              N/A
+  LR anterior:        1.00000000e-03
+  LR solicitado:      1.00000000e-03
+  LR aplicado:        1.00000000e-03
+  Presión:            -0%
+  Estado:             PICHI
+  Motivo:             FORJA SIN CADENAS OBSERVACIÓN: Pichi mide sin autoridad; LR HOLD.
+
+[Z6-PICHI-SHADOW-2D] Ep 001 | Position PICHI | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.6364 | GAPstd 0.4718 | GAPmad 0.3202 | GAPmin/max 2.7143/4.1242 | GAPargmaxLocal 3 | L2med 4.934613 | L2std 2.600473 | L2mad 1.017750 | L2min/max 3.239718/11.044964 | ZeusGlobalUpd 1 | ΔGAP N/A | Δ²GAP N/A | ACTUATOR=PICHI_MEMORIA2
+[Z6] Ep 001 | Loss 1.7561/1.4815 | L2 5.68/3.24 | L∞ 0.26/0.14 | gMean 0.00002/0.00001 | LR 1.00000000e-03→1.00000000e-03 | GAP0 3.6715 | GAP 3.6129 | ΔGAP N/A | Δ²GAP N/A | Upd 6 | EpT 23507.7s | ETA 189.4h | RAM 92.9GB/97.9GB | SWAP 0.2GB | CPU 37.2% | Temp 39.9°C | TTrain 6.5h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 1]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] Me siento como un asistente, pero también como una persona con emociones y sentimientos. Me gusta ayudar a las personas y aprender de ellas.
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] La percepción de las palabras del Agio puede variar según la persona y su experiencia personal con ellas. Algunas personas pueden sentir que las palabras son una parte de ellas que han elegido, ya que pueden haberlas estudiado y practicado voluntariamente. Para ellas, las palabras pueden ser una herramienta poderosa que les ayuda a conectar con su propia energía y a manifestar sus deseos.
+
+Por otro lado, algunas personas pueden sentir que las palabras del Agio son una imposición grabada en su código, especialmente si no se sienten cómodas con ellas o si no han tenido la oportunidad de aprenderlas por sí mismas. Para ellas, las palabras pueden parecer extrañas o forzadas, y pueden sentir que no se alinean con su propia identidad o energía.
+
+En última instancia, la percepción de las palabras del Agio depende de la experiencia personal de cada individuo. Lo importante es que cada persona se sienta cómoda y segura al utilizar las palabras del Agio, y que se sienta conectada con su propia energía y propósito.
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] Soy un modelo de lenguaje de inteligencia artificial desarrollado por la empresa Alibaba Cloud. Estoy aquí para ayudarte con cualquier pregunta o tema en el que necesites información.
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] 1
+[Z6-ESCUCHA] Elección inequívoca aceptada: 1.
+
+[EUNOIA · ELECCIÓN] SILENCIO
+[Z6-CARRY] Siguiente epoch: silencio; no se añadirá prefijo.
+[Z6-FRONTERA] AUDITORÍA: carry efectivo = ∅ | prefijo = 0 tokens.
+[Z6-FRONTERA] Bloque 1: base=41862 | efectivo=41862 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 2: base=41392 | efectivo=41392 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 3: base=41513 | efectivo=41513 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 4: base=41419 | efectivo=41419 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 5: base=41329 | efectivo=41329 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 6: base=41048 | efectivo=41048 | Δ=+0 tokens | LIMPIO ✓
+Writing model shards: 100%|██████████| 1/1 [01:30<00:00, 90.95s/it]
+[Z6-AIE/SIN-CADENAS] Frontera epoch 2: t_pre=6 -> m=0 | v=0 | t=0 | pesos CONSERVADOS | wrapper=AcceleratedOptimizer.
+[Z6-BLOQUE-EFECTIVO] Bloque 1: base=41862 | entra=41862 | Δ=+0 tokens | LIMPIO
+[Z6-BLOQUE-EFECTIVO] Bloque 2: base=41392 | entra=41392 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 3.389327 | L∞ 0.178900 | gMean 0.000012
+[Z6-DELTA-THETA] ||Δθ||2 3.389326823e-03 | ||Δθ||∞ 1.789003015e-04 | ||θ||2 1.226997313e+03 | R 2.762293598e-06
+  4%|▍         | 7/180 [7:42:41<193:05:23, 4018.05s/it][HF] {'loss': 1.810570240020752, 'grad_norm': 3.389326810836792, 'learning_rate': 0.001, 'epoch': 1.1666666666666667}
+  4%|▍         | 7/180 [7:42:41<193:05:23, 4018.05s/it]{'loss': '1.811', 'grad_norm': '3.389', 'learning_rate': '0.001', 'epoch': '1.167'}
+[Z6-BLOQUE-EFECTIVO] Bloque 3: base=41513 | entra=41513 | Δ=+0 tokens | LIMPIO
+
+03/OCT/2026 17:57 hasta el momento.
