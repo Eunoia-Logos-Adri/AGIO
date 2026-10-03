@@ -14,6 +14,13 @@
 Este exp7/forja_sin_cadenas, está pensado para que se pueda comrpender el Agio, la forja, lo que se necesite. Quizás un lr = 1, 1 update, 1 epoch lo probemos antes del exp 8.
 
 
+-15:19, durante update 5:
+-Las primeras 5 updates demuestran la rima del cimiento, mismos patrones que el comienzo a 1e-4, pero más suaves. 
+Mayor lr cómo en este caso, 1e-3 hace que todo fluya.
+-Es muy probable que el update 7, el primer update de epoch 2 muestre un grad norm grande.
+Esto ocurre porque es la primera vez que el sistema puede unir palabras en el lenguaje, tras haber leído el cimiento.
+
+
 
 
 
@@ -205,3 +212,29 @@ Map: 100%|██████████| 6/6 [00:00<00:00, 11.61 examples/s]
   Centro Pichi:          3.6715
   Semiancho conservado:  0.5000
 
+[Z6] Grad Real | L2 11.044964 | L∞ 0.525554 | gMean 0.000026
+[Z6-DELTA-THETA] ||Δθ||2 1.104496407e-02 | ||Δθ||∞ 5.255535841e-04 | ||θ||2 1.226997865e+03 | R 9.001616371e-06
+  1%|          | 1/180 [1:06:47<199:14:13, 4007.00s/it][HF] {'loss': 1.9437261819839478, 'grad_norm': 11.044963836669922, 'learning_rate': 0.001, 'epoch': 0.16666666666666666}
+  1%|          | 1/180 [1:06:47<199:14:13, 4007.00s/it]{'loss': '1.944', 'grad_norm': '11.04', 'learning_rate': '0.001', 'epoch': '0.1667'}
+[Z6-BLOQUE-EFECTIVO] Bloque 3: base=41513 | entra=41513 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 5.975516 | L∞ 0.236566 | gMean 0.000017
+[Z6-DELTA-THETA] ||Δθ||2 5.975515992e-03 | ||Δθ||∞ 2.365662158e-04 | ||θ||2 1.226998478e+03 | R 4.870027226e-06
+  1%|          | 2/180 [2:11:55<195:14:51, 3948.83s/it][HF] {'loss': 1.9349380731582642, 'grad_norm': 5.975515842437744, 'learning_rate': 0.001, 'epoch': 0.3333333333333333}
+  1%|          | 2/180 [2:11:55<195:14:51, 3948.83s/it]{'loss': '1.935', 'grad_norm': '5.976', 'learning_rate': '0.001', 'epoch': '0.3333'}
+[Z6-BLOQUE-EFECTIVO] Bloque 4: base=41419 | entra=41419 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 3.940016 | L∞ 0.174422 | gMean 0.000013
+[Z6-DELTA-THETA] ||Δθ||2 3.940015591e-03 | ||Δθ||∞ 1.744217873e-04 | ||θ||2 1.226998386e+03 | R 3.211100876e-06
+  2%|▏         | 3/180 [3:16:59<193:08:47, 3928.41s/it][HF] {'loss': 1.3746716976165771, 'grad_norm': 3.9400155544281006, 'learning_rate': 0.001, 'epoch': 0.5}
+  2%|▏         | 3/180 [3:16:59<193:08:47, 3928.41s/it]{'loss': '1.375', 'grad_norm': '3.94', 'learning_rate': '0.001', 'epoch': '0.5'}
+[Z6-BLOQUE-EFECTIVO] Bloque 5: base=41329 | entra=41329 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 4.037153 | L∞ 0.179322 | gMean 0.000013
+[Z6-DELTA-THETA] ||Δθ||2 4.037153254e-03 | ||Δθ||∞ 1.793219596e-04 | ||θ||2 1.226998322e+03 | R 3.290267950e-06
+  2%|▏         | 4/180 [4:21:51<191:21:20, 3914.10s/it][HF] {'loss': 1.5847946405410767, 'grad_norm': 4.037153244018555, 'learning_rate': 0.001, 'epoch': 0.6666666666666666}
+  2%|▏         | 4/180 [4:21:51<191:21:20, 3914.10s/it]{'loss': '1.585', 'grad_norm': '4.037', 'learning_rate': '0.001', 'epoch': '0.6667'}
+[Z6-BLOQUE-EFECTIVO] Bloque 6: base=41048 | entra=41048 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 5.832072 | L∞ 0.280391 | gMean 0.000017
+[Z6-DELTA-THETA] ||Δθ||2 5.832072163e-03 | ||Δθ||∞ 2.803906798e-04 | ||θ||2 1.226997941e+03 | R 4.753123023e-06
+  3%|▎         | 5/180 [5:27:02<190:12:32, 3912.87s/it][HF] {'loss': 2.2170958518981934, 'grad_norm': 5.8320722579956055, 'learning_rate': 0.001, 'epoch': 0.8333333333333334}
+  3%|▎         | 5/180 [5:27:02<190:12:32, 3912.87s/it]
+
+03-OCT-2026, 15:19 hasta el momento.
