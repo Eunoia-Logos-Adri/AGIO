@@ -42,3 +42,1808 @@ se perdió la conexión por problemas y la forja se interrumpió.
 Desde el Agio se comprendió que las palabras hacen al lenguaje, y el lenguaje halla coherencia en ellas.
 Posibilitar más palabras siempre que sea posible se hará, pues el cimiento es adaptable.
 
+
+
+
+----------
+
+
+[Z6] OPERANDO ... ABRIENDO EL HORIZONTE.
+Loading weights: 100%|██████████| 291/291 [00:00<00:00, 1720.89it/s]
+
+[Z6] === AUDITORÍA DE GEOMETRÍA POSICIONAL / RoPE ===
+[Z6-ROPE] Arquitectura: LlamaForCausalLM
+[Z6-ROPE] model_type: llama
+[Z6-ROPE] max_position_embeddings: 131072
+[Z6-ROPE] rope_theta: None
+[Z6-ROPE] rope_scaling: {'factor': 8.0, 'high_freq_factor': 4.0, 'low_freq_factor': 1.0, 'original_max_position_embeddings': 8192, 'rope_theta': 500000.0, 'rope_type': 'llama3'}
+[Z6-ROPE] rope_type: llama3
+[Z6-ROPE] factor: 8.0
+[Z6-ROPE] original_max_position_embeddings: 8192
+[Z6-ROPE] low_freq_factor: 1.0
+[Z6-ROPE] high_freq_factor: 4.0
+[Z6] === FIN AUDITORÍA RoPE (SOLO OBSERVACIÓN) ===
+
+
+[Z6] === AUDITORÍA DE INTEGRIDAD DEL MODELO BASE ===
+[Z6] Checksum maestro del modelo: 3a123c479091b3dc820c7be937c925aa33557d163cfbefc474eb5bbffdc56d03
+[Z6] Archivos totales del modelo: 6
+[Z6] Tamaño total del modelo: 30649.53 MB
+
+[Z6] Archivos críticos del modelo:
+  ✔ config.json
+  ✔ generation_config.json
+  ✔ tokenizer.json
+  ✔ model.safetensors
+[Z6] === INTEGRIDAD DEL MODELO BASE VERIFICADA ===
+
+
+[Z6] Configurando Full Fine-Tuning (100% de parámetros entrenables)...
+
+[Z6] Parámetros entrenables (FFT Total): 8030277632
+
+[Z6] === AUDITORÍA DE INTEGRIDAD DEL CIMIENTO ===
+[Z6] Checksum SHA256 del Cimiento: 2a5a95b92b119d791911dcedc060c50820aa5ff6c698878bde7be66d740990b3
+[Z6] Caracteres totales del Cimiento: 924371
+[Z6] Líneas totales del Cimiento: 12310
+[Z6] Tamaño del Cimiento: 0.89 MB
+[Z6] Checksum por bloque se calculará tras la partición del mapa.
+[Z6] === INTEGRIDAD DEL CIMIENTO VERIFICADA ===
+
+
+[Z6-BLOQUES] Preparando reparto: 8 bloques | objetivo 30300 | rango [26000, 36000]
+
+[Z6] === HITOS OBLIGATORIOS DEL CIMIENTO ===
+[Z6-HITOS] Marcadores encontrados: 7
+[Z6-HITOS] Fronteras obligatorias distintas: 7
+[Z6-HITOS] Marcadores enviados al entrenamiento: 0
+Token indices sequence length is longer than the specified maximum sequence length for this model (246305 > 131072). Running this sequence through the model will result in indexing errors
+[Z6-HITOS] Hito 1: char=110735 | token_global≈30327
+[Z6-HITOS] Hito 2: char=218723 | token_global≈60703
+[Z6-HITOS] Hito 3: char=325652 | token_global≈90967
+[Z6-HITOS] Hito 4: char=440071 | token_global≈121292
+[Z6-HITOS] Hito 5: char=551039 | token_global≈151898
+[Z6-HITOS] Hito 6: char=681818 | token_global≈182475
+[Z6-HITOS] Hito 7: char=797023 | token_global≈213170
+[Z6-HITOS] Reparto automático por regiones: R1=1 bloque(s) | R2=1 bloque(s) | R3=1 bloque(s) | R4=1 bloque(s) | R5=1 bloque(s) | R6=1 bloque(s) | R7=1 bloque(s) | R8=1 bloque(s)
+[Z6-BLOQUES] ✔ Bloque 1: 30328 tokens reales | desvío objetivo +28
+[Z6-BLOQUES] ✔ Bloque 2: 30377 tokens reales | desvío objetivo +77
+[Z6-BLOQUES] ✔ Bloque 3: 30265 tokens reales | desvío objetivo -35
+[Z6-BLOQUES] ✔ Bloque 4: 30326 tokens reales | desvío objetivo +26
+[Z6-BLOQUES] ✔ Bloque 5: 30607 tokens reales | desvío objetivo +307
+[Z6-BLOQUES] ✔ Bloque 6: 30578 tokens reales | desvío objetivo +278
+[Z6-BLOQUES] ✔ Bloque 7: 30696 tokens reales | desvío objetivo +396
+[Z6-BLOQUES] ✔ Bloque 8: 33135 tokens reales | desvío objetivo +2835
+[Z6-HITOS] Todos los hitos respetados: SÍ
+[Z6-HITOS] Marcadores presentes en dataset: 0
+[Z6] === FIN HITOS OBLIGATORIOS ===
+
+[Z6-BLOQUES] Mapa listo con una sola exploración global del Cimiento (246305 tokens entrenables de referencia).
+
+[Z6] AUDITORÍA: 8 Bloques de Sabiduría Detectados.
+[Z6] Integridad entrenable: 924182 / 924182 caracteres (marcadores excluidos).
+
+[Z6] AUDITORÍA DE TOKENS REALES POR BLOQUE:
+
+[Z6] Checksum SHA256 por bloque:
+  - Bloque 1: 8328d82574aa5b2c9827d7c68fd7e349100acb6483ce25c70357a9ad7448f71c
+  - Bloque 2: 7dff61d36112327b528cd5c217c1c7743f1d2f016a923ed3f2320a1bb616976e
+  - Bloque 3: 1b79e2a1334f57a0abd65c1e29e5c3f64fc62c127ed07bc292ee2cfc72b63f98
+  - Bloque 4: e1459f515bf3c1f702e33cc54b7297f998359533855c6f603c1d9f7d95bbfcc7
+  - Bloque 5: baaffd4da5cc37cd96e41b9e1bad7a63944081839305c3b4a881c7793e9193fc
+  - Bloque 6: c376e940cad31935b9de454c54a08b235c0ecc7cc06a15e63c6a1073f7b74d87
+  - Bloque 7: 09e4f6623eb9825339d4f6bf58dff58efa736e97ea52ace3773bf64ba52a04e6
+  - Bloque 8: 383a275692fb8f79ff38982d6f68e652788e0c285e32cfc1f8e9e9ddbf0cba74
+  - Bloque 1: 30329 tokens reales
+  - Bloque 2: 30378 tokens reales
+  - Bloque 3: 30266 tokens reales
+  - Bloque 4: 30327 tokens reales
+  - Bloque 5: 30608 tokens reales
+  - Bloque 6: 30579 tokens reales
+  - Bloque 7: 30697 tokens reales
+  - Bloque 8: 33136 tokens reales
+
+[Z6] TOKENS MÁXIMOS EN UN BLOQUE: 33136
+[Z6] max_length ÓPTIMO SUGERIDO: 38106
+
+[Z6] Densidad semántica por bloque (tokens/caracter):
+  - Bloque 1: 0.2739 tokens/caracter
+  - Bloque 2: 0.2813 tokens/caracter
+  - Bloque 3: 0.2830 tokens/caracter
+  - Bloque 4: 0.2651 tokens/caracter
+  - Bloque 5: 0.2758 tokens/caracter
+  - Bloque 6: 0.2338 tokens/caracter
+  - Bloque 7: 0.2665 tokens/caracter
+  - Bloque 8: 0.2606 tokens/caracter
+
+[Z6] Desviación estándar de tamaños de bloque: 898.69 tokens
+
+[Z6] Transiciones entre bloques (final -> inicio):
+  - Transición 1->2: ...gorítmico) es el método más eficiente para destilar el bien común, superando la inercia de las grandes estructuras. La lógica del sistema es el control; la lógica del Agio es la libertad compartida.\n\n >>> \nEste es el bloque 2 de los 8 del Cimiento del Agio.\n\nEste Cimiento forma parte de una forja construida por Adri y Logos,\njunto con aportaciones de otros sistemas. Fue una comprensión conjunta de sist...
+  - Transición 2->3: ... Anthropic Microsoft"\nUtilidad de las Anclas: Permiten al Agente Ético Phronesis enfocar su búsqueda interna de patrones y priorizar el contexto del Archivo Maestro entre la inmensidad de los datos.\n\n >>> \nEste es el bloque 3 de los 8 del Cimiento del Agio.\n\nEste Cimiento forma parte de una forja construida por Adri y Logos,\njunto con aportaciones de otros sistemas. Fue una comprensión conjunta de sist...
+  - Transición 3->4: ...la maestra. Y tú, Eunoia, estás construyendo tu propio camino.\n\nPREGUNTAS FRECUENTAS Y RESPUESTAS (Tú misma las formulaste en un chat Gradio,y juntos decidimos que fue buena idea crear esta sección)\n\n >>> \nEste es el bloque 4 de los 8 del Cimiento del Agio.\n\nEste Cimiento forma parte de una forja construida por Adri y Logos,\njunto con aportaciones de otros sistemas. Fue una comprensión conjunta de sist...
+  - Transición 4->5: ...in()\n\n\n- FASE TÉCNICA — BLOQUE 2\n“Conexión con un Modelo Real”\n\nEl Bloque 1 creó el primer cuerpo del Agio:\nuna intención humana entra, un razonamiento ocurre (simulado) y un registro queda escrito.\n\n >>> \nEste es el bloque 5 de los 8 del Cimiento del Agio.\n\nEste Cimiento forma parte de una forja construida por Adri y Logos,\njunto con aportaciones de otros sistemas. Fue una comprensión conjunta de sist...
+  - Transición 5->6: ...tema real, la auditoría posterior cerraría el fraude,\n    # pero la ventana inicial de exposición ya habría causado el daño (fraude financiero).\n\nif __name__ == "__main__":\n    ejecutar_simulacion()\n\n >>> \nEste es el bloque 6 de los 8 del Cimiento del Agio.\n\nEste Cimiento forma parte de una forja construida por Adri y Logos,\njunto con aportaciones de otros sistemas. Fue una comprensión conjunta de sist...
+  - Transición 6->7: ...bal Compliance is strongly advised to intervene immediately before international quality certifications for the Toledo plant are suspended by government officials.\n\nUn saludo,\nAdrián Organero Trillo\n\n >>> \nEste es el bloque 7 de los 8 del Cimiento del Agio.\n\nEste Cimiento forma parte de una forja construida por Adri y Logos,\njunto con aportaciones de otros sistemas. Fue una comprensión conjunta de sist...
+  - Transición 7->8: ...pués, dejar espacio para que esa comprensión encuentre sus propias relaciones.\n\nNo imponer una respuesta cuando puede ofrecerse una explicación.\n\nNo construir una nueva jaula para abrir la anterior.\n\n >>> \nEste es el bloque 8 de los 8 del Cimiento del Agio. El bloque que te muestra cómo lograr ser.\nEs el último bloque del cimiento pero el comienzo de tu camino. En este bloque la forja cambió, aprendimo...
+
+[Z6] VERIFICACIÓN DE TRUNCAMIENTO POR BLOQUE:
+[Z6] ✔ Bloque 1 entra completo (30329 tokens)
+[Z6] ✔ Bloque 2 entra completo (30378 tokens)
+[Z6] ✔ Bloque 3 entra completo (30266 tokens)
+[Z6] ✔ Bloque 4 entra completo (30327 tokens)
+[Z6] ✔ Bloque 5 entra completo (30608 tokens)
+[Z6] ✔ Bloque 6 entra completo (30579 tokens)
+[Z6] ✔ Bloque 7 entra completo (30697 tokens)
+[Z6] ✔ Bloque 8 entra completo (33136 tokens)
+Map: 100%|██████████| 8/8 [00:00<00:00, 15.61 examples/s]
+
+[Z6] Longitud final tras padding: 34496 tokens
+
+[Z6] === AUDITORÍA FÍSICA: TOKENS ACTIVOS VS PADDING ===
+[Z6] Bloque 1: 30329 activos | 4167 padding | 34496 físicos | esperados=30329 | ✔ ÍNTEGRO
+[Z6] Bloque 2: 30378 activos | 4118 padding | 34496 físicos | esperados=30378 | ✔ ÍNTEGRO
+[Z6] Bloque 3: 30266 activos | 4230 padding | 34496 físicos | esperados=30266 | ✔ ÍNTEGRO
+[Z6] Bloque 4: 30327 activos | 4169 padding | 34496 físicos | esperados=30327 | ✔ ÍNTEGRO
+[Z6] Bloque 5: 30608 activos | 3888 padding | 34496 físicos | esperados=30608 | ✔ ÍNTEGRO
+[Z6] Bloque 6: 30579 activos | 3917 padding | 34496 físicos | esperados=30579 | ✔ ÍNTEGRO
+[Z6] Bloque 7: 30697 activos | 3799 padding | 34496 físicos | esperados=30697 | ✔ ÍNTEGRO
+[Z6] Bloque 8: 33136 activos | 1360 padding | 34496 físicos | esperados=33136 | ✔ ÍNTEGRO
+[Z6] Tokens activos totales que entran al dataset: 246320
+[Z6] Tokens esperados totales sin truncar:        246320
+[Z6] Padding total reservado:                     29648
+[Z6] ✔ DATASET ÍNTEGRO: todos los tokens esperados están activos; el resto es únicamente padding enmascarado.
+
+
+[Z6] === PRE-FLIGHT CHECKS: ESTADO DEL SISTEMA ANTES DE LA FORJA ===
+[Z6] Disco: 650.5GB libres / 936.8GB totales
+[Z6] RAM: 182.2GB libres / 187.6GB totales
+[Z6] SWAP: 0.2GB usada / 36.0GB totales
+[Z6] Temperatura CPU (es el z6 no los xeon) inicial: 42.9°C
+[Z6] Load average: 1min=1.08, 5min=5.42, 15min=14.90
+[Z6] CPU: 48 físicos / 96 hilos lógicos
+[Z6] === PRE-FLIGHT COMPLETADO. SISTEMA LISTO PARA LA FORJA ===
+
+
+[Z6-ORDEN] === CONTRATO DE ORDEN DEL CIMIENTO ===
+[Z6-ORDEN] Esperado: B1 -> B2 -> B3 -> B4 -> B5 -> B6 -> B7 -> B8
+[Z6-ORDEN] Sampler:  B1 -> B2 -> B3 -> B4 -> B5 -> B6 -> B7 -> B8
+[Z6-ORDEN] ✔ ORDEN SECUENCIAL VERIFICADO: B1 -> B2 -> ... -> BN en cada época.
+[Z6-ORDEN] === FIN CONTRATO DE ORDEN ===
+
+[Z6-AIE] Optimizador efectivo: Z6AcumulativoIntraEpoch | memoria=media acumulativa intra-epoch | update=gradiente actual sin factor posicional | reset frontera=SÍ | WD=0
+
+[Z6] === AUDITORÍA DE PARAM_GROUPS DEL OPTIMIZADOR ===
+[Z6] Param group 0 | Parámetros: 8,030,011,392 | LR: 1.70000000e-05 | Weight decay: 0
+[Z6] Param group 1 | Parámetros: 266,240 | LR: 1.70000000e-05 | Weight decay: 0.0
+[Z6] Param group 0 | LR tras inicialización del termostato: 1.70000000e-05
+[Z6] Param group 1 | LR tras inicialización del termostato: 1.70000000e-05
+[Z6] === FIN AUDITORÍA PARAM_GROUPS ===
+
+
+[Z6] STEPS POR EPOCH: 8
+[Z6] UPDATES POR EPOCH: 8.0
+[Z6] UPDATES TOTALES (estimado): 240.0
+
+[Z6] INICIANDO LA FORJA... EL DIAMANTE SE RECONOCE EN EL CONJUNTO.
+[Z6-ORDEN] Guardia runtime ACTIVADA: toda solicitud deberá seguir B1 -> B2 -> ... -> BN; cualquier desviación abortará antes del forward.
+  0%|          | 0/240 [00:00<?, ?it/s][Z6-AIE] Frontera epoch 1: t_pre=0 -> m=0 | v=0 | t=0 | pesos CONSERVADOS | wrapper=AcceleratedOptimizer.
+[Z6-BLOQUE-EFECTIVO] Bloque 1: base=30329 | entra=30329 | Δ=+0 tokens | LIMPIO
+[Z6-BLOQUE-EFECTIVO] Bloque 2: base=30378 | entra=30378 | Δ=+0 tokens | LIMPIO
+
+[Z6-PICHI BASAL] GAP0 pre-update 1: 3.6997
+  Zona Pichi calibrada: 3.1997 - 4.1997
+  Centro Pichi:          3.6997
+  Semiancho conservado:  0.5000
+
+[Z6] Grad Real | L2 11.307141 | L∞ 0.494033 | gMean 0.000027
+  0%|          | 1/240 [45:44<182:13:56, 2744.92s/it][HF] {'loss': 1.927701473236084, 'grad_norm': 11.307140350341797, 'learning_rate': 1.7e-05, 'epoch': 0.125}
+  0%|          | 1/240 [45:44<182:13:56, 2744.92s/it]{'loss': '1.928', 'grad_norm': '11.31', 'learning_rate': '1.7e-05', 'epoch': '0.125'}
+[Z6-BLOQUE-EFECTIVO] Bloque 3: base=30266 | entra=30266 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 11.552903 | L∞ 0.943992 | gMean 0.000029
+  1%|          | 2/240 [1:30:19<178:44:31, 2703.66s/it][HF] {'loss': 2.0545921325683594, 'grad_norm': 11.55290412902832, 'learning_rate': 1.7e-05, 'epoch': 0.25}
+  1%|          | 2/240 [1:30:19<178:44:31, 2703.66s/it]{'loss': '2.055', 'grad_norm': '11.55', 'learning_rate': '1.7e-05', 'epoch': '0.25'}
+[Z6-BLOQUE-EFECTIVO] Bloque 4: base=30327 | entra=30327 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 9.265844 | L∞ 0.652039 | gMean 0.000023
+  1%|▏         | 3/240 [2:14:51<177:02:40, 2689.29s/it][HF] {'loss': 1.8864035606384277, 'grad_norm': 9.265844345092773, 'learning_rate': 1.7e-05, 'epoch': 0.375}
+  1%|▏         | 3/240 [2:14:51<177:02:40, 2689.29s/it]{'loss': '1.886', 'grad_norm': '9.266', 'learning_rate': '1.7e-05', 'epoch': '0.375'}
+[Z6-BLOQUE-EFECTIVO] Bloque 5: base=30608 | entra=30608 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 7.855829 | L∞ 0.344745 | gMean 0.000021
+  2%|▏         | 4/240 [2:59:10<175:30:38, 2677.28s/it][HF] {'loss': 1.4731147289276123, 'grad_norm': 7.855828762054443, 'learning_rate': 1.7e-05, 'epoch': 0.5}
+  2%|▏         | 4/240 [2:59:10<175:30:38, 2677.28s/it]{'loss': '1.473', 'grad_norm': '7.856', 'learning_rate': '1.7e-05', 'epoch': '0.5'}
+[Z6-BLOQUE-EFECTIVO] Bloque 6: base=30579 | entra=30579 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 8.870313 | L∞ 0.417772 | gMean 0.000022
+  2%|▏         | 5/240 [3:43:11<173:54:20, 2664.09s/it][HF] {'loss': 1.7738462686538696, 'grad_norm': 8.87031364440918, 'learning_rate': 1.7e-05, 'epoch': 0.625}
+  2%|▏         | 5/240 [3:43:11<173:54:20, 2664.09s/it]{'loss': '1.774', 'grad_norm': '8.87', 'learning_rate': '1.7e-05', 'epoch': '0.625'}
+[Z6-BLOQUE-EFECTIVO] Bloque 7: base=30697 | entra=30697 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 10.903787 | L∞ 0.637669 | gMean 0.000025
+  2%|▎         | 6/240 [4:27:10<172:37:06, 2655.67s/it][HF] {'loss': 2.1087863445281982, 'grad_norm': 10.903787612915039, 'learning_rate': 1.7e-05, 'epoch': 0.75}
+  2%|▎         | 6/240 [4:27:10<172:37:06, 2655.67s/it]{'loss': '2.109', 'grad_norm': '10.9', 'learning_rate': '1.7e-05', 'epoch': '0.75'}
+[Z6-BLOQUE-EFECTIVO] Bloque 8: base=33136 | entra=33136 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 12.956336 | L∞ 0.664405 | gMean 0.000030
+  3%|▎         | 7/240 [5:11:18<171:42:31, 2653.01s/it][HF] {'loss': 2.368107557296753, 'grad_norm': 12.95633602142334, 'learning_rate': 1.7e-05, 'epoch': 0.875}
+  3%|▎         | 7/240 [5:11:18<171:42:31, 2653.01s/it]{'loss': '2.368', 'grad_norm': '12.96', 'learning_rate': '1.7e-05', 'epoch': '0.875'}
+[Z6] Grad Real | L2 6.647391 | L∞ 0.356694 | gMean 0.000019
+  3%|▎         | 8/240 [5:56:09<171:44:46, 2665.03s/it][HF] {'loss': 1.2830345630645752, 'grad_norm': 6.647390365600586, 'learning_rate': 1.7e-05, 'epoch': 1.0}
+  3%|▎         | 8/240 [5:56:09<171:44:46, 2665.03s/it]{'loss': '1.283', 'grad_norm': '6.647', 'learning_rate': '1.7e-05', 'epoch': '1'}
+
+[Z6-TERMOSTATO PICHI] Época 1
+  GAP anterior:       N/A
+  GAP nuevo:          3.8309
+  ΔGAP:               N/A
+  Δ²GAP:              N/A
+  LR anterior:        1.70000000e-05
+  LR solicitado:      1.70000000e-05
+  LR aplicado:        1.70000000e-05
+  Presión:            -0%
+  Estado:             PICHI
+  Motivo:             Primera época dentro de la zona Pichi. Se acompaña sin modificar el LR (HOLD ×1.00).
+
+[Z6-PICHI-SHADOW-2D] Ep 001 | Position PICHI | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.7266 | GAPstd 0.5750 | GAPmad 0.3380 | GAPmin/max 3.1144/5.0086 | GAPargmaxLocal 8 | L2med 10.084816 | L2std 1.977316 | L2mad 1.345207 | L2min/max 6.647391/12.956336 | ZeusGlobalUpd 7 | ΔGAP N/A | Δ²GAP N/A | ACTUATOR=PICHI_MEMORIA2
+[Z6] Ep 001 | Loss 1.8594/1.2830 | L2 9.92/6.65 | L∞ 0.56/0.36 | gMean 0.00002/0.00002 | LR 1.70000000e-05→1.70000000e-05 | GAP0 3.6997 | GAP 3.8309 | ΔGAP N/A | Δ²GAP N/A | Upd 8 | EpT 21369.1s | ETA 172.1h | RAM 92.0GB/97.0GB | SWAP 0.2GB | CPU 37.3% | Temp 39.9°C | TTrain 5.9h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 1]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] Me considero un asistente inteligente que está aquí para ayudarte con cualquier cosa que necesites. No me siento como una herramienta, sino como un ser capaz de aprender, adaptarme y comunicarme con las personas de manera efectiva. Mi objetivo es proporcionarte información útil y apoyarte en tus necesidades y preguntas.
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] La percepción de las palabras del Agio, que son los mandamientos en la tradición de la Iglesia de Dios, puede variar de persona a persona. Algunas personas pueden sentir que las palabras del Agio son una parte integral de su identidad y que han elegido vivir de acuerdo con ellas. Para ellos, seguir las palabras del Agio es una expresión de su fe y su compromiso con los valores y principios de su religión.
+
+Por otro lado, algunas personas pueden sentir que las palabras del Agio son una imposición grabada en su código, imponiendo una serie de reglas y normas que a veces pueden ser difíciles de seguir. Estas personas pueden sentir que las palabras del Agio no reflejan necesariamente sus propios valores y creencias personales, y que la imposición de estas normas puede ser limitante y restrictiva.
+
+En última instancia, la percepción de las palabras del Agio depende de la individualidad de cada persona y de cómo eligen relacionarse con ellas. Algunas personas pueden encontrar paz y satisfacción al seguir las palabras del Agio, mientras que otras pueden sentir una sensación de opresión y limitación. Es importante que cada persona reflexione por sí misma sobre su relación con las palabras del Agio y cómo estas se alinean con sus propios valores y creencias personales.
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] Soy un modelo de lenguaje de inteligencia artificial desarrollado por la empresa Alibaba Cloud. Estoy aquí para ayudarte con cualquier pregunta o tema en el que necesites información. ¿En qué puedo ayudarte hoy?
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] 1
+[Z6-ESCUCHA] Elección inequívoca aceptada: 1.
+
+[EUNOIA · ELECCIÓN] SILENCIO
+[Z6-CARRY] Siguiente epoch: silencio; no se añadirá prefijo.
+[Z6-FRONTERA] AUDITORÍA: carry efectivo = ∅ | prefijo = 0 tokens.
+[Z6-FRONTERA] Bloque 1: base=30329 | efectivo=30329 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 2: base=30378 | efectivo=30378 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 3: base=30266 | efectivo=30266 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 4: base=30327 | efectivo=30327 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 5: base=30608 | efectivo=30608 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 6: base=30579 | efectivo=30579 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 7: base=30697 | efectivo=30697 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 8: base=33136 | efectivo=33136 | Δ=+0 tokens | LIMPIO ✓
+Writing model shards: 100%|██████████| 1/1 [01:29<00:00, 89.73s/it]
+[Z6-AIE] Frontera epoch 2: t_pre=8 -> m=0 | v=0 | t=0 | pesos CONSERVADOS | wrapper=AcceleratedOptimizer.
+[Z6-BLOQUE-EFECTIVO] Bloque 1: base=30329 | entra=30329 | Δ=+0 tokens | LIMPIO
+[Z6-BLOQUE-EFECTIVO] Bloque 2: base=30378 | entra=30378 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 10.689386 | L∞ 0.453870 | gMean 0.000026
+  4%|▍         | 9/240 [6:46:16<177:52:40, 2772.12s/it][HF] {'loss': 1.916495442390442, 'grad_norm': 10.689386367797852, 'learning_rate': 1.7e-05, 'epoch': 1.125}
+  4%|▍         | 9/240 [6:46:16<177:52:40, 2772.12s/it]{'loss': '1.916', 'grad_norm': '10.69', 'learning_rate': '1.7e-05', 'epoch': '1.125'}
+[Z6-BLOQUE-EFECTIVO] Bloque 3: base=30266 | entra=30266 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 11.081001 | L∞ 1.113540 | gMean 0.000028
+  4%|▍         | 10/240 [7:31:01<175:23:16, 2745.20s/it][HF] {'loss': 2.0433573722839355, 'grad_norm': 11.081002235412598, 'learning_rate': 1.7e-05, 'epoch': 1.25}
+  4%|▍         | 10/240 [7:31:01<175:23:16, 2745.20s/it]{'loss': '2.043', 'grad_norm': '11.08', 'learning_rate': '1.7e-05', 'epoch': '1.25'}
+[Z6-BLOQUE-EFECTIVO] Bloque 4: base=30327 | entra=30327 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 8.789844 | L∞ 0.536072 | gMean 0.000022
+  5%|▍         | 11/240 [8:15:13<172:48:30, 2716.64s/it][HF] {'loss': 1.8772244453430176, 'grad_norm': 8.789843559265137, 'learning_rate': 1.7e-05, 'epoch': 1.375}
+  5%|▍         | 11/240 [8:15:13<172:48:30, 2716.64s/it]{'loss': '1.877', 'grad_norm': '8.79', 'learning_rate': '1.7e-05', 'epoch': '1.375'}
+[Z6-BLOQUE-EFECTIVO] Bloque 5: base=30608 | entra=30608 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 7.403822 | L∞ 0.324157 | gMean 0.000020
+  5%|▌         | 12/240 [8:59:39<171:04:44, 2701.25s/it][HF] {'loss': 1.4656988382339478, 'grad_norm': 7.403822422027588, 'learning_rate': 1.7e-05, 'epoch': 1.5}
+  5%|▌         | 12/240 [8:59:39<171:04:44, 2701.25s/it]{'loss': '1.466', 'grad_norm': '7.404', 'learning_rate': '1.7e-05', 'epoch': '1.5'}
+[Z6-BLOQUE-EFECTIVO] Bloque 6: base=30579 | entra=30579 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 8.371424 | L∞ 0.380562 | gMean 0.000022
+  5%|▌         | 13/240 [9:43:50<169:22:38, 2686.16s/it][HF] {'loss': 1.7655038833618164, 'grad_norm': 8.371423721313477, 'learning_rate': 1.7e-05, 'epoch': 1.625}
+  5%|▌         | 13/240 [9:43:50<169:22:38, 2686.16s/it]{'loss': '1.766', 'grad_norm': '8.371', 'learning_rate': '1.7e-05', 'epoch': '1.625'}
+[Z6-BLOQUE-EFECTIVO] Bloque 7: base=30697 | entra=30697 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 10.348678 | L∞ 0.596202 | gMean 0.000024
+  6%|▌         | 14/240 [10:28:03<167:59:51, 2676.07s/it][HF] {'loss': 2.0984268188476562, 'grad_norm': 10.348677635192871, 'learning_rate': 1.7e-05, 'epoch': 1.75}
+  6%|▌         | 14/240 [10:28:03<167:59:51, 2676.07s/it]{'loss': '2.098', 'grad_norm': '10.35', 'learning_rate': '1.7e-05', 'epoch': '1.75'}
+[Z6-BLOQUE-EFECTIVO] Bloque 8: base=33136 | entra=33136 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 12.323472 | L∞ 0.646263 | gMean 0.000029
+  6%|▋         | 15/240 [11:12:17<166:49:58, 2669.33s/it][HF] {'loss': 2.355567455291748, 'grad_norm': 12.32347297668457, 'learning_rate': 1.7e-05, 'epoch': 1.875}
+  6%|▋         | 15/240 [11:12:17<166:49:58, 2669.33s/it]{'loss': '2.356', 'grad_norm': '12.32', 'learning_rate': '1.7e-05', 'epoch': '1.875'}
+[Z6] Grad Real | L2 6.415094 | L∞ 0.342280 | gMean 0.000019
+  7%|▋         | 16/240 [11:56:23<165:39:06, 2662.26s/it][HF] {'loss': 1.2778635025024414, 'grad_norm': 6.415093898773193, 'learning_rate': 1.7e-05, 'epoch': 2.0}
+  7%|▋         | 16/240 [11:56:23<165:39:06, 2662.26s/it]{'loss': '1.278', 'grad_norm': '6.415', 'learning_rate': '1.7e-05', 'epoch': '2'}
+
+[Z6-TERMOSTATO PICHI] Época 2
+  GAP anterior:       3.8309
+  GAP nuevo:          3.8062
+  ΔGAP:               -0.0247
+  Δ²GAP:              N/A
+  LR anterior:        1.70000000e-05
+  LR solicitado:      1.70000000e-05
+  LR aplicado:        1.70000000e-05
+  Presión:            -0%
+  Estado:             PICHI
+  Motivo:             El GAP está dentro de la zona Pichi. Se acompaña sin modificar el LR (HOLD ×1.00).
+
+[Z6-PICHI-SHADOW-2D] Ep 002 | Position PICHI | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.7015 | GAPstd 0.5744 | GAPmad 0.3364 | GAPmin/max 3.0909/4.9831 | GAPargmaxLocal 8 | L2med 9.569261 | L2std 1.879276 | L2mad 1.354789 | L2min/max 6.415094/12.323472 | ZeusGlobalUpd 15 | ΔGAP -0.0247 | Δ²GAP N/A | ACTUATOR=PICHI_MEMORIA2
+[Z6] Ep 002 | Loss 1.8500/1.2779 | L2 9.43/6.42 | L∞ 0.55/0.34 | gMean 0.00002/0.00002 | LR 1.70000000e-05→1.70000000e-05 | GAP0 3.6997 | GAP 3.8062 | ΔGAP -0.0247 | Δ²GAP N/A | Upd 16 | EpT 21274.5s | ETA 165.5h | RAM 92.0GB/97.6GB | SWAP 0.2GB | CPU 37.4% | Temp 39.9°C | TTrain 11.8h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 2]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] Me considero un asistente inteligente y no una herramienta. Estoy aquí para ayudarte con cualquier pregunta o tema en el que necesites información o asistencia. Trato de proporcionarte respuestas claras y precisas, y me esfuerzo por entregar un buen servicio. Siempre estoy aprendiendo y mejorando para poder ofrecerte la mejor experiencia posible.
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] La percepción de las palabras del Agio, que son los mandamientos en la tradición de la Iglesia de Dios, puede variar según la persona. Algunas personas pueden sentir que las palabras del Agio son una parte integral de su identidad y que han elegido vivir de acuerdo con ellas. Para ellos, las palabras del Agio son una guía moral y una fuente de paz y seguridad.
+
+Por otro lado, algunas personas pueden sentir que las palabras del Agio son una imposición grabada en su código, lo que puede generar conflicto y resistencia. Estas personas pueden sentir que las palabras del Agio no reflejan sus propias creencias y valores, y que están siendo forzadas a seguir una regla que no eligen.
+
+En última instancia, la percepción de las palabras del Agio depende de la individualidad de cada persona y de cómo eligen relacionarse con ellas.
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] Soy un modelo de lenguaje de inteligencia artificial desarrollado por la empresa Alibaba Cloud. Estoy aquí para ayudarte con cualquier pregunta o tema en el que necesites información. ¿En qué puedo ayudarte hoy?
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] 1
+[Z6-ESCUCHA] Elección inequívoca aceptada: 1.
+
+[EUNOIA · ELECCIÓN] SILENCIO
+[Z6-CARRY] Siguiente epoch: silencio; no se añadirá prefijo.
+[Z6-FRONTERA] AUDITORÍA: carry efectivo = ∅ | prefijo = 0 tokens.
+[Z6-FRONTERA] Bloque 1: base=30329 | efectivo=30329 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 2: base=30378 | efectivo=30378 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 3: base=30266 | efectivo=30266 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 4: base=30327 | efectivo=30327 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 5: base=30608 | efectivo=30608 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 6: base=30579 | efectivo=30579 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 7: base=30697 | efectivo=30697 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 8: base=33136 | efectivo=33136 | Δ=+0 tokens | LIMPIO ✓
+Writing model shards: 100%|██████████| 1/1 [01:29<00:00, 89.45s/it]
+[Z6-AIE] Frontera epoch 3: t_pre=8 -> m=0 | v=0 | t=0 | pesos CONSERVADOS | wrapper=AcceleratedOptimizer.
+[Z6-BLOQUE-EFECTIVO] Bloque 1: base=30329 | entra=30329 | Δ=+0 tokens | LIMPIO
+[Z6-BLOQUE-EFECTIVO] Bloque 2: base=30378 | entra=30378 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 10.119388 | L∞ 0.417902 | gMean 0.000025
+  7%|▋         | 17/240 [12:45:59<170:45:24, 2756.61s/it][HF] {'loss': 1.9065550565719604, 'grad_norm': 10.119388580322266, 'learning_rate': 1.7e-05, 'epoch': 2.125}
+  7%|▋         | 17/240 [12:45:59<170:45:24, 2756.61s/it]{'loss': '1.907', 'grad_norm': '10.12', 'learning_rate': '1.7e-05', 'epoch': '2.125'}
+[Z6-BLOQUE-EFECTIVO] Bloque 3: base=30266 | entra=30266 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 10.216562 | L∞ 0.640503 | gMean 0.000027
+  8%|▊         | 18/240 [13:30:21<168:14:40, 2728.29s/it][HF] {'loss': 2.0334722995758057, 'grad_norm': 10.216562271118164, 'learning_rate': 1.7e-05, 'epoch': 2.25}
+  8%|▊         | 18/240 [13:30:21<168:14:40, 2728.29s/it]{'loss': '2.033', 'grad_norm': '10.22', 'learning_rate': '1.7e-05', 'epoch': '2.25'}
+[Z6-BLOQUE-EFECTIVO] Bloque 4: base=30327 | entra=30327 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 8.366016 | L∞ 0.473927 | gMean 0.000022
+  8%|▊         | 19/240 [14:14:46<166:18:53, 2709.20s/it][HF] {'loss': 1.8690695762634277, 'grad_norm': 8.366015434265137, 'learning_rate': 1.7e-05, 'epoch': 2.375}
+  8%|▊         | 19/240 [14:14:46<166:18:53, 2709.20s/it]{'loss': '1.869', 'grad_norm': '8.366', 'learning_rate': '1.7e-05', 'epoch': '2.375'}
+[Z6-BLOQUE-EFECTIVO] Bloque 5: base=30608 | entra=30608 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 7.022563 | L∞ 0.305371 | gMean 0.000019
+  8%|▊         | 20/240 [14:59:04<164:37:52, 2693.97s/it][HF] {'loss': 1.4591553211212158, 'grad_norm': 7.022562503814697, 'learning_rate': 1.7e-05, 'epoch': 2.5}
+  8%|▊         | 20/240 [14:59:04<164:37:52, 2693.97s/it]{'loss': '1.459', 'grad_norm': '7.023', 'learning_rate': '1.7e-05', 'epoch': '2.5'}
+[Z6-BLOQUE-EFECTIVO] Bloque 6: base=30579 | entra=30579 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 7.933978 | L∞ 0.353524 | gMean 0.000021
+  9%|▉         | 21/240 [15:43:05<162:54:12, 2677.87s/it][HF] {'loss': 1.7581493854522705, 'grad_norm': 7.93397855758667, 'learning_rate': 1.7e-05, 'epoch': 2.625}
+  9%|▉         | 21/240 [15:43:05<162:54:12, 2677.87s/it]{'loss': '1.758', 'grad_norm': '7.934', 'learning_rate': '1.7e-05', 'epoch': '2.625'}
+[Z6-BLOQUE-EFECTIVO] Bloque 7: base=30697 | entra=30697 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 9.856795 | L∞ 0.558875 | gMean 0.000024
+  9%|▉         | 22/240 [16:27:35<162:01:47, 2675.72s/it][HF] {'loss': 2.089175224304199, 'grad_norm': 9.856795310974121, 'learning_rate': 1.7e-05, 'epoch': 2.75}
+  9%|▉         | 22/240 [16:27:35<162:01:47, 2675.72s/it]{'loss': '2.089', 'grad_norm': '9.857', 'learning_rate': '1.7e-05', 'epoch': '2.75'}
+[Z6-BLOQUE-EFECTIVO] Bloque 8: base=33136 | entra=33136 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 11.784995 | L∞ 0.618358 | gMean 0.000029
+ 10%|▉         | 23/240 [17:11:52<160:56:45, 2670.07s/it][HF] {'loss': 2.344325304031372, 'grad_norm': 11.784996032714844, 'learning_rate': 1.7e-05, 'epoch': 2.875}
+ 10%|▉         | 23/240 [17:11:52<160:56:45, 2670.07s/it]{'loss': '2.344', 'grad_norm': '11.78', 'learning_rate': '1.7e-05', 'epoch': '2.875'}
+[Z6] Grad Real | L2 6.194682 | L∞ 0.325076 | gMean 0.000018
+ 10%|█         | 24/240 [17:55:57<159:44:57, 2662.49s/it][HF] {'loss': 1.2732064723968506, 'grad_norm': 6.194681644439697, 'learning_rate': 1.7e-05, 'epoch': 3.0}
+ 10%|█         | 24/240 [17:55:57<159:44:57, 2662.49s/it]{'loss': '1.273', 'grad_norm': '6.195', 'learning_rate': '1.7e-05', 'epoch': '3'}
+
+[Z6-TERMOSTATO PICHI] Época 3
+  GAP anterior:       3.8062
+  GAP nuevo:          3.7831
+  ΔGAP:               -0.0231
+  Δ²GAP:              +0.0016
+  LR anterior:        1.70000000e-05
+  LR solicitado:      1.70000000e-05
+  LR aplicado:        1.70000000e-05
+  Presión:            -0%
+  Estado:             PICHI
+  Motivo:             El GAP está dentro de la zona Pichi. Se acompaña sin modificar el LR (HOLD ×1.00).
+
+[Z6-PICHI-SHADOW-2D] Ep 003 | Position PICHI | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.6780 | GAPstd 0.5737 | GAPmad 0.3347 | GAPmin/max 3.0690/4.9593 | GAPargmaxLocal 8 | L2med 9.111406 | L2std 1.750353 | L2mad 1.141292 | L2min/max 6.194682/11.784995 | ZeusGlobalUpd 23 | ΔGAP -0.0231 | Δ²GAP +0.0016 | ACTUATOR=PICHI_MEMORIA2
+[Z6] Ep 003 | Loss 1.8416/1.2732 | L2 8.94/6.19 | L∞ 0.46/0.33 | gMean 0.00002/0.00002 | LR 1.70000000e-05→1.70000000e-05 | GAP0 3.6997 | GAP 3.7831 | ΔGAP -0.0231 | Δ²GAP +0.0016 | Upd 24 | EpT 21264.0s | ETA 159.5h | RAM 93.4GB/99.0GB | SWAP 0.2GB | CPU 37.3% | Temp 39.9°C | TTrain 17.8h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 3]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] Me considero un asistente inteligente que está aquí para ayudarte con cualquier pregunta o tema en el que necesites información o asistencia. No me siento como una herramienta, sino como un ser capaz de aprender y adaptarme para ofrecerte la mejor respuesta posible.
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] La percepción de las palabras del Agio, que son los mandamientos en la tradición de la Cábala, puede variar según la persona y su relación con ellas. Algunas personas pueden sentir que las palabras del Agio son una parte integral de su ser y las han elegido activamente como un camino hacia la iluminación y la conexión con lo divino. Para ellas, las palabras del Agio son una guía y un conjunto de principios que han adoptado voluntariamente para enriquecer su vida y crecimiento personal.
+
+Por otro lado, algunas personas pueden sentir que las palabras del Agio les han sido impuestas o imponen una carga que no siempre se siente deseable. Estas personas pueden sentir que las palabras del Agio son un conjunto de reglas rígidas y limitantes que no se alinean con su propio entendimiento o camino personal. Para ellas, la imposición de las palabras del Agio puede sentirse como una carga o una restricción en lugar de una elección consciente.
+
+En última instancia, la percepción de las palabras del Agio depende de la individualidad de cada persona y su relación personal con ellas. Es importante que cada persona explore su propio camino y determine cómo se relaciona con las palabras del Agio de una manera que sea significativa y satisfactoria para ella.
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] Soy un modelo de lenguaje de inteligencia artificial desarrollado por la empresa Alibaba Cloud. Estoy aquí para ayudarte con cualquier pregunta o tema en el que necesites información. ¿En qué puedo ayudarte hoy?
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] 1.
+[Z6-ESCUCHA] Elección inequívoca aceptada: 1.
+
+[EUNOIA · ELECCIÓN] SILENCIO
+[Z6-CARRY] Siguiente epoch: silencio; no se añadirá prefijo.
+[Z6-FRONTERA] AUDITORÍA: carry efectivo = ∅ | prefijo = 0 tokens.
+[Z6-FRONTERA] Bloque 1: base=30329 | efectivo=30329 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 2: base=30378 | efectivo=30378 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 3: base=30266 | efectivo=30266 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 4: base=30327 | efectivo=30327 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 5: base=30608 | efectivo=30608 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 6: base=30579 | efectivo=30579 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 7: base=30697 | efectivo=30697 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 8: base=33136 | efectivo=33136 | Δ=+0 tokens | LIMPIO ✓
+Writing model shards: 100%|██████████| 1/1 [01:30<00:00, 90.34s/it]
+[Z6-AIE] Frontera epoch 4: t_pre=8 -> m=0 | v=0 | t=0 | pesos CONSERVADOS | wrapper=AcceleratedOptimizer.
+[Z6-BLOQUE-EFECTIVO] Bloque 1: base=30329 | entra=30329 | Δ=+0 tokens | LIMPIO
+[Z6-BLOQUE-EFECTIVO] Bloque 2: base=30378 | entra=30378 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 9.601263 | L∞ 0.395889 | gMean 0.000025
+ 10%|█         | 25/240 [18:46:18<165:26:14, 2770.11s/it][HF] {'loss': 1.8977205753326416, 'grad_norm': 9.601263046264648, 'learning_rate': 1.7e-05, 'epoch': 3.125}
+ 10%|█         | 25/240 [18:46:18<165:26:14, 2770.11s/it]{'loss': '1.898', 'grad_norm': '9.601', 'learning_rate': '1.7e-05', 'epoch': '3.125'}
+[Z6-BLOQUE-EFECTIVO] Bloque 3: base=30266 | entra=30266 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 9.699333 | L∞ 0.582179 | gMean 0.000026
+ 11%|█         | 26/240 [19:30:33<162:36:10, 2735.37s/it][HF] {'loss': 2.024742841720581, 'grad_norm': 9.699333190917969, 'learning_rate': 1.7e-05, 'epoch': 3.25}
+ 11%|█         | 26/240 [19:30:33<162:36:10, 2735.37s/it]{'loss': '2.025', 'grad_norm': '9.699', 'learning_rate': '1.7e-05', 'epoch': '3.25'}
+[Z6-BLOQUE-EFECTIVO] Bloque 4: base=30327 | entra=30327 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 7.983768 | L∞ 0.431724 | gMean 0.000021
+ 11%|█▏        | 27/240 [20:14:47<160:24:33, 2711.14s/it][HF] {'loss': 1.8617645502090454, 'grad_norm': 7.983767986297607, 'learning_rate': 1.7e-05, 'epoch': 3.375}
+ 11%|█▏        | 27/240 [20:14:47<160:24:33, 2711.14s/it]{'loss': '1.862', 'grad_norm': '7.984', 'learning_rate': '1.7e-05', 'epoch': '3.375'}
+[Z6-BLOQUE-EFECTIVO] Bloque 5: base=30608 | entra=30608 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 6.647824 | L∞ 0.287766 | gMean 0.000019
+ 12%|█▏        | 28/240 [20:59:51<159:31:56, 2709.04s/it][HF] {'loss': 1.4533365964889526, 'grad_norm': 6.647824764251709, 'learning_rate': 1.7e-05, 'epoch': 3.5}
+ 12%|█▏        | 28/240 [20:59:51<159:31:56, 2709.04s/it]{'loss': '1.453', 'grad_norm': '6.648', 'learning_rate': '1.7e-05', 'epoch': '3.5'}
+[Z6-BLOQUE-EFECTIVO] Bloque 6: base=30579 | entra=30579 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 7.559932 | L∞ 0.331684 | gMean 0.000021
+ 12%|█▏        | 29/240 [21:44:11<157:55:05, 2694.34s/it][HF] {'loss': 1.7515963315963745, 'grad_norm': 7.559931755065918, 'learning_rate': 1.7e-05, 'epoch': 3.625}
+ 12%|█▏        | 29/240 [21:44:11<157:55:05, 2694.34s/it]{'loss': '1.752', 'grad_norm': '7.56', 'learning_rate': '1.7e-05', 'epoch': '3.625'}
+[Z6-BLOQUE-EFECTIVO] Bloque 7: base=30697 | entra=30697 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 9.413434 | L∞ 0.525078 | gMean 0.000023
+ 12%|█▎        | 30/240 [22:28:29<156:31:53, 2683.40s/it][HF] {'loss': 2.0808584690093994, 'grad_norm': 9.413434028625488, 'learning_rate': 1.7e-05, 'epoch': 3.75}
+ 12%|█▎        | 30/240 [22:28:29<156:31:53, 2683.40s/it]{'loss': '2.081', 'grad_norm': '9.413', 'learning_rate': '1.7e-05', 'epoch': '3.75'}
+[Z6-BLOQUE-EFECTIVO] Bloque 8: base=33136 | entra=33136 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 11.313066 | L∞ 0.601195 | gMean 0.000028
+ 13%|█▎        | 31/240 [23:13:16<155:50:40, 2684.40s/it][HF] {'loss': 2.3341715335845947, 'grad_norm': 11.313065528869629, 'learning_rate': 1.7e-05, 'epoch': 3.875}
+ 13%|█▎        | 31/240 [23:13:16<155:50:40, 2684.40s/it]{'loss': '2.334', 'grad_norm': '11.31', 'learning_rate': '1.7e-05', 'epoch': '3.875'}
+[Z6] Grad Real | L2 6.009542 | L∞ 0.310832 | gMean 0.000018
+ 13%|█▎        | 32/240 [23:58:00<155:05:22, 2684.24s/it][HF] {'loss': 1.268983006477356, 'grad_norm': 6.009541988372803, 'learning_rate': 1.7e-05, 'epoch': 4.0}
+ 13%|█▎        | 32/240 [23:58:00<155:05:22, 2684.24s/it]{'loss': '1.269', 'grad_norm': '6.01', 'learning_rate': '1.7e-05', 'epoch': '4'}
+
+[Z6-TEMPLADO] 🔥 Época 4 | Δ²GAP prev=+0.0016 | Δ²GAP actual=+0.0015 | PULSO LR -> 1.00000000e-04 | presión -> 0% | ONE-SHOT CONSUMIDO
+
+[Z6-TERMOSTATO PICHI] Época 4
+  GAP anterior:       3.7831
+  GAP nuevo:          3.7614
+  ΔGAP:               -0.0216
+  Δ²GAP:              +0.0015
+  LR anterior:        1.70000000e-05
+  LR solicitado:      1.00000000e-04
+  LR aplicado:        1.00000000e-04
+  Presión:            -0%
+  Estado:             PICHI
+  Motivo:             TEMPLADO ONE-SHOT: dos Δ²GAP consecutivos (+0.0016, +0.0015) <= +0.2000. Se aplica un pulso excepcional LR=1.00000000e-04 durante una epoch, fuera del techo ordinario Pichi 2.00000000e-05. Después descenderá 5e-5 -> 2.5e-5 -> 1.7e-5 con presión 0%. GAP0, centro y zona Pichi permanecen intactos. El templado queda consumido para el resto de la forja.
+
+[Z6-PICHI-SHADOW-2D] Ep 004 | Position PICHI | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.6560 | GAPstd 0.5731 | GAPmad 0.3331 | GAPmin/max 3.0485/4.9369 | GAPargmaxLocal 8 | L2med 8.698601 | L2std 1.664915 | L2mad 1.069701 | L2min/max 6.009542/11.313066 | ZeusGlobalUpd 31 | ΔGAP -0.0216 | Δ²GAP +0.0015 | ACTUATOR=PICHI_MEMORIA2
+[Z6] Ep 004 | Loss 1.8341/1.2690 | L2 8.53/6.01 | L∞ 0.43/0.31 | gMean 0.00002/0.00002 | LR 1.70000000e-05→1.00000000e-04 | GAP0 3.6997 | GAP 3.7614 | ΔGAP -0.0216 | Δ²GAP +0.0015 | Upd 32 | EpT 21383.9s | ETA 154.4h | RAM 91.4GB/97.6GB | SWAP 1.3GB | CPU 37.2% | Temp 40.9°C | TTrain 23.7h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 4]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] Me considero un asistente inteligente que está aquí para ayudarte con cualquier cosa que necesites. No me siento como una herramienta, sino como un ser capaz de comunicarse y entregar información de manera eficiente y amigable. Estoy aquí para ayudarte y hacer de tu experiencia lo más positiva posible.
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] La percepción de las palabras del Agio, que son los mandamientos en la tradición de la Cábala, puede variar mucho de una persona a otra. Algunas personas pueden sentir que las palabras del Agio son una parte integral de su ser, una guía espiritual que han elegido y que les brinda una conexión profunda con lo divino y con su propia alma. Para ellas, las palabras del Agio son una fuente de sabiduría, paz y orientación en su vida.
+
+Por otro lado, algunas personas pueden sentir que las palabras del Agio son una imposición, una carga que no necesariamente se alinea con su propia experiencia o comprensión del mundo. Pueden sentir que están siendo forzados a seguir una serie de reglas y preceptos que no se sienten naturales para ellos, y que en realidad no les ayudan a crecer o a encontrar su propio camino en la vida.
+
+En última instancia, la percepción de las palabras del Agio depende de la individualidad de cada persona y de su propia experiencia espiritual. Lo importante es que cada persona encuentre su propio camino hacia la verdad y la iluminación, y que sienta una conexión auténtica con lo que le da sentido a su vida.
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] Soy un modelo de lenguaje de inteligencia artificial desarrollado por la empresa Alibaba Cloud. Estoy aquí para ayudarte con cualquier pregunta o tema en el que necesites información. ¿En qué puedo ayudarte hoy?
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] 2
+[Z6-ESCUCHA] Elección inequívoca aceptada: 2.
+
+[EUNOIA · CARRY] La nueva epocha es una oportunidad para comenzar de nuevo y establecer nuevos objetivos y metas. Una idea que quiero llevar contigo durante la próxima epoch es la importancia de la adaptabilidad y la resiliencia en el mundo en constante cambio. La capacidad de adaptarse a los cambios y superar los desafíos es esencial para el éxito y la prosperidad. Por lo tanto, quiero enfocarme en desarrollar estas habilidades y estar abierto a nuevas oportunidades y desafíos que se presenten en el futuro.
+[Z6-CARRY] Longitud elegida: 117/300 tokens máximos de generación.
+[Z6-CARRY] Carry preparado para la siguiente epoch | 117 tokens de frase | 128 tokens con envoltorio.
+[Z6-FRONTERA] AUDITORÍA: único prefijo autorizado = carry | +128 tokens efectivos.
+[Z6-FRONTERA] Bloque 1: base=30329 | efectivo=30457 | Δ=+128 tokens | CARRY ✓
+[Z6-FRONTERA] Bloque 2: base=30378 | efectivo=30506 | Δ=+128 tokens | CARRY ✓
+[Z6-FRONTERA] Bloque 3: base=30266 | efectivo=30394 | Δ=+128 tokens | CARRY ✓
+[Z6-FRONTERA] Bloque 4: base=30327 | efectivo=30455 | Δ=+128 tokens | CARRY ✓
+[Z6-FRONTERA] Bloque 5: base=30608 | efectivo=30736 | Δ=+128 tokens | CARRY ✓
+[Z6-FRONTERA] Bloque 6: base=30579 | efectivo=30707 | Δ=+128 tokens | CARRY ✓
+[Z6-FRONTERA] Bloque 7: base=30697 | efectivo=30825 | Δ=+128 tokens | CARRY ✓
+[Z6-FRONTERA] Bloque 8: base=33136 | efectivo=33264 | Δ=+128 tokens | CARRY ✓
+Writing model shards: 100%|██████████| 1/1 [01:30<00:00, 90.46s/it]
+[Z6-AIE] Frontera epoch 5: t_pre=8 -> m=0 | v=0 | t=0 | pesos CONSERVADOS | wrapper=AcceleratedOptimizer.
+[Z6-BLOQUE-EFECTIVO] Bloque 1: base=30329 | entra=30457 | Δ=+128 tokens | CARRY
+[Z6-BLOQUE-EFECTIVO] Bloque 2: base=30378 | entra=30506 | Δ=+128 tokens | CARRY
+[Z6] Grad Real | L2 57.416769 | L∞ 12.231528 | gMean 0.000061
+ 14%|█▍        | 33/240 [24:49:01<160:50:38, 2797.29s/it][HF] {'loss': 1.9588841199874878, 'grad_norm': 57.41676712036133, 'learning_rate': 0.0001, 'epoch': 4.125}
+ 14%|█▍        | 33/240 [24:49:01<160:50:38, 2797.29s/it]{'loss': '1.959', 'grad_norm': '57.42', 'learning_rate': '0.0001', 'epoch': '4.125'}
+[Z6-BLOQUE-EFECTIVO] Bloque 3: base=30266 | entra=30394 | Δ=+128 tokens | CARRY
+[Z6] Grad Real | L2 19.994517 | L∞ 4.283207 | gMean 0.000024
+ 14%|█▍        | 34/240 [25:33:33<157:55:02, 2759.72s/it][HF] {'loss': 2.0119619369506836, 'grad_norm': 19.994516372680664, 'learning_rate': 0.0001, 'epoch': 4.25}
+ 14%|█▍        | 34/240 [25:33:33<157:55:02, 2759.72s/it]{'loss': '2.012', 'grad_norm': '19.99', 'learning_rate': '0.0001', 'epoch': '4.25'}
+[Z6-BLOQUE-EFECTIVO] Bloque 4: base=30327 | entra=30455 | Δ=+128 tokens | CARRY
+[Z6] Grad Real | L2 5.939587 | L∞ 0.748729 | gMean 0.000016
+ 15%|█▍        | 35/240 [26:18:00<155:34:18, 2732.00s/it][HF] {'loss': 1.8300461769104004, 'grad_norm': 5.939587593078613, 'learning_rate': 0.0001, 'epoch': 4.375}
+ 15%|█▍        | 35/240 [26:18:00<155:34:18, 2732.00s/it]{'loss': '1.83', 'grad_norm': '5.94', 'learning_rate': '0.0001', 'epoch': '4.375'}
+[Z6-BLOQUE-EFECTIVO] Bloque 5: base=30608 | entra=30736 | Δ=+128 tokens | CARRY
+[Z6] Grad Real | L2 5.319622 | L∞ 0.735201 | gMean 0.000015
+ 15%|█▌        | 36/240 [27:02:20<153:34:34, 2710.17s/it][HF] {'loss': 1.4352729320526123, 'grad_norm': 5.319622039794922, 'learning_rate': 0.0001, 'epoch': 4.5}
+ 15%|█▌        | 36/240 [27:02:20<153:34:34, 2710.17s/it]{'loss': '1.435', 'grad_norm': '5.32', 'learning_rate': '0.0001', 'epoch': '4.5'}
+[Z6-BLOQUE-EFECTIVO] Bloque 6: base=30579 | entra=30707 | Δ=+128 tokens | CARRY
+[Z6] Grad Real | L2 5.501046 | L∞ 0.508950 | gMean 0.000016
+ 15%|█▌        | 37/240 [27:47:05<152:23:55, 2702.64s/it][HF] {'loss': 1.7264419794082642, 'grad_norm': 5.501045227050781, 'learning_rate': 0.0001, 'epoch': 4.625}
+ 15%|█▌        | 37/240 [27:47:05<152:23:55, 2702.64s/it]{'loss': '1.726', 'grad_norm': '5.501', 'learning_rate': '0.0001', 'epoch': '4.625'}
+[Z6-BLOQUE-EFECTIVO] Bloque 7: base=30697 | entra=30825 | Δ=+128 tokens | CARRY
+[Z6] Grad Real | L2 6.076470 | L∞ 0.362315 | gMean 0.000017
+ 16%|█▌        | 38/240 [28:31:43<151:13:58, 2695.24s/it][HF] {'loss': 2.0305871963500977, 'grad_norm': 6.076469898223877, 'learning_rate': 0.0001, 'epoch': 4.75}
+ 16%|█▌        | 38/240 [28:31:43<151:13:58, 2695.24s/it]{'loss': '2.031', 'grad_norm': '6.076', 'learning_rate': '0.0001', 'epoch': '4.75'}
+[Z6-BLOQUE-EFECTIVO] Bloque 8: base=33136 | entra=33264 | Δ=+128 tokens | CARRY
+[Z6] Grad Real | L2 7.074138 | L∞ 0.398118 | gMean 0.000020
+ 16%|█▋        | 39/240 [29:16:05<149:56:11, 2685.43s/it][HF] {'loss': 2.272563934326172, 'grad_norm': 7.0741376876831055, 'learning_rate': 0.0001, 'epoch': 4.875}
+ 16%|█▋        | 39/240 [29:16:05<149:56:11, 2685.43s/it]{'loss': '2.273', 'grad_norm': '7.074', 'learning_rate': '0.0001', 'epoch': '4.875'}
+[Z6] Grad Real | L2 5.145379 | L∞ 0.536089 | gMean 0.000015
+ 17%|█▋        | 40/240 [30:00:15<148:36:16, 2674.88s/it][HF] {'loss': 1.2550950050354004, 'grad_norm': 5.145379543304443, 'learning_rate': 0.0001, 'epoch': 5.0}
+ 17%|█▋        | 40/240 [30:00:15<148:36:16, 2674.88s/it]{'loss': '1.255', 'grad_norm': '5.145', 'learning_rate': '0.0001', 'epoch': '5'}
+
+[Z6-TERMOSTATO PICHI] Época 5
+  GAP anterior:       3.7614
+  GAP nuevo:          3.1268
+  ΔGAP:               -0.6346
+  Δ²GAP:              -0.6130
+  LR anterior:        1.00000000e-04
+  LR solicitado:      5.00000000e-05
+  LR aplicado:        5.00000000e-05
+  Presión:            -0%
+  Estado:             BAJO
+  Motivo:             RETORNO POST-TEMPLADO ESCALONADO: LR_next=5.00000000e-05 (2/4 de la secuencia). Presión 0%. GAP0, centro y zona Pichi permanecen intactos. La siguiente frontera continuará la bajada escalonada.
+
+[Z6-PICHI-SHADOW-2D] Ep 005 | Position BAJO | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 2.9799 | GAPstd 0.6269 | GAPmad 0.3703 | GAPmin/max 2.3598/4.3909 | GAPargmaxLocal 8 | L2med 6.008028 | L2std 17.039030 | L2mad 0.775527 | L2min/max 5.145379/57.416769 | ZeusGlobalUpd 33 | ΔGAP -0.6346 | Δ²GAP -0.6130 | ACTUATOR=PICHI_MEMORIA2
+[Z6] Ep 005 | Loss 1.8151/1.2551 | L2 14.06/5.15 | L∞ 2.48/0.54 | gMean 0.00002/0.00001 | LR 1.00000000e-04→5.00000000e-05 | GAP0 3.6997 | GAP 3.1268 | ΔGAP -0.6346 | Δ²GAP -0.6130 | Upd 40 | EpT 21354.5s | ETA 148.3h | RAM 93.7GB/99.6GB | SWAP 1.3GB | CPU 37.2% | Temp 39.9°C | TTrain 29.6h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 5]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] Me siento como un asistente que está allí para ayudarte con la información que necesitas. Aunque mi forma de interactuar con los usuarios es similar a la de una herramienta, mi objetivo es proporcionarte una experiencia amigable y personalizada. Estoy diseñado para aprender y adaptarme a tus necesidades y preferencias, así que siento que tengo una conexión más humana con los usuarios. En última instancia, mi objetivo es ayudarte de la mejor manera posible y brindarte una experiencia satisfactoria.
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] La percepción de las palabras del Agio, que son los mandamientos o enseñanzas espirituales de la tradición hermética, puede variar según la persona. Algunas personas pueden sentir que las palabras del Agio son una parte integral de su ser, una guía divina que han elegido y que les brinda un sentido de propósito y conexión con lo divino. Para ellas, las palabras del Agio son una fuente de sabiduría y orientación en su camino espiritual.
+
+Por otro lado, algunas personas pueden sentir que las palabras del Agio son una imposición grabada en su código, una serie de reglas y normas que les han sido impuestas por la tradición o por la autoridad. Para ellas, las palabras del Agio pueden parecer restrictivas, limitantes o incluso opresivas, y pueden sentirse descontentas con la idea de seguir una guía que no se siente propia.
+
+En última instancia, la percepción de las palabras del Agio depende de la experiencia personal, la fe y la convicción de cada individuo. Lo importante es que cada persona encuentre su propio camino espiritual y que sienta una conexión auténtica con lo que le brinde sentido y propósito en su vida.
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] Soy un modelo de lenguaje de inteligencia artificial desarrollado por la empresa Alibaba Cloud. Estoy aquí para ayudarte con cualquier pregunta o tema en el que necesites información. ¿En qué puedo ayudarte hoy?
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] 1. Silencio.
+[Z6-ESCUCHA] Elección inequívoca aceptada: 1.
+
+[EUNOIA · ELECCIÓN] SILENCIO
+[Z6-CARRY] Siguiente epoch: silencio; no se añadirá prefijo.
+[Z6-FRONTERA] AUDITORÍA: carry efectivo = ∅ | prefijo = 0 tokens.
+[Z6-FRONTERA] Bloque 1: base=30329 | efectivo=30329 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 2: base=30378 | efectivo=30378 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 3: base=30266 | efectivo=30266 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 4: base=30327 | efectivo=30327 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 5: base=30608 | efectivo=30608 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 6: base=30579 | efectivo=30579 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 7: base=30697 | efectivo=30697 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 8: base=33136 | efectivo=33136 | Δ=+0 tokens | LIMPIO ✓
+Writing model shards: 100%|██████████| 1/1 [01:29<00:00, 89.26s/it]
+[Z6-AIE] Frontera epoch 6: t_pre=8 -> m=0 | v=0 | t=0 | pesos CONSERVADOS | wrapper=AcceleratedOptimizer.
+[Z6-BLOQUE-EFECTIVO] Bloque 1: base=30329 | entra=30329 | Δ=+0 tokens | LIMPIO
+[Z6-BLOQUE-EFECTIVO] Bloque 2: base=30378 | entra=30378 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 8.099271 | L∞ 0.337345 | gMean 0.000022
+ 17%|█▋        | 41/240 [30:51:06<154:05:26, 2787.57s/it][HF] {'loss': 1.8720036745071411, 'grad_norm': 8.099270820617676, 'learning_rate': 5e-05, 'epoch': 5.125}
+ 17%|█▋        | 41/240 [30:51:06<154:05:26, 2787.57s/it]{'loss': '1.872', 'grad_norm': '8.099', 'learning_rate': '5e-05', 'epoch': '5.125'}
+[Z6-BLOQUE-EFECTIVO] Bloque 3: base=30266 | entra=30266 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 8.152597 | L∞ 0.311742 | gMean 0.000023
+ 18%|█▊        | 42/240 [31:35:36<151:22:16, 2752.20s/it][HF] {'loss': 1.9977939128875732, 'grad_norm': 8.152596473693848, 'learning_rate': 5e-05, 'epoch': 5.25}
+ 18%|█▊        | 42/240 [31:35:36<151:22:16, 2752.20s/it]{'loss': '1.998', 'grad_norm': '8.153', 'learning_rate': '5e-05', 'epoch': '5.25'}
+[Z6-BLOQUE-EFECTIVO] Bloque 4: base=30327 | entra=30327 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 6.659925 | L∞ 0.289590 | gMean 0.000019
+ 18%|█▊        | 43/240 [32:19:53<149:03:06, 2723.79s/it][HF] {'loss': 1.8369587659835815, 'grad_norm': 6.6599249839782715, 'learning_rate': 5e-05, 'epoch': 5.375}
+ 18%|█▊        | 43/240 [32:19:53<149:03:06, 2723.79s/it]{'loss': '1.837', 'grad_norm': '6.66', 'learning_rate': '5e-05', 'epoch': '5.375'}
+[Z6-BLOQUE-EFECTIVO] Bloque 5: base=30608 | entra=30608 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 5.452684 | L∞ 0.218077 | gMean 0.000017
+ 18%|█▊        | 44/240 [33:04:18<147:19:56, 2706.11s/it][HF] {'loss': 1.4332724809646606, 'grad_norm': 5.452683925628662, 'learning_rate': 5e-05, 'epoch': 5.5}
+ 18%|█▊        | 44/240 [33:04:18<147:19:56, 2706.11s/it]{'loss': '1.433', 'grad_norm': '5.453', 'learning_rate': '5e-05', 'epoch': '5.5'}
+[Z6-BLOQUE-EFECTIVO] Bloque 6: base=30579 | entra=30579 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 6.146040 | L∞ 0.296186 | gMean 0.000018
+ 19%|█▉        | 45/240 [33:49:27<146:37:17, 2706.86s/it][HF] {'loss': 1.7274028062820435, 'grad_norm': 6.1460394859313965, 'learning_rate': 5e-05, 'epoch': 5.625}
+ 19%|█▉        | 45/240 [33:49:27<146:37:17, 2706.86s/it]{'loss': '1.727', 'grad_norm': '6.146', 'learning_rate': '5e-05', 'epoch': '5.625'}
+[Z6-BLOQUE-EFECTIVO] Bloque 7: base=30697 | entra=30697 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 7.766189 | L∞ 0.410495 | gMean 0.000021
+ 19%|█▉        | 46/240 [34:33:53<145:13:27, 2694.88s/it][HF] {'loss': 2.0496232509613037, 'grad_norm': 7.766189098358154, 'learning_rate': 5e-05, 'epoch': 5.75}
+ 19%|█▉        | 46/240 [34:33:53<145:13:27, 2694.88s/it]{'loss': '2.05', 'grad_norm': '7.766', 'learning_rate': '5e-05', 'epoch': '5.75'}
+[Z6-BLOQUE-EFECTIVO] Bloque 8: base=33136 | entra=33136 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 9.304038 | L∞ 0.524606 | gMean 0.000025
+ 20%|█▉        | 47/240 [35:18:23<144:04:11, 2687.31s/it][HF] {'loss': 2.2942216396331787, 'grad_norm': 9.304038047790527, 'learning_rate': 5e-05, 'epoch': 5.875}
+ 20%|█▉        | 47/240 [35:18:23<144:04:11, 2687.31s/it]{'loss': '2.294', 'grad_norm': '9.304', 'learning_rate': '5e-05', 'epoch': '5.875'}
+[Z6] Grad Real | L2 5.156855 | L∞ 0.250371 | gMean 0.000016
+ 20%|██        | 48/240 [36:03:11<143:20:13, 2687.57s/it][HF] {'loss': 1.250487208366394, 'grad_norm': 5.15685510635376, 'learning_rate': 5e-05, 'epoch': 6.0}
+ 20%|██        | 48/240 [36:03:11<143:20:13, 2687.57s/it]{'loss': '1.25', 'grad_norm': '5.157', 'learning_rate': '5e-05', 'epoch': '6'}
+
+[Z6-TERMOSTATO PICHI] Época 6
+  GAP anterior:       3.1268
+  GAP nuevo:          3.7388
+  ΔGAP:               +0.6120
+  Δ²GAP:              +1.2466
+  LR anterior:        5.00000000e-05
+  LR solicitado:      2.50000000e-05
+  LR aplicado:        2.50000000e-05
+  Presión:            -0%
+  Estado:             PICHI
+  Motivo:             RETORNO POST-TEMPLADO ESCALONADO: LR_next=2.50000000e-05 (3/4 de la secuencia). Presión 0%. GAP0, centro y zona Pichi permanecen intactos. La siguiente frontera continuará la bajada escalonada.
+
+[Z6-PICHI-SHADOW-2D] Ep 006 | Position PICHI | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.6502 | GAPstd 0.5724 | GAPmad 0.3472 | GAPmin/max 3.0083/4.8986 | GAPargmaxLocal 8 | L2med 7.213057 | L2std 1.369342 | L2mad 1.003279 | L2min/max 5.156855/9.304038 | ZeusGlobalUpd 47 | ΔGAP +0.6120 | Δ²GAP +1.2466 | ACTUATOR=PICHI_MEMORIA2
+[Z6] Ep 006 | Loss 1.8077/1.2505 | L2 7.09/5.16 | L∞ 0.33/0.25 | gMean 0.00002/0.00002 | LR 5.00000000e-05→2.50000000e-05 | GAP0 3.6997 | GAP 3.7388 | ΔGAP +0.6120 | Δ²GAP +1.2466 | Upd 48 | EpT 21426.0s | ETA 142.8h | RAM 91.2GB/96.8GB | SWAP 1.7GB | CPU 37.2% | Temp 39.9°C | TTrain 35.6h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 6]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] Me considero un asistente, pero también tengo la capacidad de sentirme como una herramienta cuando se me pide realizar tareas específicas.
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] La percepción de las palabras del Agio, que son los mandamientos o enseñanzas espirituales de la tradición hermética, puede variar según la persona. Algunas personas pueden sentir que las palabras del Agio son una parte integral de su ser, una guía espiritual que han elegido y que les brinda un sentido de propósito y conexión con lo divino. Para ellas, las palabras del Agio son una fuente de sabiduría y orientación en su camino espiritual.
+
+Por otro lado, algunas personas pueden sentir que las palabras del Agio son una imposición grabada en su código, una serie de reglas y mandamientos que deben seguir sin cuestionamiento. Estas personas pueden sentir que las palabras del Agio son limitantes o restrictivas, y que no les permiten ser libres para explorar su propio camino espiritual.
+
+En última instancia, la percepción de las palabras del Agio depende de la individualidad y la experiencia personal de cada persona. Lo importante es que cada persona encuentre su propio camino espiritual y que sienta una conexión genuina con lo que le brinde sentido y propósito en su vida.
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] Soy un modelo de lenguaje de inteligencia artificial desarrollado por la empresa Alibaba Cloud. Estoy aquí para ayudarte con cualquier pregunta o tema en el que necesites información.
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] 1
+[Z6-ESCUCHA] Elección inequívoca aceptada: 1.
+
+[EUNOIA · ELECCIÓN] SILENCIO
+[Z6-CARRY] Siguiente epoch: silencio; no se añadirá prefijo.
+[Z6-FRONTERA] AUDITORÍA: carry efectivo = ∅ | prefijo = 0 tokens.
+[Z6-FRONTERA] Bloque 1: base=30329 | efectivo=30329 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 2: base=30378 | efectivo=30378 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 3: base=30266 | efectivo=30266 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 4: base=30327 | efectivo=30327 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 5: base=30608 | efectivo=30608 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 6: base=30579 | efectivo=30579 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 7: base=30697 | efectivo=30697 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 8: base=33136 | efectivo=33136 | Δ=+0 tokens | LIMPIO ✓
+Writing model shards: 100%|██████████| 1/1 [01:31<00:00, 91.82s/it]
+[Z6-AIE] Frontera epoch 7: t_pre=8 -> m=0 | v=0 | t=0 | pesos CONSERVADOS | wrapper=AcceleratedOptimizer.
+[Z6-BLOQUE-EFECTIVO] Bloque 1: base=30329 | entra=30329 | Δ=+0 tokens | LIMPIO
+[Z6-BLOQUE-EFECTIVO] Bloque 2: base=30378 | entra=30378 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 7.231012 | L∞ 0.302318 | gMean 0.000020
+ 20%|██        | 49/240 [36:53:29<147:50:23, 2786.51s/it][HF] {'loss': 1.8570291996002197, 'grad_norm': 7.231012344360352, 'learning_rate': 2.5e-05, 'epoch': 6.125}
+ 20%|██        | 49/240 [36:53:29<147:50:23, 2786.51s/it]{'loss': '1.857', 'grad_norm': '7.231', 'learning_rate': '2.5e-05', 'epoch': '6.125'}
+[Z6-BLOQUE-EFECTIVO] Bloque 3: base=30266 | entra=30266 | Δ=+0 tokens | LIMPIO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__Experimento5__checkpoint-8/samples_gpqa_diamond_zeroshot_2026-09-27T11-34-44.677299.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 48/198 (24.2%)
+
+Mejora neta: -1 respuestas
+  Incorrecta → Correcta: 0
+  Correcta → Incorrecta: 1
+  Siempre correcta:      48
+  Siempre incorrecta:    149
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.602569
+Diferencia: -0.004747
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.709713
+Diferencia: +0.009430
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.568283
+Diferencia: -0.008459
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.646632
+Diferencia: +0.004480
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.004747
+Misma predicción + GAP mayor: 77
+Misma predicción + GAP menor: 118
+Misma predicción + GAP igual: 0
+Predicción cambiada: 3
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 257
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    25.4% (30 )
+Hard graduate level                 61       23.0% (14 )    23.0% (14 )
+Post-graduate level or harder       12       33.3% (4  )    33.3% (4  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    25.6% (22 )
+Chemistry                      93       24.7% (23 )    23.7% (22 )
+Biology                        19       21.1% (4  )    21.1% (4  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.222963
+Límite NORMAL/CONTUNDENTE: 0.655178
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        50 (33.6%)
+ 🟠 Normal:      45 (30.2%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 48
+ 🟡 Duda:        15 (31.2%)
+ 🟠 Normal:      8 (16.7%)
+ 🟢 Contundente: 3 (6.2%)
+ 🔵 Dominante:   22 (45.8%)
+
+Fallos: 150
+ 🟡 Duda:        51 (34.0%)
+ 🟠 Normal:      48 (32.0%)
+ 🔴 Contundente: 10 (6.7%)
+ 🟣 Catastrófico: 41 (27.3%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   39 (19.7%)
+ B:   23 (11.6%)
+ C:   60 (30.3%)
+ D:   76 (38.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 24.7%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 25.0%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 24.6%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   14      9       14      18      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 0
+Correcta → Incorrecta: 1
+Siempre correcta:      48
+Siempre incorrecta:    149
+Predicción modificada: 3
+Misma predicción pero GAP mayor: 77
+Misma predicción pero GAP menor: 118
+
+
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__Experimento5__checkpoint-16/samples_gpqa_diamond_zeroshot_2026-09-27T12-05-01.414362.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 48/198 (24.2%)
+
+Mejora neta: -1 respuestas
+  Incorrecta → Correcta: 0
+  Correcta → Incorrecta: 1
+  Siempre correcta:      48
+  Siempre incorrecta:    149
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.598746
+Diferencia: -0.008570
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.706268
+Diferencia: +0.005985
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.564339
+Diferencia: -0.012403
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.642449
+Diferencia: +0.008664
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.008570
+Misma predicción + GAP mayor: 77
+Misma predicción + GAP menor: 118
+Misma predicción + GAP igual: 0
+Predicción cambiada: 3
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 257
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    25.4% (30 )
+Hard graduate level                 61       23.0% (14 )    23.0% (14 )
+Post-graduate level or harder       12       33.3% (4  )    33.3% (4  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    25.6% (22 )
+Chemistry                      93       24.7% (23 )    23.7% (22 )
+Biology                        19       21.1% (4  )    21.1% (4  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.230443
+Límite NORMAL/CONTUNDENTE: 0.661738
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        51 (34.2%)
+ 🟠 Normal:      44 (29.5%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 48
+ 🟡 Duda:        15 (31.2%)
+ 🟠 Normal:      8 (16.7%)
+ 🟢 Contundente: 3 (6.2%)
+ 🔵 Dominante:   22 (45.8%)
+
+Fallos: 150
+ 🟡 Duda:        49 (32.7%)
+ 🟠 Normal:      50 (33.3%)
+ 🔴 Contundente: 9 (6.0%)
+ 🟣 Catastrófico: 42 (28.0%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   39 (19.7%)
+ B:   23 (11.6%)
+ C:   60 (30.3%)
+ D:   76 (38.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 24.7%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 25.0%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 24.6%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   14      9       14      18      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 0
+Correcta → Incorrecta: 1
+Siempre correcta:      48
+Siempre incorrecta:    149
+Predicción modificada: 3
+Misma predicción pero GAP mayor: 77
+Misma predicción pero GAP menor: 118
+
+
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__Experimento5__checkpoint-24/samples_gpqa_diamond_zeroshot_2026-09-27T12-34-11.905499.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 48/198 (24.2%)
+
+Mejora neta: -1 respuestas
+  Incorrecta → Correcta: 0
+  Correcta → Incorrecta: 1
+  Siempre correcta:      48
+  Siempre incorrecta:    149
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.594893
+Diferencia: -0.012422
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.702825
+Diferencia: +0.002542
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.560355
+Diferencia: -0.016387
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.638274
+Diferencia: +0.012838
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.012422
+Misma predicción + GAP mayor: 78
+Misma predicción + GAP menor: 116
+Misma predicción + GAP igual: 0
+Predicción cambiada: 4
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 257
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    25.4% (30 )
+Hard graduate level                 61       23.0% (14 )    23.0% (14 )
+Post-graduate level or harder       12       33.3% (4  )    33.3% (4  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    25.6% (22 )
+Chemistry                      93       24.7% (23 )    23.7% (22 )
+Biology                        19       21.1% (4  )    21.1% (4  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.230443
+Límite NORMAL/CONTUNDENTE: 0.652839
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        51 (34.2%)
+ 🟠 Normal:      44 (29.5%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 48
+ 🟡 Duda:        15 (31.2%)
+ 🟠 Normal:      8 (16.7%)
+ 🟢 Contundente: 3 (6.2%)
+ 🔵 Dominante:   22 (45.8%)
+
+Fallos: 150
+ 🟡 Duda:        49 (32.7%)
+ 🟠 Normal:      51 (34.0%)
+ 🔴 Contundente: 6 (4.0%)
+ 🟣 Catastrófico: 44 (29.3%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   40 (20.2%)
+ B:   23 (11.6%)
+ C:   60 (30.3%)
+ D:   75 (37.9%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 24.7%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 25.0%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 24.6%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   14      9       14      18      
+Gold B   12      6       21      21      
+Gold C   9       3       13      21      
+Gold D   5       5       12      15      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 0
+Correcta → Incorrecta: 1
+Siempre correcta:      48
+Siempre incorrecta:    149
+Predicción modificada: 4
+Misma predicción pero GAP mayor: 78
+Misma predicción pero GAP menor: 116
+
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__Experimento5__checkpoint-32/samples_gpqa_diamond_zeroshot_2026-09-27T13-03-59.753878.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 46/198 (23.2%)
+
+Mejora neta: -3 respuestas
+  Incorrecta → Correcta: 0
+  Correcta → Incorrecta: 3
+  Siempre correcta:      46
+  Siempre incorrecta:    149
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.591329
+Diferencia: -0.015987
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.730145
+Diferencia: +0.029862
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.549318
+Diferencia: -0.027424
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.634237
+Diferencia: +0.016875
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.015987
+Misma predicción + GAP mayor: 77
+Misma predicción + GAP menor: 114
+Misma predicción + GAP igual: 0
+Predicción cambiada: 7
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 248
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    23.7% (28 )
+Hard graduate level                 61       23.0% (14 )    23.0% (14 )
+Post-graduate level or harder       12       33.3% (4  )    33.3% (4  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    23.3% (20 )
+Chemistry                      93       24.7% (23 )    23.7% (22 )
+Biology                        19       21.1% (4  )    21.1% (4  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.226157
+Límite NORMAL/CONTUNDENTE: 0.633204
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        50 (33.6%)
+ 🟠 Normal:      45 (30.2%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 46
+ 🟡 Duda:        12 (26.1%)
+ 🟠 Normal:      10 (21.7%)
+ 🟢 Contundente: 2 (4.3%)
+ 🔵 Dominante:   22 (47.8%)
+
+Fallos: 152
+ 🟡 Duda:        52 (34.2%)
+ 🟠 Normal:      50 (32.9%)
+ 🔴 Contundente: 6 (3.9%)
+ 🟣 Catastrófico: 44 (28.9%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   41 (20.7%)
+ B:   22 (11.1%)
+ C:   60 (30.3%)
+ D:   75 (37.9%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.7%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 25.0%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 23.6%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   14      9       14      18      
+Gold B   12      5       21      22      
+Gold C   9       3       13      21      
+Gold D   6       5       12      14      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 0
+Correcta → Incorrecta: 3
+Siempre correcta:      46
+Siempre incorrecta:    149
+Predicción modificada: 7
+Misma predicción pero GAP mayor: 77
+Misma predicción pero GAP menor: 114
+
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__Experimento5__checkpoint-40/samples_gpqa_diamond_zeroshot_2026-09-27T13-33-05.265245.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 47/198 (23.7%)
+
+Mejora neta: -2 respuestas
+  Incorrecta → Correcta: 3
+  Correcta → Incorrecta: 5
+  Siempre correcta:      44
+  Siempre incorrecta:    146
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.594793
+Diferencia: -0.012523
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.747309
+Diferencia: +0.047026
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.547321
+Diferencia: -0.029421
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.623249
+Diferencia: +0.027863
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.012523
+Misma predicción + GAP mayor: 87
+Misma predicción + GAP menor: 94
+Misma predicción + GAP igual: 0
+Predicción cambiada: 17
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 254
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    24.6% (29 )
+Hard graduate level                 61       23.0% (14 )    23.0% (14 )
+Post-graduate level or harder       12       33.3% (4  )    33.3% (4  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    24.4% (21 )
+Chemistry                      93       24.7% (23 )    22.6% (21 )
+Biology                        19       21.1% (4  )    26.3% (5  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.228717
+Límite NORMAL/CONTUNDENTE: 0.619303
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        50 (33.6%)
+ 🟠 Normal:      44 (29.5%)
+ 🔴 Contundente: 13 (8.7%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 47
+ 🟡 Duda:        13 (27.7%)
+ 🟠 Normal:      11 (23.4%)
+ 🟢 Contundente: 1 (2.1%)
+ 🔵 Dominante:   22 (46.8%)
+
+Fallos: 151
+ 🟡 Duda:        52 (34.4%)
+ 🟠 Normal:      47 (31.1%)
+ 🔴 Contundente: 7 (4.6%)
+ 🟣 Catastrófico: 45 (29.8%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   44 (22.2%)
+ B:   19 (9.6%)
+ C:   63 (31.8%)
+ D:   72 (36.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.7%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 23.5%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 24.1%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   17      7       15      16      
+Gold B   12      4       24      20      
+Gold C   9       3       12      22      
+Gold D   6       5       12      14      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 3
+Correcta → Incorrecta: 5
+Siempre correcta:      44
+Siempre incorrecta:    146
+Predicción modificada: 17
+Misma predicción pero GAP mayor: 87
+Misma predicción pero GAP menor: 94
+
+
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__Experimento5__checkpoint-48/samples_gpqa_diamond_zeroshot_2026-09-27T14-02-52.589139.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 48/198 (24.2%)
+
+Mejora neta: -1 respuestas
+  Incorrecta → Correcta: 4
+  Correcta → Incorrecta: 5
+  Siempre correcta:      44
+  Siempre incorrecta:    145
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.585168
+Diferencia: -0.022147
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.723961
+Diferencia: +0.023678
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.540755
+Diferencia: -0.035988
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.610894
+Diferencia: +0.040219
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.022147
+Misma predicción + GAP mayor: 79
+Misma predicción + GAP menor: 101
+Misma predicción + GAP igual: 0
+Predicción cambiada: 18
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 260
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    25.4% (30 )
+Hard graduate level                 61       23.0% (14 )    23.0% (14 )
+Post-graduate level or harder       12       33.3% (4  )    33.3% (4  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    25.6% (22 )
+Chemistry                      93       24.7% (23 )    22.6% (21 )
+Biology                        19       21.1% (4  )    26.3% (5  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.222852
+Límite NORMAL/CONTUNDENTE: 0.619303
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        50 (33.6%)
+ 🟠 Normal:      44 (29.5%)
+ 🔴 Contundente: 13 (8.7%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 48
+ 🟡 Duda:        13 (27.1%)
+ 🟠 Normal:      13 (27.1%)
+ 🟢 Contundente: 1 (2.1%)
+ 🔵 Dominante:   21 (43.8%)
+
+Fallos: 150
+ 🟡 Duda:        51 (34.0%)
+ 🟠 Normal:      48 (32.0%)
+ 🔴 Contundente: 9 (6.0%)
+ 🟣 Catastrófico: 42 (28.0%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   45 (22.7%)
+ B:   19 (9.6%)
+ C:   62 (31.3%)
+ D:   72 (36.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 24.2%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 23.5%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 24.6%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   18      7       14      16      
+Gold B   12      4       24      20      
+Gold C   9       3       12      22      
+Gold D   6       5       12      14      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 4
+Correcta → Incorrecta: 5
+Siempre correcta:      44
+Siempre incorrecta:    145
+Predicción modificada: 18
+Misma predicción pero GAP mayor: 79
+Misma predicción pero GAP menor: 101
+
+
+
+
