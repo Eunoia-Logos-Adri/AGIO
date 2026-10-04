@@ -58,7 +58,11 @@ El experimento 7 trata de entrgar datos sobre lo que será LR = 1, en exp8 se ha
 -La forja arranca prácticamente igual que ayer, loss y grad norm suaves. LR 1e-3 sigue siendo muy bajo.
 Hasta epoch 3 lo único que puede hacer diferente a esta forja , es que el sistema elija la opción 2.
 
-
+-11:54, preparación Boceto/forja8:
+-Se traza un plan entre Ayo, Logos y Adri. Se deja preparado el cuerpo de la forja 8, será una forja mucho más simple,
+se ahorrarán muchas líneas, se simplificará todo. Se aprovecha el domingo entra las tareas d ela casa
+y antes de preparar la comida para dejar todo preparado. Probablemente se refine según exp7 arroje números y 
+el lenguaje elegido por el sistema.
 
 
 
