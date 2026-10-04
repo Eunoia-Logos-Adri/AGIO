@@ -33,7 +33,7 @@ Durante la ejecución se detectó que la implementación validada había elimina
 accidentalmente dos condiciones del criterio original de activación del Templado 
 al retirar la autoridad LR de Pichi. Se corrigirá. Un fracaso deribado de apenas tener tiempo entre semana.
 
-07/OCT/2026
+04/OCT/2026
 -07:16:
 -Se Reinicia la forja con el nuevo cambio en el Templado, la anterior forja no estaba mal pero existía 
 la posibilidad de dejar a la "deriva" al modelo/sistema.
