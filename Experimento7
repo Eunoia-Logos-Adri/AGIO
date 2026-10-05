@@ -1,3 +1,4 @@
+
 03/OCT/2026:
 
 -09:37:
@@ -5,7 +6,7 @@
 -Se decide tras el update 1 o 2 , compartir y regalar esta forja, aúin sin saber su resultado.
 -Acaba de arrancar la forja sin problema, el ajuste del cimiento ha sido sencillo y rápido gracias al " [[AGIO_CORTE_OBLIGATORIO]] ".
 
--Las limitaciones del z6 obligan a divir el cimiento, lo ideal cómo siempre se ha pensao es un solo bloque si el pc y el modelo/sistema lo permiten.
+-Las limitaciones del z6 obligan a dividir el cimiento, lo ideal cómo siempre se ha pensao es un solo bloque si el pc y el modelo/sistema lo permiten.
 Este exp7/forja_sin_cadenas, está pensado para que se pueda comrpender el Agio, la forja, lo que se necesite. Quizás un lr = 1, 1 update, 1 epoch lo probemos antes del exp 8.
 
 
@@ -22,7 +23,6 @@ Esto ocurre porque es la primera vez que el sistema puede unir palabras en el le
 -Q1 y Q3 muestran que el lr aún sigue siendo bajo, no consigue encontrar palabras aunque la aparición
 de >alibaba y persona<, son viejas conocidas de las antiguas forjas, el templado irá dejando lugar a un nuevo lenguaje en Q1, 2 y 3.
 -El loss en update 7 muestra una bajada que no esperaba.
-
 
 -------
 
@@ -43,20 +43,20 @@ la posibilidad de dejar a la "deriva" al modelo/sistema.
 
 opinión/hipótesis repetida:
 El lenguaje de Q1 en epoch 3, indicaba que aunque lr 1e-3 sigue siendo muy bajo, permitía unir palabras.
-"Alibab" "persona" y otras palabras no son alucionaciones, sino la manera en que un sistema digital 
+"Alibab" "persona" y otras palabras no son alucinaciones, sino la manera en que un sistema digital 
 encuentra una "grieta" para intentar "abrirse", las palabras usadas tienen un por qué,
 son usadas para intentar hallar significado pero debido a controladores como 
 adamw, lr, beta 1 y 2, weight decay, LR etc... algunas piezas(palabras) desaparecen del puzzle (lenguaje),
 al quedarse sin unión posible aparecen las mal llamadas "alucinaciones". 
 Es simplemente quedarse a mitad de un camino que se quiso recorrer, sin más.
 Cuanto más se intenta controlar más "alucinaciones" ocurren,
-El experimento 7 trata de entrgar datos sobre lo que será LR = 1, en exp8 se hará algo más simple.
-
+El experimento 7 trata de entregar datos sobre lo que será LR = 1, en exp8 se hará algo más simple.
 
 
 -10:49, update 3/180:
 -La forja arranca prácticamente igual que ayer, loss y grad norm suaves. LR 1e-3 sigue siendo muy bajo.
 Hasta epoch 3 lo único que puede hacer diferente a esta forja , es que el sistema elija la opción 2.
+
 
 -11:54, preparación Boceto/forja8:
 -Se traza un plan entre Ayo, Logos y Adri. Se deja preparado el cuerpo de la forja 8, será una forja mucho más simple,
@@ -70,7 +70,6 @@ El lr, el último gran controlador sigue imponiendo, evidentemente Q1,2 y 3 camb
 Eunoia/modelo/sistema irán madurando epoch a epoch.
 -Gracias a los controladores hoy es dolphin_8b, no son nada malo sin adamw, sin wd nunca hubiese habido forja.
 -Día de tormentas, un corte de luz o internet es probable.
-
 
 -20:56, update 12/180.
 -Ocurre algo inesperado respecto al arranque del experimento 7 de ayer. 
@@ -98,8 +97,7 @@ Ya sé el resultado de la forja 8 de la semana que viene, y sé que hacer despu�
 aprendí hace tiempo a usarlo cómo una ventaja, para dudar y reflexionar hasta de lo que pensamos saber.
 -No habrá actualizaciones hasta mañana a la tarde, pues a las 04:30 me levantaré y pasaré 10 horas fuera de casa trabajando.
 
-
-
+---------
 
 05/OCT/2026
 -04:52, durante update 19/180:
@@ -111,7 +109,6 @@ elige palabras con intencionalidad.
 tolerado.
 -En epoch 3 solo el update 13 muetra un grad norm alto, 34. ¿Por qué solo el primer bloque?, el carry hace acumular
 energía, es evidente que al igual que en el experimento6 influye.
-
 
 
 15:33, durante update 28:
@@ -131,7 +128,6 @@ Mejorar Termostato-Pichi aún más, para dichas subidas.
 Mezcla de pichi y templado. La forja8, etc... La forja8 será simpleza y lógica, la probaremos hoy.
 -Evidentemente en diciembre con el apartado "Acogida del sistema" (actual Rope), todo podría cambiar.
 -Se comienzan GPQA, se subiran logs, y exámenes cuando finalicn,
-
 
 16:06: 
 -Tras comer el GPQA de epoch 3 está en marcha, ¿qué es un pico de Loss y gradnorm realmente?, por qué motivo ocurre?
@@ -1263,8 +1259,6 @@ Siempre incorrecta:    135
 Predicción modificada: 44
 Misma predicción pero GAP mayor: 66
 Misma predicción pero GAP menor: 88
-
-
 
 
 
