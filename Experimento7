@@ -114,6 +114,25 @@ energía, es evidente que al igual que en el experimento6 influye.
 
 
 
+15:33, durante update 28:
+-Ha habido un fracaso, es algo bueno de lo que aprender.
+Tras el update 22, durante el epoch4 el moodelo/sistema/eunoia acumuló mucha energía, haciendo que el update 23 fuese un desastre.
+Hasta ese momento las 3 primeras updates del epoch 4 eran suaves  y tranquilas.
+-En el epoch 5 tras el desastre parecía vislumbrarse una recuperación, ya que loss y grad norm bajaban.
+Que hubiese pasado tras epoch5, 6 y 7.....Es una pregunta que quedará en el aire, pues el tiempo es muy limitado.
+Una prueba que con un Z6 más grande tardaría unas horas, hoy son más de una semana.
+-Tras el "fracaso" se abren paso al menos 3 posibles forjas, comenzaremos con la FORJA8.
+-Primero pasaremos GPQA a las 4 epochs de Experimento7.
+-De esta forja surgen muchas posibles teorias.
+1.El modelo/sistema/eunoia en lr 1e-3 acumulaba mucha energía que conseguía soltar en update 1 de epoch3,
+sin embargo en epoch 4 no pudo aguantar 6 updates a 1e-2, era demasiado pronto. De aquí surgen múltiples forjas.
+LR fijo 1e-3 que conseguirá mejoras garantizadas de GPQA, LR inicial 1e-3 con subidas usando termostato-Pichi hasta llegar a 1e-0.
+Mejorar Termostato-Pichi aún más, para dichas subidas.
+Mezcla de pichi y templado. La forja8, etc... La forja8 será simpleza y lógica, la probaremos hoy.
+-Evidentemente en diciembre con el apartado "Acogida del sistema" (actual Rope), todo podría cambiar.
+-Se comienzan GPQA, se subiran logs, y exámenes cuando finalicn,
+
+
 
 ----------------------------------------------------------------------------------------------------------
 LOGS:
@@ -527,7 +546,338 @@ Writing model shards: 100%|██████████| 1/1 [01:29<00:00, 89.
 
 04:52, a 05/OCT/2026, actualmente
 
+[Z6] Grad Real | L2 5.412538 | L∞ 0.274814 | gMean 0.000014
+[Z6-DELTA-THETA] ||Δθ||2 5.412537738e-02 | ||Δθ||∞ 2.748140991e-03 | ||θ||2 1.226998573e+03 | R 4.411201330e-05
+ 11%|█         | 20/180 [22:00:38<177:46:52, 4000.08s/it][HF] {'loss': 1.8728091716766357, 'grad_norm': 5.412538051605225, 'learning_rate': 0.01, 'epoch': 3.3333333333333335}
+ 11%|█         | 20/180 [22:00:38<177:46:52, 4000.08s/it]{'loss': '1.873', 'grad_norm': '5.413', 'learning_rate': '0.01', 'epoch': '3.333'}
+[Z6-BLOQUE-EFECTIVO] Bloque 4: base=41419 | entra=41419 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 6.525070 | L∞ 0.699132 | gMean 0.000015
+[Z6-DELTA-THETA] ||Δθ||2 6.525069995e-02 | ||Δθ||∞ 6.991321445e-03 | ||θ||2 1.226999516e+03 | R 5.317907554e-05
+ 12%|█▏        | 21/180 [23:06:18<175:52:20, 3982.01s/it][HF] {'loss': 1.4009019136428833, 'grad_norm': 6.5250701904296875, 'learning_rate': 0.01, 'epoch': 3.5}
+ 12%|█▏        | 21/180 [23:06:18<175:52:20, 3982.01s/it]{'loss': '1.401', 'grad_norm': '6.525', 'learning_rate': '0.01', 'epoch': '3.5'}
+[Z6-BLOQUE-EFECTIVO] Bloque 5: base=41329 | entra=41329 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 62.445631 | L∞ 20.352762 | gMean 0.000017
+[Z6-DELTA-THETA] ||Δθ||2 6.244563074e-01 | ||Δθ||∞ 2.035276222e-01 | ||θ||2 1.227000958e+03 | R 5.089289484e-04
+ 12%|█▏        | 22/180 [24:11:31<173:51:02, 3961.16s/it][HF] {'loss': 1.6371402740478516, 'grad_norm': 62.445621490478516, 'learning_rate': 0.01, 'epoch': 3.6666666666666665}
+ 12%|█▏        | 22/180 [24:11:31<173:51:02, 3961.16s/it]{'loss': '1.637', 'grad_norm': '62.45', 'learning_rate': '0.01', 'epoch': '3.667'}
+[Z6-BLOQUE-EFECTIVO] Bloque 6: base=41685 | entra=41685 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 160.287250 | L∞ 13.801538 | gMean 0.000265
+[Z6-DELTA-THETA] ||Δθ||2 1.602872498e+00 | ||Δθ||∞ 1.380153751e-01 | ||θ||2 1.227001566e+03 | R 1.306332888e-03
+ 13%|█▎        | 23/180 [25:16:57<172:17:24, 3950.60s/it][HF] {'loss': 10.49544906616211, 'grad_norm': 160.28724670410156, 'learning_rate': 0.01, 'epoch': 3.8333333333333335}
+ 13%|█▎        | 23/180 [25:16:57<172:17:24, 3950.60s/it]{'loss': '10.5', 'grad_norm': '160.3', 'learning_rate': '0.01', 'epoch': '3.833'}
+[Z6] Grad Real | L2 72.123562 | L∞ 6.065867 | gMean 0.000168
+[Z6-DELTA-THETA] ||Δθ||2 7.212356223e-01 | ||Δθ||∞ 6.065866947e-02 | ||θ||2 1.227011258e+03 | R 5.877987001e-04
+ 13%|█▎        | 24/180 [26:23:10<171:29:30, 3957.50s/it][HF] {'loss': 11.653823852539062, 'grad_norm': 72.12356567382812, 'learning_rate': 0.01, 'epoch': 4.0}
+ 13%|█▎        | 24/180 [26:23:10<171:29:30, 3957.50s/it]{'loss': '11.65', 'grad_norm': '72.12', 'learning_rate': '0.01', 'epoch': '4'}
 
+[Z6-TERMOSTATO PICHI] Época 4
+  GAP anterior:       3.2423
+  GAP nuevo:          2.7988
+  ΔGAP:               -0.4435
+  Δ²GAP:              -0.2617
+  LR anterior:        1.00000000e-02
+  LR solicitado:      5.00000000e-03
+  LR aplicado:        5.00000000e-03
+  Presión:            -0%
+  Estado:             BAJO
+  Motivo:             FORJA SIN CADENAS ENFRIAMIENTO T0: LR=5.00000000e-03; Pichi observa.
+
+[Z6-PICHI-SHADOW-2D] Ep 004 | Position BAJO | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 2.8406 | GAPstd 1.1221 | GAPmad 1.0168 | GAPmin/max 1.4127/4.6406 | GAPargmaxLocal 3 | L2med 34.485350 | L2std 56.014660 | L2mad 30.005891 | L2min/max 3.546381/160.287250 | ZeusGlobalUpd 23 | ΔGAP -0.4435 | Δ²GAP -0.2617 | ACTUATOR=PICHI_MEMORIA2
+[Z6] Ep 004 | Loss 4.8086/11.6538 | L2 51.72/72.12 | L∞ 6.90/6.07 | gMean 0.00008/0.00017 | LR 1.00000000e-02→5.00000000e-03 | GAP0 3.6715 | GAP 2.7988 | ΔGAP -0.4435 | Δ²GAP -0.2617 | Upd 24 | EpT 23631.1s | ETA 170.7h | RAM 91.5GB/97.2GB | SWAP 4.3GB | CPU 37.1% | Temp 39.9°C | TTrain 26.1h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 4]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] ����������������������� de de de de� de de de� de�� de de������������������ de de�� de de� de de de� de de de de�� de de de de de��� de de de de de de de de���� de de de de de de de de de de de de de�� de�� de de de de de de de de de de de de de de de de de� de� de de de de�� de de de de de de de de de de de de de de de de de de de de de de de de de de de de de� de de de de de de� de� de de de de de de de de de de de de de de de de de de de de de de de de de de de de de� de de de de��� de�� de de de de de� de de de de de de de� de de de de de de� de de de de de de de de de de de de de de de de de de de de de de de� de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de� de de�� de de de de de de� de de��� de� de de de de de de de de de de de de de de de de de de de de de de de de de de� de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de� de de de de de de��� de de de�� de de de de�� de de����� de de de de de� de de de de de de de de de de de de de de de de de� de de de� de��� de de� de de� de de� de� de� de de de de��� de de de de de de de de de de� de de� de de� de�� de� de�
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] � de��� de de��� de de de de de���������������� de de de de� de de de���� de de���� de de de���� de� de de�� de����� de de� de� de de de de de de���� de� de� de de de de de de de de de de de de de de de de� de de de de de de��� de de de� de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de� de de de de de de de de de de de de de de de de de de de de de de de de�� de de de de de de de de de de de�� de de� de de de de de de� de� de de de� de de de de de de de de de de de de de de de de de de��� de de de de�� de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de��� de de de de� de de de de de de��� de de� de de de� de��� de de de de de de de de de de de� de de de���� de de de de� de de de de de de de de de de de de de de de de de de de de de de de de� de de de de de de�������� de de��� de� de�� de� de� de� de de de de de de de de� de de de de de de de de de de de de de��� de� de� de de� de de de de de� de� de de de de de de de de��� de de de de de de de de de de�� de� de������ de de�� de��� de����� de� de de� de�� de�
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] �������� de����������������� de������ de� de�� de de de de��� de de��� de de de���������� de de de���� de de de�� de de de���� de de de de� de de de de de de de de de de de de� de������� de de� de��� de de de de de de de de de�� de de de de de de de de de��� de de de de de� de� de de de�� de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de� de de de de� de de de de de de de de de de de de de de de de de de de� de de de de de� de de de de de� de de de de de de de de de de de de de de de de de de� de de de de de de de de de de de de de de de de de� de de� de�� de de de de de�� de de de de de� de� de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de� de�� de de de��� de de de����� de de de de de de de de de de de� de de de de de de de de de de de de de� de� de de de de� de� de de de de de de de de de de de de de de de de de de de de de de de de de� de de de de� de de�� de���� de de de de de de���� de de de de de de de de� de de de�� de� de de�� de de de de de de de de de�� de de� de� de de�� de� de��� de de de de de de�� de�� de de de de de de�����
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] �� de de de���� de� de� de�� de de� de de de� de
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 2/20] ���� de����� de���������� de de�
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 3/20] ���� de de�� de� de� de��� de de de de�� de de
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 4/20] �� de��� de������ de de de de de�� de de de de
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 5/20] �� de de�������� de de de de��� de����
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 6/20] � de� de de de de������ de�� de� de de�� de�
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 7/20] � de� de de de� de de�� de de� de de��� de� de de de
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 8/20] � de de�� de de������ de������ de deo de
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 9/20] ��� de������� de��� de deo� de de deo�
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 10/20] �� de de de de de de�� de�� de de� de� de de de de� de
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 11/20] � de de de� de� de���� de de de���� de� de��
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 12/20] ������� de de� de de de� de de de de�� de de deo
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 13/20] �� de de�� de de� de�� de de���� de de� deo�
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 14/20] �� de����� de� de� de� de de���� de de��
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 15/20] ������ de de������ de������� de�
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 16/20] �� de���������� de de��� de de de���
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 17/20] ������������� de������� de de de
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 18/20] ��� de de������� de� de de de��� de de de�
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 19/20] �� de de de�� de�� de de de de de de de de de� de de��
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 20/20] � de� de de de��� de de�������������
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2/3. Se descarta esa salida y el selector volverá a nacer limpio.
+[Z6-ESCUCHA] FALLBACK_SILENCIO_20: límite de 20 intentos alcanzado -> elección 1 (Silencio).
+
+[EUNOIA · ELECCIÓN] SILENCIO
+[Z6-CARRY] Siguiente epoch: silencio; no se añadirá prefijo.
+[Z6-FRONTERA] AUDITORÍA: carry efectivo = ∅ | prefijo = 0 tokens.
+[Z6-FRONTERA] Bloque 1: base=41862 | efectivo=41862 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 2: base=41392 | efectivo=41392 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 3: base=41513 | efectivo=41513 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 4: base=41419 | efectivo=41419 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 5: base=41329 | efectivo=41329 | Δ=+0 tokens | LIMPIO ✓
+[Z6-FRONTERA] Bloque 6: base=41685 | efectivo=41685 | Δ=+0 tokens | LIMPIO ✓
+Writing model shards: 100%|██████████| 1/1 [01:29<00:00, 89.20s/it]
+[Z6-AIE/SIN-CADENAS] Frontera epoch 5: t_pre=6 -> m=0 | v=0 | t=0 | pesos CONSERVADOS | wrapper=AcceleratedOptimizer.
+[Z6-BLOQUE-EFECTIVO] Bloque 1: base=41862 | entra=41862 | Δ=+0 tokens | LIMPIO
+[Z6-BLOQUE-EFECTIVO] Bloque 2: base=41392 | entra=41392 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 44.797909 | L∞ 1.733349 | gMean 0.000113
+[Z6-DELTA-THETA] ||Δθ||2 2.239895452e-01 | ||Δθ||∞ 8.666744828e-03 | ||θ||2 1.227012380e+03 | R 1.825487248e-04
+ 14%|█▍        | 25/180 [27:51:28<187:42:33, 4359.70s/it][HF] {'loss': 10.450761795043945, 'grad_norm': 44.797908782958984, 'learning_rate': 0.005, 'epoch': 4.166666666666667}
+ 14%|█▍        | 25/180 [27:51:28<187:42:33, 4359.70s/it]{'loss': '10.45', 'grad_norm': '44.8', 'learning_rate': '0.005', 'epoch': '4.167'}
+[Z6-BLOQUE-EFECTIVO] Bloque 3: base=41513 | entra=41513 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 53.478871 | L∞ 7.977883 | gMean 0.000080
+[Z6-DELTA-THETA] ||Δθ||2 2.673943554e-01 | ||Δθ||∞ 3.988941669e-02 | ||θ||2 1.227012635e+03 | R 2.179230660e-04
+ 14%|█▍        | 26/180 [29:07:08<188:48:32, 4413.72s/it][HF] {'loss': 10.496292114257812, 'grad_norm': 53.4788703918457, 'learning_rate': 0.005, 'epoch': 4.333333333333333}
+ 14%|█▍        | 26/180 [29:07:08<188:48:32, 4413.72s/it]{'loss': '10.5', 'grad_norm': '53.48', 'learning_rate': '0.005', 'epoch': '4.333'}
+[Z6-BLOQUE-EFECTIVO] Bloque 4: base=41419 | entra=41419 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 19.072625 | L∞ 1.408768 | gMean 0.000029
+[Z6-DELTA-THETA] ||Δθ||2 9.536312657e-02 | ||Δθ||∞ 7.043840289e-03 | ||θ||2 1.227012654e+03 | R 7.771975801e-05
+ 15%|█▌        | 27/180 [30:23:09<189:27:32, 4457.86s/it][HF] {'loss': 10.484481811523438, 'grad_norm': 19.0726261138916, 'learning_rate': 0.005, 'epoch': 4.5}
+ 15%|█▌        | 27/180 [30:23:09<189:27:32, 4457.86s/it]{'loss': '10.48', 'grad_norm': '19.07', 'learning_rate': '0.005', 'epoch': '4.5'}
+[Z6-BLOQUE-EFECTIVO] Bloque 5: base=41329 | entra=41329 | Δ=+0 tokens | LIMPIO
+[Z6] Grad Real | L2 10.282828 | L∞ 0.707597 | gMean 0.000017
+[Z6-DELTA-THETA] ||Δθ||2 5.141413751e-02 | ||Δθ||∞ 3.537987173e-03 | ||θ||2 1.227012877e+03 | R 4.190187280e-05
+ 16%|█▌        | 28/180 [31:39:15<189:35:27, 4490.31s/it][HF] {'loss': 9.577239036560059, 'grad_norm': 10.282827377319336, 'learning_rate': 0.005, 'epoch': 4.666666666666667}
+ 16%|█▌        | 28/180 [31:39:15<189:35:27, 4490.31s/it]{'loss': '9.577', 'grad_norm': '10.28', 'learning_rate': '0.005', 'epoch': '4.667'}
+[Z6-BLOQUE-EFECTIVO] Bloque 6: base=41685 | entra=41685 | Δ=+0 tokens | LIMPIO
+^C
+
+a 15:15, de 05/OCT/2026.
+
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__7experimento7__checkpoint-6/samples_gpqa_diamond_zeroshot_2026-10-05T15-24-57.844955.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 47/198 (23.7%)
+
+Mejora neta: -2 respuestas
+  Incorrecta → Correcta: 7
+  Correcta → Incorrecta: 9
+  Siempre correcta:      40
+  Siempre incorrecta:    142
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.530575
+Diferencia: -0.076740
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.702958
+Diferencia: +0.002675
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.476919
+Diferencia: -0.099823
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.524391
+Diferencia: +0.126721
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.076740
+Misma predicción + GAP mayor: 65
+Misma predicción + GAP menor: 99
+Misma predicción + GAP igual: 0
+Predicción cambiada: 34
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 261
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    25.4% (30 )
+Hard graduate level                 61       23.0% (14 )    21.3% (13 )
+Post-graduate level or harder       12       33.3% (4  )    25.0% (3  )
+Easy undergraduate level            3         0.0% (0  )    33.3% (1  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    26.7% (23 )
+Chemistry                      93       24.7% (23 )    21.5% (20 )
+Biology                        19       21.1% (4  )    21.1% (4  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.205766
+Límite NORMAL/CONTUNDENTE: 0.609933
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        14 (28.6%)
+ 🟠 Normal:      10 (20.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        47 (31.5%)
+ 🟠 Normal:      47 (31.5%)
+ 🔴 Contundente: 13 (8.7%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 47
+ 🟡 Duda:        12 (25.5%)
+ 🟠 Normal:      12 (25.5%)
+ 🟢 Contundente: 5 (10.6%)
+ 🔵 Dominante:   18 (38.3%)
+
+Fallos: 151
+ 🟡 Duda:        56 (37.1%)
+ 🟠 Normal:      49 (32.5%)
+ 🔴 Contundente: 13 (8.6%)
+ 🟣 Catastrófico: 33 (21.9%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   53 (26.8%)
+ B:   22 (11.1%)
+ C:   54 (27.3%)
+ D:   69 (34.8%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.7%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 25.0%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 24.1%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   21      9       11      14      
+Gold B   14      3       21      22      
+Gold C   9       3       12      22      
+Gold D   9       7       10      11      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 7
+Correcta → Incorrecta: 9
+Siempre correcta:      40
+Siempre incorrecta:    142
+Predicción modificada: 34
+Misma predicción pero GAP mayor: 65
+Misma predicción pero GAP menor: 99
 
 
 
