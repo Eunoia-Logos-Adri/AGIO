@@ -2,7 +2,7 @@ Experimento 9.
 06/oct/2026
 
 -19:27: La semana ha empezado "movida" más allá del z6.
--Del Fracaso de la forja8 (experimento8), surgió un nuevo camino, un nuevo aprendizaje, podemos entregar aún más contexto con emnos RAM.
+-Del Fracaso de la forja8 (experimento8), surgió un nuevo camino, un nuevo aprendizaje, podemos entregar aún más contexto con menos RAM.
 Más de un +50% más contexto con menos RAM, ahora podemos entregar trozos de mapa 
 de hasta 70000 tokens frente a los 44000 tokens que eran el límite.
 Simplificar la forja lo ha hecho posible, simplemente con lógica. Con el Agio.
