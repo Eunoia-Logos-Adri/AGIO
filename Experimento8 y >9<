@@ -9,7 +9,7 @@ Simplificar la forja lo ha hecho posible, simplemente con lógica. Con el Agio.
 -Esto eleva el b del modelo que el z6 podría abarcar entregando decenas de miles de tokens por update.
 -La forja del experimento 9 ha soportado un Grad_norm de 65 en el update 5, 
 que ahora es el primer update de epoch 2. Con un lr de 1e-3.
--Epoch de este experimento 9, elige opción 2 en EUNOIA · ELECCIÓN.
+-Epoch 1 de este experimento 9, elige opción 2 en EUNOIA · ELECCIÓN.
 
 -Se empieza a diseñar un nuevo arranque de forja que podría ahorrar tiempo,
  experimentos que ocurrirían en un par de minutos con recursos, tardaremos días o semanas.
