@@ -252,6 +252,2302 @@ En general, creo que las palabras del Agio son una herramienta valiosa que me ay
 
 
 
+Introduce el número del archivo (1 al 121): 81
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-4/samples_gpqa_diamond_zeroshot_2026-10-10T10-31-59.983944.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 46/198 (23.2%)
+
+Mejora neta: -3 respuestas
+  Incorrecta → Correcta: 5
+  Correcta → Incorrecta: 8
+  Siempre correcta:      41
+  Siempre incorrecta:    144
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.539036
+Diferencia: -0.068279
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.702368
+Diferencia: +0.002085
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.489607
+Diferencia: -0.087135
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.554294
+Diferencia: +0.096818
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.068279
+Misma predicción + GAP mayor: 66
+Misma predicción + GAP menor: 106
+Misma predicción + GAP igual: 0
+Predicción cambiada: 26
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 254
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    24.6% (29 )
+Hard graduate level                 61       23.0% (14 )    21.3% (13 )
+Post-graduate level or harder       12       33.3% (4  )    33.3% (4  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    25.6% (22 )
+Chemistry                      93       24.7% (23 )    21.5% (20 )
+Biology                        19       21.1% (4  )    21.1% (4  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.222852
+Límite NORMAL/CONTUNDENTE: 0.606857
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        50 (33.6%)
+ 🟠 Normal:      44 (29.5%)
+ 🔴 Contundente: 13 (8.7%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 46
+ 🟡 Duda:        12 (26.1%)
+ 🟠 Normal:      13 (28.3%)
+ 🟢 Contundente: 3 (6.5%)
+ 🔵 Dominante:   18 (39.1%)
+
+Fallos: 152
+ 🟡 Duda:        52 (34.2%)
+ 🟠 Normal:      52 (34.2%)
+ 🔴 Contundente: 11 (7.2%)
+ 🟣 Catastrófico: 37 (24.3%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   46 (23.2%)
+ B:   22 (11.1%)
+ C:   60 (30.3%)
+ D:   70 (35.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.2%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 23.5%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 23.6%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   18      8       15      14      
+Gold B   12      4       22      22      
+Gold C   9       3       12      22      
+Gold D   7       7       11      12      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 5
+Correcta → Incorrecta: 8
+Siempre correcta:      41
+Siempre incorrecta:    144
+Predicción modificada: 26
+Misma predicción pero GAP mayor: 66
+Misma predicción pero GAP menor: 106
+
+
+==============================================================================
+INFORME EXPORTADO
+
+
+
+
+
+Introduce el número del archivo (1 al 122): 36
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-8/samples_gpqa_diamond_zeroshot_2026-10-10T11-01-21.646227.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 46/198 (23.2%)
+
+Mejora neta: -3 respuestas
+  Incorrecta → Correcta: 15
+  Correcta → Incorrecta: 18
+  Siempre correcta:      31
+  Siempre incorrecta:    134
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.553201
+Diferencia: -0.054114
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.601892
+Diferencia: -0.098391
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.538466
+Diferencia: -0.038276
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.583500
+Diferencia: +0.067612
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.054114
+Misma predicción + GAP mayor: 47
+Misma predicción + GAP menor: 65
+Misma predicción + GAP igual: 0
+Predicción cambiada: 86
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 273
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    24.6% (29 )
+Hard graduate level                 61       23.0% (14 )    23.0% (14 )
+Post-graduate level or harder       12       33.3% (4  )    25.0% (3  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    26.7% (23 )
+Chemistry                      93       24.7% (23 )    20.4% (19 )
+Biology                        19       21.1% (4  )    21.1% (4  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.265899
+Límite NORMAL/CONTUNDENTE: 0.636780
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        17 (34.7%)
+ 🟠 Normal:      7 (14.3%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        56 (37.6%)
+ 🟠 Normal:      39 (26.2%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 46
+ 🟡 Duda:        12 (26.1%)
+ 🟠 Normal:      19 (41.3%)
+ 🟢 Contundente: 0 (0.0%)
+ 🔵 Dominante:   15 (32.6%)
+
+Fallos: 152
+ 🟡 Duda:        46 (30.3%)
+ 🟠 Normal:      52 (34.2%)
+ 🔴 Contundente: 12 (7.9%)
+ 🟣 Catastrófico: 42 (27.6%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   47 (23.7%)
+ B:    7 (3.5%)
+ C:   85 (42.9%)
+ D:   59 (29.8%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.7%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 19.1%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 23.6%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      1       24      15      
+Gold B   8       2       32      18      
+Gold C   15      2       16      13      
+Gold D   9       2       13      13      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 15
+Correcta → Incorrecta: 18
+Siempre correcta:      31
+Siempre incorrecta:    134
+Predicción modificada: 86
+Misma predicción pero GAP mayor: 47
+Misma predicción pero GAP menor: 65
+
+
+
+
+
+
+----------------------------------------------------------------------
+Introduce el número del archivo (1 al 123): 64
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-12/samples_gpqa_diamond_zeroshot_2026-10-10T11-30-25.962256.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 39/198 (19.7%)
+
+Mejora neta: -10 respuestas
+  Incorrecta → Correcta: 12
+  Correcta → Incorrecta: 22
+  Siempre correcta:      27
+  Siempre incorrecta:    137
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.645891
+Diferencia: +0.038576
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.772939
+Diferencia: +0.072656
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.614729
+Diferencia: +0.037986
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.738927
+Diferencia: -0.087814
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: +0.038576
+Misma predicción + GAP mayor: 66
+Misma predicción + GAP menor: 62
+Misma predicción + GAP igual: 0
+Predicción cambiada: 70
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 205
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    23.7% (28 )
+Hard graduate level                 61       23.0% (14 )    18.0% (11 )
+Post-graduate level or harder       12       33.3% (4  )     0.0% (0  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    24.4% (21 )
+Chemistry                      93       24.7% (23 )    17.2% (16 )
+Biology                        19       21.1% (4  )    10.5% (2  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.248319
+Límite NORMAL/CONTUNDENTE: 0.688322
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        17 (34.7%)
+ 🟠 Normal:      7 (14.3%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        52 (34.9%)
+ 🟠 Normal:      47 (31.5%)
+ 🔴 Contundente: 8 (5.4%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 39
+ 🟡 Duda:        10 (25.6%)
+ 🟠 Normal:      12 (30.8%)
+ 🟢 Contundente: 1 (2.6%)
+ 🔵 Dominante:   16 (41.0%)
+
+Fallos: 159
+ 🟡 Duda:        51 (32.1%)
+ 🟠 Normal:      49 (30.8%)
+ 🔴 Contundente: 9 (5.7%)
+ 🟣 Catastrófico: 50 (31.4%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   46 (23.2%)
+ B:   14 (7.1%)
+ C:   56 (28.3%)
+ D:   82 (41.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 20.0%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 22.1%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 20.0%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   14      5       12      24      
+Gold B   11      1       24      24      
+Gold C   12      4       10      20      
+Gold D   9       4       10      14      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 12
+Correcta → Incorrecta: 22
+Siempre correcta:      27
+Siempre incorrecta:    137
+Predicción modificada: 70
+Misma predicción pero GAP mayor: 66
+Misma predicción pero GAP menor: 62
+
+
+==============================================================================
+
+
+
+Introduce el número del archivo (1 al 124): 91
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-16/samples_gpqa_diamond_zeroshot_2026-10-10T12-01-11.417554.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 44/198 (22.2%)
+
+Mejora neta: -5 respuestas
+  Incorrecta → Correcta: 13
+  Correcta → Incorrecta: 18
+  Siempre correcta:      31
+  Siempre incorrecta:    136
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.610238
+Diferencia: +0.002922
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.667763
+Diferencia: -0.032520
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.593802
+Diferencia: +0.017060
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.676500
+Diferencia: -0.025387
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: +0.002922
+Misma predicción + GAP mayor: 57
+Misma predicción + GAP menor: 72
+Misma predicción + GAP igual: 0
+Predicción cambiada: 69
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 233
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    26.3% (31 )
+Hard graduate level                 61       23.0% (14 )    19.7% (12 )
+Post-graduate level or harder       12       33.3% (4  )     8.3% (1  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    25.6% (22 )
+Chemistry                      93       24.7% (23 )    21.5% (20 )
+Biology                        19       21.1% (4  )    10.5% (2  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.250819
+Límite NORMAL/CONTUNDENTE: 0.671747
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        17 (34.7%)
+ 🟠 Normal:      7 (14.3%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        52 (34.9%)
+ 🟠 Normal:      45 (30.2%)
+ 🔴 Contundente: 10 (6.7%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 44
+ 🟡 Duda:        13 (29.5%)
+ 🟠 Normal:      13 (29.5%)
+ 🟢 Contundente: 3 (6.8%)
+ 🔵 Dominante:   15 (34.1%)
+
+Fallos: 154
+ 🟡 Duda:        48 (31.2%)
+ 🟠 Normal:      48 (31.2%)
+ 🔴 Contundente: 14 (9.1%)
+ 🟣 Catastrófico: 44 (28.6%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   43 (21.7%)
+ B:   16 (8.1%)
+ C:   65 (32.8%)
+ D:   74 (37.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 22.1%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 26.5%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 22.6%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   14      5       14      22      
+Gold B   10      4       24      22      
+Gold C   10      4       14      18      
+Gold D   9       3       13      12      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 13
+Correcta → Incorrecta: 18
+Siempre correcta:      31
+Siempre incorrecta:    136
+Predicción modificada: 69
+Misma predicción pero GAP mayor: 57
+Misma predicción pero GAP menor: 72
+
+
+==============================================================================
+
+
+
+
+Introduce el número del archivo (1 al 131): 30
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-20/samples_gpqa_diamond_zeroshot_2026-10-10T12-30-57.227821.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 42/198 (21.2%)
+
+Mejora neta: -7 respuestas
+  Incorrecta → Correcta: 11
+  Correcta → Incorrecta: 18
+  Siempre correcta:      31
+  Siempre incorrecta:    138
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.598603
+Diferencia: -0.008712
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.688171
+Diferencia: -0.012112
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.574489
+Diferencia: -0.002253
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.658605
+Diferencia: -0.007493
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.008712
+Misma predicción + GAP mayor: 55
+Misma predicción + GAP menor: 74
+Misma predicción + GAP igual: 0
+Predicción cambiada: 69
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 218
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    25.4% (30 )
+Hard graduate level                 61       23.0% (14 )    18.0% (11 )
+Post-graduate level or harder       12       33.3% (4  )     8.3% (1  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    26.7% (23 )
+Chemistry                      93       24.7% (23 )    18.3% (17 )
+Biology                        19       21.1% (4  )    10.5% (2  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.242993
+Límite NORMAL/CONTUNDENTE: 0.657817
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        16 (32.7%)
+ 🟠 Normal:      8 (16.3%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        52 (34.9%)
+ 🟠 Normal:      43 (28.9%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 42
+ 🟡 Duda:        11 (26.2%)
+ 🟠 Normal:      13 (31.0%)
+ 🟢 Contundente: 2 (4.8%)
+ 🔵 Dominante:   16 (38.1%)
+
+Fallos: 156
+ 🟡 Duda:        52 (33.3%)
+ 🟠 Normal:      48 (30.8%)
+ 🔴 Contundente: 9 (5.8%)
+ 🟣 Catastrófico: 47 (30.1%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   44 (22.2%)
+ B:   16 (8.1%)
+ C:   60 (30.3%)
+ D:   78 (39.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 21.1%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 23.5%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 21.5%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   13      6       13      23      
+Gold B   12      3       22      23      
+Gold C   10      4       13      19      
+Gold D   9       3       12      13      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 11
+Correcta → Incorrecta: 18
+Siempre correcta:      31
+Siempre incorrecta:    138
+Predicción modificada: 69
+Misma predicción pero GAP mayor: 55
+Misma predicción pero GAP menor: 74
+
+
+==============================================================================
+
+
+Introduce el número del archivo (1 al 131): 88
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-24/samples_gpqa_diamond_zeroshot_2026-10-10T13-00-42.468313.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 45/198 (22.7%)
+
+Mejora neta: -4 respuestas
+  Incorrecta → Correcta: 12
+  Correcta → Incorrecta: 16
+  Siempre correcta:      33
+  Siempre incorrecta:    137
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.581379
+Diferencia: -0.025937
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.644559
+Diferencia: -0.055724
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.562796
+Diferencia: -0.013946
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.633297
+Diferencia: +0.017815
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.025937
+Misma predicción + GAP mayor: 55
+Misma predicción + GAP menor: 74
+Misma predicción + GAP igual: 0
+Predicción cambiada: 69
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 238
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    27.1% (32 )
+Hard graduate level                 61       23.0% (14 )    18.0% (11 )
+Post-graduate level or harder       12       33.3% (4  )    16.7% (2  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    29.1% (25 )
+Chemistry                      93       24.7% (23 )    18.3% (17 )
+Biology                        19       21.1% (4  )    15.8% (3  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.235864
+Límite NORMAL/CONTUNDENTE: 0.656031
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        16 (32.7%)
+ 🟠 Normal:      8 (16.3%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        51 (34.2%)
+ 🟠 Normal:      44 (29.5%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 45
+ 🟡 Duda:        15 (33.3%)
+ 🟠 Normal:      12 (26.7%)
+ 🟢 Contundente: 2 (4.4%)
+ 🔵 Dominante:   16 (35.6%)
+
+Fallos: 153
+ 🟡 Duda:        48 (31.4%)
+ 🟠 Normal:      51 (33.3%)
+ 🔴 Contundente: 13 (8.5%)
+ 🟣 Catastrófico: 41 (26.8%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   48 (24.2%)
+ B:   17 (8.6%)
+ C:   57 (28.8%)
+ D:   76 (38.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 22.6%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 25.0%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 23.1%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      7       12      21      
+Gold B   14      3       21      22      
+Gold C   10      4       13      19      
+Gold D   9       3       11      14      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 12
+Correcta → Incorrecta: 16
+Siempre correcta:      33
+Siempre incorrecta:    137
+Predicción modificada: 69
+Misma predicción pero GAP mayor: 55
+Misma predicción pero GAP menor: 74
+
+
+==============================================================================
+
+
+
+Introduce el número del archivo (1 al 131): 51
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-28/samples_gpqa_diamond_zeroshot_2026-10-10T13-29-27.282231.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 48/198 (24.2%)
+
+Mejora neta: -1 respuestas
+  Incorrecta → Correcta: 15
+  Correcta → Incorrecta: 16
+  Siempre correcta:      33
+  Siempre incorrecta:    134
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.571096
+Diferencia: -0.036219
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.604989
+Diferencia: -0.095294
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.560250
+Diferencia: -0.016492
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.617509
+Diferencia: +0.033603
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.036219
+Misma predicción + GAP mayor: 55
+Misma predicción + GAP menor: 72
+Misma predicción + GAP igual: 0
+Predicción cambiada: 71
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 251
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    28.0% (33 )
+Hard graduate level                 61       23.0% (14 )    21.3% (13 )
+Post-graduate level or harder       12       33.3% (4  )    16.7% (2  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    29.1% (25 )
+Chemistry                      93       24.7% (23 )    21.5% (20 )
+Biology                        19       21.1% (4  )    15.8% (3  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.224356
+Límite NORMAL/CONTUNDENTE: 0.623928
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        50 (33.6%)
+ 🟠 Normal:      45 (30.2%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 48
+ 🟡 Duda:        18 (37.5%)
+ 🟠 Normal:      13 (27.1%)
+ 🟢 Contundente: 2 (4.2%)
+ 🔵 Dominante:   15 (31.2%)
+
+Fallos: 150
+ 🟡 Duda:        46 (30.7%)
+ 🟠 Normal:      49 (32.7%)
+ 🔴 Contundente: 16 (10.7%)
+ 🟣 Catastrófico: 39 (26.0%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   51 (25.8%)
+ B:   17 (8.6%)
+ C:   54 (27.3%)
+ D:   76 (38.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 24.2%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 29.4%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 24.6%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   16      7       12      20      
+Gold B   16      3       20      21      
+Gold C   10      4       13      19      
+Gold D   9       3       9       16      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 15
+Correcta → Incorrecta: 16
+Siempre correcta:      33
+Siempre incorrecta:    134
+Predicción modificada: 71
+Misma predicción pero GAP mayor: 55
+Misma predicción pero GAP menor: 72
+
+
+==============================================================================
+
+
+Introduce el número del archivo (1 al 131): 35
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-32/samples_gpqa_diamond_zeroshot_2026-10-10T13-58-36.398349.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 46/198 (23.2%)
+
+Mejora neta: -3 respuestas
+  Incorrecta → Correcta: 11
+  Correcta → Incorrecta: 14
+  Siempre correcta:      35
+  Siempre incorrecta:    138
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.570660
+Diferencia: -0.036655
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.631338
+Diferencia: -0.068945
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.552297
+Diferencia: -0.024445
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.611677
+Diferencia: +0.039435
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.036655
+Misma predicción + GAP mayor: 56
+Misma predicción + GAP menor: 73
+Misma predicción + GAP igual: 0
+Predicción cambiada: 69
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 245
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    28.0% (33 )
+Hard graduate level                 61       23.0% (14 )    18.0% (11 )
+Post-graduate level or harder       12       33.3% (4  )    16.7% (2  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    30.2% (26 )
+Chemistry                      93       24.7% (23 )    18.3% (17 )
+Biology                        19       21.1% (4  )    15.8% (3  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.230443
+Límite NORMAL/CONTUNDENTE: 0.624119
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        51 (34.2%)
+ 🟠 Normal:      44 (29.5%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 46
+ 🟡 Duda:        17 (37.0%)
+ 🟠 Normal:      11 (23.9%)
+ 🟢 Contundente: 3 (6.5%)
+ 🔵 Dominante:   15 (32.6%)
+
+Fallos: 152
+ 🟡 Duda:        47 (30.9%)
+ 🟠 Normal:      51 (33.6%)
+ 🔴 Contundente: 14 (9.2%)
+ 🟣 Catastrófico: 40 (26.3%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   54 (27.3%)
+ B:   17 (8.6%)
+ C:   52 (26.3%)
+ D:   75 (37.9%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.2%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 25.0%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 23.6%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   16      7       11      21      
+Gold B   18      3       19      20      
+Gold C   11      4       12      19      
+Gold D   9       3       10      15      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 11
+Correcta → Incorrecta: 14
+Siempre correcta:      35
+Siempre incorrecta:    138
+Predicción modificada: 69
+Misma predicción pero GAP mayor: 56
+Misma predicción pero GAP menor: 73
+
+
+==============================================================================
+
+
+
+
+
+
+
+Introduce el número del archivo (1 al 131): 103
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-36/samples_gpqa_diamond_zeroshot_2026-10-10T14-28-15.600504.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 43/198 (21.7%)
+
+Mejora neta: -6 respuestas
+  Incorrecta → Correcta: 10
+  Correcta → Incorrecta: 16
+  Siempre correcta:      33
+  Siempre incorrecta:    139
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.568589
+Diferencia: -0.038726
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.678190
+Diferencia: -0.022093
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.538184
+Diferencia: -0.038558
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.604648
+Diferencia: +0.046464
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.038726
+Misma predicción + GAP mayor: 58
+Misma predicción + GAP menor: 71
+Misma predicción + GAP igual: 0
+Predicción cambiada: 69
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 231
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    27.1% (32 )
+Hard graduate level                 61       23.0% (14 )    16.4% (10 )
+Post-graduate level or harder       12       33.3% (4  )     8.3% (1  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    27.9% (24 )
+Chemistry                      93       24.7% (23 )    17.2% (16 )
+Biology                        19       21.1% (4  )    15.8% (3  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.231204
+Límite NORMAL/CONTUNDENTE: 0.623928
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        51 (34.2%)
+ 🟠 Normal:      44 (29.5%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 43
+ 🟡 Duda:        13 (30.2%)
+ 🟠 Normal:      12 (27.9%)
+ 🟢 Contundente: 3 (7.0%)
+ 🔵 Dominante:   15 (34.9%)
+
+Fallos: 155
+ 🟡 Duda:        52 (33.5%)
+ 🟠 Normal:      48 (31.0%)
+ 🔴 Contundente: 14 (9.0%)
+ 🟣 Catastrófico: 41 (26.5%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   55 (27.8%)
+ B:   16 (8.1%)
+ C:   51 (25.8%)
+ D:   76 (38.4%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 21.6%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 25.0%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 22.1%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   16      7       11      21      
+Gold B   18      2       19      21      
+Gold C   11      4       11      20      
+Gold D   10      3       10      14      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 10
+Correcta → Incorrecta: 16
+Siempre correcta:      33
+Siempre incorrecta:    139
+Predicción modificada: 69
+Misma predicción pero GAP mayor: 58
+Misma predicción pero GAP menor: 71
+
+
+==============================================================================
+
+
+
+
+Introduce el número del archivo (1 al 131): 74
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-40/samples_gpqa_diamond_zeroshot_2026-10-10T14-56-57.288526.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 47/198 (23.7%)
+
+Mejora neta: -2 respuestas
+  Incorrecta → Correcta: 12
+  Correcta → Incorrecta: 14
+  Siempre correcta:      35
+  Siempre incorrecta:    137
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.562051
+Diferencia: -0.045265
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.625160
+Diferencia: -0.075123
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.542408
+Diferencia: -0.034335
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.593349
+Diferencia: +0.057763
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.045265
+Misma predicción + GAP mayor: 58
+Misma predicción + GAP menor: 71
+Misma predicción + GAP igual: 0
+Predicción cambiada: 69
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 252
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    29.7% (35 )
+Hard graduate level                 61       23.0% (14 )    16.4% (10 )
+Post-graduate level or harder       12       33.3% (4  )    16.7% (2  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    29.1% (25 )
+Chemistry                      93       24.7% (23 )    20.4% (19 )
+Biology                        19       21.1% (4  )    15.8% (3  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.233028
+Límite NORMAL/CONTUNDENTE: 0.618789
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        15 (30.6%)
+ 🟠 Normal:      9 (18.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        51 (34.2%)
+ 🟠 Normal:      43 (28.9%)
+ 🔴 Contundente: 13 (8.7%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 47
+ 🟡 Duda:        17 (36.2%)
+ 🟠 Normal:      12 (25.5%)
+ 🟢 Contundente: 3 (6.4%)
+ 🔵 Dominante:   15 (31.9%)
+
+Fallos: 151
+ 🟡 Duda:        46 (30.5%)
+ 🟠 Normal:      52 (34.4%)
+ 🔴 Contundente: 13 (8.6%)
+ 🟣 Catastrófico: 40 (26.5%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   55 (27.8%)
+ B:   17 (8.6%)
+ C:   49 (24.7%)
+ D:   77 (38.9%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.7%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 29.4%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 24.1%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   17      7       10      21      
+Gold B   18      3       19      20      
+Gold C   11      4       11      20      
+Gold D   9       3       9       16      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 12
+Correcta → Incorrecta: 14
+Siempre correcta:      35
+Siempre incorrecta:    137
+Predicción modificada: 69
+Misma predicción pero GAP mayor: 58
+Misma predicción pero GAP menor: 71
+
+
+==============================================================================
+
+
+Introduce el número del archivo (1 al 131): 73
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-44/samples_gpqa_diamond_zeroshot_2026-10-10T15-25-33.665666.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 45/198 (22.7%)
+
+Mejora neta: -4 respuestas
+  Incorrecta → Correcta: 11
+  Correcta → Incorrecta: 15
+  Siempre correcta:      34
+  Siempre incorrecta:    138
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.562914
+Diferencia: -0.044401
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.657423
+Diferencia: -0.042860
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.535118
+Diferencia: -0.041625
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.589190
+Diferencia: +0.061922
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.044401
+Misma predicción + GAP mayor: 58
+Misma predicción + GAP menor: 71
+Misma predicción + GAP igual: 0
+Predicción cambiada: 69
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 250
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    28.8% (34 )
+Hard graduate level                 61       23.0% (14 )    16.4% (10 )
+Post-graduate level or harder       12       33.3% (4  )     8.3% (1  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    27.9% (24 )
+Chemistry                      93       24.7% (23 )    19.4% (18 )
+Biology                        19       21.1% (4  )    15.8% (3  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.235472
+Límite NORMAL/CONTUNDENTE: 0.623928
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        16 (32.7%)
+ 🟠 Normal:      8 (16.3%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        51 (34.2%)
+ 🟠 Normal:      44 (29.5%)
+ 🔴 Contundente: 12 (8.1%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 45
+ 🟡 Duda:        14 (31.1%)
+ 🟠 Normal:      13 (28.9%)
+ 🟢 Contundente: 3 (6.7%)
+ 🔵 Dominante:   15 (33.3%)
+
+Fallos: 153
+ 🟡 Duda:        48 (31.4%)
+ 🟠 Normal:      50 (32.7%)
+ 🔴 Contundente: 13 (8.5%)
+ 🟣 Catastrófico: 42 (27.5%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   57 (28.8%)
+ B:   15 (7.6%)
+ C:   49 (24.7%)
+ D:   77 (38.9%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.2%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 27.9%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 23.1%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   18      6       10      21      
+Gold B   18      2       19      21      
+Gold C   12      4       10      20      
+Gold D   9       3       10      15      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 11
+Correcta → Incorrecta: 15
+Siempre correcta:      34
+Siempre incorrecta:    138
+Predicción modificada: 69
+Misma predicción pero GAP mayor: 58
+Misma predicción pero GAP menor: 71
+
+
+==============================================================================
+
+
+Introduce el número del archivo (1 al 132): 85
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__opt__agio__almacen__9experimento9__checkpoint-48/samples_gpqa_diamond_zeroshot_2026-10-10T15-55-08.355195.jsonl
+
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+
+
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 45/198 (22.7%)
+
+Mejora neta: -4 respuestas
+  Incorrecta → Correcta: 11
+  Correcta → Incorrecta: 15
+  Siempre correcta:      34
+  Siempre incorrecta:    138
+
+
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.563740
+Diferencia: -0.043576
+
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.663601
+Diferencia: -0.036682
+
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.534369
+Diferencia: -0.042373
+
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.584622
+Diferencia: +0.066491
+
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.043576
+Misma predicción + GAP mayor: 56
+Misma predicción + GAP menor: 71
+Misma predicción + GAP igual: 0
+Predicción cambiada: 71
+
+Enlaces asociados a preguntas acertadas por el Checkpoint: 250
+
+
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    28.8% (34 )
+Hard graduate level                 61       23.0% (14 )    16.4% (10 )
+Post-graduate level or harder       12       33.3% (4  )     8.3% (1  )
+Easy undergraduate level            3         0.0% (0  )     0.0% (0  )
+
+
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    27.9% (24 )
+Chemistry                      93       24.7% (23 )    19.4% (18 )
+Biology                        19       21.1% (4  )    15.8% (3  )
+
+
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+
+Límite DUDA/NORMAL:        0.242949
+Límite NORMAL/CONTUNDENTE: 0.611323
+
+--- BASE DE FÁBRICA ---
+
+Aciertos: 49
+ 🟡 Duda:        16 (32.7%)
+ 🟠 Normal:      8 (16.3%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+
+Fallos: 149
+ 🟡 Duda:        52 (34.9%)
+ 🟠 Normal:      42 (28.2%)
+ 🔴 Contundente: 13 (8.7%)
+ 🟣 Catastrófico: 42 (28.2%)
+
+--- CHECKPOINT ---
+
+Aciertos: 45
+ 🟡 Duda:        12 (26.7%)
+ 🟠 Normal:      15 (33.3%)
+ 🟢 Contundente: 2 (4.4%)
+ 🔵 Dominante:   16 (35.6%)
+
+Fallos: 153
+ 🟡 Duda:        50 (32.7%)
+ 🟠 Normal:      50 (32.7%)
+ 🔴 Contundente: 13 (8.5%)
+ 🟣 Catastrófico: 40 (26.1%)
+
+
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+
+CHECKPOINT:
+ A:   59 (29.8%)
+ B:   15 (7.6%)
+ C:   49 (24.7%)
+ D:   75 (37.9%)
+
+
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 23.2%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 27.9%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 23.1%
+
+
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+
+
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   18      6       10      21      
+Gold B   18      2       19      21      
+Gold C   14      4       10      18      
+Gold D   9       3       10      15      
+
+
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+
+Incorrecta → Correcta: 11
+Correcta → Incorrecta: 15
+Siempre correcta:      34
+Siempre incorrecta:    138
+Predicción modificada: 71
+Misma predicción pero GAP mayor: 56
+Misma predicción pero GAP menor: 71
+
+
+==============================================================================
+
 
 
 
