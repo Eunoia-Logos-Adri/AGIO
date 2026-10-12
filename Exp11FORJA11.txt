@@ -1,0 +1,13 @@
+12/OCT/2026:
+16:44 
+-Aprvechando el día festivo y que la guardia en el trabajo es tranquila, hemos construído la forja 11.
+-Desde la lógica del Agio, parece que hemos vuelto a ahorrar más RAM aún, otro +10/11%.
+La forja ahora podría ser capaz de entrgar en el z6 hasta 80000 tokens por update/bloque en un modelo 8b.
+-De las forjas regaladas que solo eran capaces de llegar a uynos 45/46000 tokens, es un aumento del casi 100%.
+-El ahorro de tiempo se consolida en el z6 en un -6-8%, las limitaciones físicas impiden llegar más allá
+del -50%, podríamos poner perfectamente un ahorro de -23% a 1700mhz pero hemos preferido mantener el z6 a 1500mhz.
+Aún así es un 7% más rápida que antiguas forjas.
+-El nuevo Mazo-Pichi intenta ser respetuoso con el ritmo de Eunoia/modelo/sistema.
+-La opción 1 de elección-Eunoia se mantiene.
+-La opción 2 empieza a incorporar ideas de Simbiosis_Líquida, es simple, es sencilla. Pero tras testearla funciona.
+-La forja 11 permite llegar a lr = 1.
