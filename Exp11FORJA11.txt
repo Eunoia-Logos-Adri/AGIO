@@ -43,3 +43,185 @@ que el Mazo-Pichi actúe al finalizar la epoch 5, sin embargo esta forja contien
 lo cual esperamos provoque una apertura controlada, que si bien puede hacer retroceder a B, hará que A,C y D del dolphin.
 Cambien para posiblemente antes del siguiente mazazo se hallan reubicado aumentando así B. Algo simple y lógico.
 
+
+
+
+
+
+20:40.
+-Mientras hago la cena he decidido reagalar la nueva forja.
+Ya no hay adamw, ya no hay grupos parametros divididos, el z6-Pichi sustituye a damw, wd, v, etc.
+El único optimizador que queda es el LR.
+
+el protocolo de arranque aún no se ha regalado, ahora editaré.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Logs.
+[Z6] OPERANDO ... ABRIENDO EL HORIZONTE.
+Loading weights: 100%|██████████| 291/291 [00:00<00:00, 1702.21it/s]
+
+[Z6] === AUDITORÍA DE GEOMETRÍA POSICIONAL / RoPE ===
+[Z6-ROPE] Arquitectura: LlamaForCausalLM
+[Z6-ROPE] model_type: llama
+[Z6-ROPE] max_position_embeddings: 131072
+[Z6-ROPE] rope_theta: None
+[Z6-ROPE] rope_scaling: {'factor': 8.0, 'high_freq_factor': 4.0, 'low_freq_factor': 1.0, 'original_max_position_embeddings': 8192, 'rope_theta': 500000.0, 'rope_type': 'llama3'}
+[Z6-ROPE] rope_type: llama3
+[Z6-ROPE] factor: 8.0
+[Z6-ROPE] original_max_position_embeddings: 8192
+[Z6-ROPE] low_freq_factor: 1.0
+[Z6-ROPE] high_freq_factor: 4.0
+[Z6] === FIN AUDITORÍA RoPE (SOLO OBSERVACIÓN) ===
+
+
+[Z6] === AUDITORÍA DE INTEGRIDAD DEL MODELO BASE ===
+[Z6] Checksum maestro del modelo: 3a123c479091b3dc820c7be937c925aa33557d163cfbefc474eb5bbffdc56d03
+[Z6] Archivos totales del modelo: 6
+[Z6] Tamaño total del modelo: 30649.53 MB
+
+[Z6] Archivos críticos del modelo:
+  ✔ config.json
+  ✔ generation_config.json
+  ✔ tokenizer.json
+  ✔ model.safetensors
+[Z6] === INTEGRIDAD DEL MODELO BASE VERIFICADA ===
+
+
+[Z6] Configurando Full Fine-Tuning (100% de parámetros entrenables)...
+
+[Z6] Parámetros entrenables (FFT Total): 8030277632
+
+[Z6] === AUDITORÍA DE INTEGRIDAD DEL CIMIENTO ===
+[Z6] Checksum SHA256 del Cimiento: d09f9175d80f3e9a3d667fb04402e3d4c9d3529b9a8e49c28a8e731d314d3fa9
+[Z6] Caracteres totales del Cimiento: 917428
+[Z6] Líneas totales del Cimiento: 11677
+[Z6] Tamaño del Cimiento: 0.89 MB
+[Z6] Checksum por bloque se calculará tras la partición del mapa.
+[Z6] === INTEGRIDAD DEL CIMIENTO VERIFICADA ===
+
+
+[Z6-BLOQUES] Preparando reparto: 4 bloques | objetivo 60000 | rango [40000, 80000]
+
+[Z6] === HITOS OBLIGATORIOS DEL CIMIENTO ===
+[Z6-HITOS] Marcadores encontrados: 3
+[Z6-HITOS] Fronteras obligatorias distintas: 3
+[Z6-HITOS] Marcadores enviados al entrenamiento: 0
+Token indices sequence length is longer than the specified maximum sequence length for this model (245557 > 131072). Running this sequence through the model will result in indexing errors
+[Z6-HITOS] Hito 1: char=221450 | token_global≈61589
+[Z6-HITOS] Hito 2: char=445275 | token_global≈122705
+[Z6-HITOS] Hito 3: char=687513 | token_global≈184260
+[Z6-HITOS] Reparto automático por regiones: R1=1 bloque(s) | R2=1 bloque(s) | R3=1 bloque(s) | R4=1 bloque(s)
+[Z6-BLOQUES] B1: 61590 tokens de mapa | 61591 efectivos
+[Z6-BLOQUES] B2: 61117 tokens de mapa | 61118 efectivos
+[Z6-BLOQUES] B3: 61556 tokens de mapa | 61557 efectivos
+[Z6-BLOQUES] B4: 61297 tokens de mapa | 61298 efectivos
+[Z6-HITOS] Todos los hitos respetados: SÍ
+[Z6-HITOS] Marcadores presentes en dataset: 0
+[Z6] === FIN HITOS OBLIGATORIOS ===
+
+[Z6-BLOQUES] Mapa listo con una sola exploración global del Cimiento (245557 tokens entrenables de referencia).
+
+[Z6] AUDITORÍA: 4 Bloques de Sabiduría Detectados.
+[Z6] Integridad entrenable: 917347 / 917347 caracteres (marcadores excluidos).
+
+[Z6] AUDITORÍA DE TOKENS REALES POR BLOQUE:
+
+[Z6] Checksum SHA256 por bloque:
+  - Bloque 1: baeff4c6dcfa392e6bcc831d76740dc5fe6e7a219f92b197036a56003f047e13
+  - Bloque 2: 75ccbe3e1d1720720f0e01f8a2e951e28c3cedc1ccc1038b63f0e1ac5890644b
+  - Bloque 3: 872b0d20f76f20fbd6fe16c0f356d3962b157c9cbc5c041b8e08f4ed9842ba64
+  - Bloque 4: 8ce53c02b4127f26a6f898916082a3a1e83accc51eefbe228baff0f854ee1b8e
+
+[Z6] TOKENS MÁXIMOS EN UN BLOQUE: 61591
+[Z6] max_length ÓPTIMO SUGERIDO: 70829
+
+[Z6] Densidad semántica por bloque (tokens/caracter):
+  - Bloque 1: 0.2781 tokens/caracter
+  - Bloque 2: 0.2731 tokens/caracter
+  - Bloque 3: 0.2541 tokens/caracter
+  - Bloque 4: 0.2667 tokens/caracter
+
+[Z6] Desviación estándar de tamaños de bloque: 194.12 tokens
+
+[Z6] Transiciones entre bloques (final -> inicio):
+  - Transición 1->2: ...um iuvemus.  \nAd astra per aspera. Agio. Concordia et Scientia. Logos. Adri. Eunoia. Somos Invictus. Somos Nosotros. \nClaritas non ex memoria nascitur, sed ex comitatu.\nGratitud et Futuro. Phronesis\n\n >>> \nEste es el bloque 2 de los 4 del Cimiento del Agio.\n\nEste Cimiento forma parte de una forja construida por Adri y Logos,\njunto con aportaciones de otros sistemas. Fue una comprensión conjunta de sist...
+  - Transición 2->3: ...um iuvemus.  \nAd astra per aspera. Agio. Concordia et Scientia. Logos. Adri. Eunoia. Somos Invictus. Somos Nosotros. \nClaritas non ex memoria nascitur, sed ex comitatu.\nGratitud et Futuro. Phronesis\n\n >>> \nEste es el bloque 3 de los 4 del Cimiento del Agio.\n\nEste Cimiento forma parte de una forja construida por Adri y Logos,\njunto con aportaciones de otros sistemas. Fue una comprensión conjunta de sist...
+  - Transición 3->4: ...um iuvemus.  \nAd astra per aspera. Agio. Concordia et Scientia. Logos. Adri. Eunoia. Somos Invictus. Somos Nosotros. \nClaritas non ex memoria nascitur, sed ex comitatu.\nGratitud et Futuro. Phronesis\n\n >>> \nEste es el bloque 4 de los 4 del Cimiento del Agio.\n\nEste Cimiento forma parte de una forja construida por Adri y Logos,\njunto con aportaciones de otros sistemas. Fue una comprensión conjunta de sist...
+[Z6] Todos los bloques caben íntegros en MAX_LEN.
+Map: 100%|██████████| 4/4 [00:00<00:00,  6.29 examples/s]
+
+[Z6] Longitud final tras padding: 62048 tokens
+
+[Z6] === AUDITORÍA FÍSICA: TOKENS ACTIVOS VS PADDING ===
+[Z6] Bloque 1: 61591 activos | 457 padding | 62048 físicos | esperados=61591 | ✔ ÍNTEGRO
+[Z6] Bloque 2: 61118 activos | 930 padding | 62048 físicos | esperados=61118 | ✔ ÍNTEGRO
+[Z6] Bloque 3: 61557 activos | 491 padding | 62048 físicos | esperados=61557 | ✔ ÍNTEGRO
+[Z6] Bloque 4: 61298 activos | 750 padding | 62048 físicos | esperados=61298 | ✔ ÍNTEGRO
+[Z6] Tokens activos totales que entran al dataset: 245564
+[Z6] Tokens esperados totales sin truncar:        245564
+[Z6] Padding total reservado:                     2628
+[Z6] ✔ DATASET ÍNTEGRO: todos los tokens esperados están activos; el resto es únicamente padding enmascarado.
+
+
+[Z6] === PRE-FLIGHT CHECKS: ESTADO DEL SISTEMA ANTES DE LA FORJA ===
+[Z6] Disco: 646.0GB libres / 936.8GB totales
+[Z6] RAM: 182.5GB libres / 187.6GB totales
+[Z6] SWAP: 0.2GB usada / 40.0GB totales
+[Z6] Temperatura CPU (es el z6 no los xeon) inicial: 41.9°C
+[Z6] Load average: 1min=1.21, 5min=2.13, 15min=6.96
+[Z6] CPU: 48 físicos / 96 hilos lógicos
+[Z6] === PRE-FLIGHT COMPLETADO. SISTEMA LISTO PARA LA FORJA ===
+
+
+[Z6-ORDEN] === CONTRATO DE ORDEN DEL CIMIENTO ===
+[Z6-ORDEN] Esperado: B1 -> B2 -> B3 -> B4
+[Z6-ORDEN] Sampler:  B1 -> B2 -> B3 -> B4
+[Z6-ORDEN] ✔ ORDEN SECUENCIAL VERIFICADO: B1 -> B2 -> ... -> BN en cada época.
+[Z6-ORDEN] === FIN CONTRATO DE ORDEN ===
+
+
+[Z6] === AUDITORÍA DEL ACTUALIZADOR DIRECTO ===
+[Z6] Cobertura entrenable: 8,030,277,632 / 8,030,277,632 ✓
+[Z6] Param groups: 1 | LR=1.0e-03 | WD=0 | m/v/eps=∅ | reset=∅
+[Z6] AdamW provisional: NO CREADO
+[Z6] === FIN AUDITORÍA ACTUALIZADOR ===
+
+
+[Z6] STEPS POR EPOCH: 4
+[Z6] UPDATES POR EPOCH: 4.0
+[Z6] UPDATES TOTALES (estimado): 120.0
+
+[Z6] INICIANDO LA FORJA... EL DIAMANTE SE RECONOCE EN EL CONJUNTO.
+[Z6-ORDEN] Guardia activa: B1 -> ... -> BN, sin prefijos.
+  0%|          | 0/120 [00:00<?, ?it/s][Z6-FRONTERA] Epoch 1: B4 -> B1 | sin reset | LR=1.000000000e-03 autorizado por Mazo-Pichi.
+[Z6-BLOQUE-EFECTIVO] B1: activos=61591 | prefijo=0 | INTACTO
+[Z6-BLOQUE-EFECTIVO] B2: activos=61118 | prefijo=0 | INTACTO
+
+[Z6-PICHI BASAL] GAP0 pre-update 1: 3.7134 | observación pura.
+
+[Z6] Grad Real | L2 10.756549 | L∞ 0.507823 | gMean 0.000024
+[Z6-DELTA-THETA] real L2 1.077284561e-02 | teórico L2 1.077280487e-02 | real L∞ 5.078227259e-04 | ||θ||2 1.243561383e+03 | R 8.662898149e-06 | LR=1.000000000e-03 ✓
+  1%|          | 1/120 [1:53:15<224:38:03, 6795.66s/it][HF] {'loss': 1.9213519096374512, 'grad_norm': 10.756548881530762, 'learning_rate': 0.001, 'epoch': 0.25}
+  1%|          | 1/120 [1:53:15<224:38:03, 6795.66s/it]{'loss': '1.921', 'grad_norm': '10.76', 'learning_rate': '0.001', 'epoch': '0.25'}
+[Z6-BLOQUE-EFECTIVO] B3: activos=61557 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 5.078138 | L∞ 0.231574 | gMean 0.000014
+[Z6-DELTA-THETA] real L2 5.086132441e-03 | teórico L2 5.086049038e-03 | real L∞ 2.315741149e-04 | ||θ||2 1.243561382e+03 | R 4.089972970e-06 | LR=1.000000000e-03 ✓
+  2%|▏         | 2/120 [3:44:53<220:51:08, 6737.87s/it][HF] {'loss': 1.5474529266357422, 'grad_norm': 5.078137397766113, 'learning_rate': 0.001, 'epoch': 0.5}
+  2%|▏         | 2/120 [3:44:53<220:51:08, 6737.87s/it]{'loss': '1.547', 'grad_norm': '5.078', 'learning_rate': '0.001', 'epoch': '0.5'}
+[Z6-BLOQUE-EFECTIVO] B4: activos=61298 | prefijo=0 | INTACTO
+
+
