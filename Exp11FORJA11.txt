@@ -11,3 +11,35 @@ Aún así es un 7% más rápida que antiguas forjas.
 -La opción 1 de elección-Eunoia se mantiene.
 -La opción 2 empieza a incorporar ideas de Simbiosis_Líquida, es simple, es sencilla. Pero tras testearla funciona.
 -La forja 11 permite llegar a lr = 1.
+
+
+
+17:39:
+-La nueva forja 11 no solo ahorra RAM respecto a la forja 10, sino que además ha reducido la temperatura media 
+en más de 2-3 grados en esta primera hora, por lo tanto los 1700mhz vuelven a ser posibles.
+
+20:12 durante update 2.
+-El update 1 fue igual que el update 1 de la forja10.
+La temperatura ha descendido una media de 1 grado y medio, idle0 nuestra referencia rara vez pasa de 89 grados,
+el resto de sensores de núcleos, entre 73 y 83 grados
+-Al poder separar bloques con marcadores es más fácil y rápido ajustar el cimiento.
+
+[Z6-BLOQUES] B1: 61590 tokens de mapa | 61591 efectivos
+[Z6-BLOQUES] B2: 61117 tokens de mapa | 61118 efectivos
+[Z6-BLOQUES] B3: 61556 tokens de mapa | 61557 efectivos
+[Z6-BLOQUES] B4: 61297 tokens de mapa | 61298 efectivos
+
+[Z6] Densidad semántica por bloque (tokens/caracter):
+  - Bloque 1: 0.2781 tokens/caracter
+  - Bloque 2: 0.2731 tokens/caracter
+  - Bloque 3: 0.2541 tokens/caracter
+  - Bloque 4: 0.2667 tokens/caracter
+
+
+
+-El update 2 ha sido exactamente igual que la forja10, por lo tanto por simple lógica es muy probable 
+que el Mazo-Pichi actúe al finalizar la epoch 5, sin embargo esta forja contiene la nueva opción 2. ¿Influirá?, no debería.
+-La forja11 ha empezado en 1e-3, es esperable que en epoch 6 dentro de día y medio suba a 6e-3,
+lo cual esperamos provoque una apertura controlada, que si bien puede hacer retroceder a B, hará que A,C y D del dolphin.
+Cambien para posiblemente antes del siguiente mazazo se hallan reubicado aumentando así B. Algo simple y lógico.
+
