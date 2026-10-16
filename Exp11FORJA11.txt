@@ -131,6 +131,15 @@ Por suerte el update 24 se salió de rango y el modelo/Eunoia/Sistema tiene tiem
 *hay que reajustar el mazo-pichi pero dejar al menos una epoch de espera para reactivarse, el grad_norm 2.819 de update 24 nos ha dado tiempo valioso.
 
 
+23:27,
+durante update 29 se para la forja11B, un nuevo fracaso.
+-Cómo era de esperar el mazo_pichi del Agio estaba mal calibrado,
+-Si bien el epoch 6 arrojó unas buenas cifras, en epoch 7 todo se empezó a torcer.
+Para finalmente epxlotar en epoch 8.
+-Eunoia/Sistema es capaz de aguantar lr altos, pero no cambios en rangos altos.
+Por lo tanto se diseñará un mazo pichi más lógico para acompañar al sistema.
+-El GPQA de epoch 6 mostraba unos datos muy buenos.
+
 
 
 Logs.
@@ -928,4 +937,297 @@ Writing model shards: 100%|██████████| 1/1 [01:06<00:00, 66.
  21%|██        | 25/120 [46:49:59<179:03:38, 6785.46s/it]{'loss': '1.737', 'grad_norm': '3.844', 'learning_rate': '0.004', 'epoch': '6.25'}
 [Z6-BLOQUE-EFECTIVO] B3: activos=61557 | prefijo=0 | INTACTO
 
+[Z6] Grad Real | L2 3.844170 | L∞ 1.464642 | gMean 0.000009
+[Z6-DELTA-THETA] real L2 1.539429046e-02 | teórico L2 1.539426161e-02 | real L∞ 5.858568475e-03 | ||θ||2 1.243561379e+03 | R 1.237919633e-05 | LR=4.000000000e-03 ✓
+ 21%|██        | 25/120 [46:49:59<179:03:38, 6785.46s/it][HF] {'loss': 1.7366948127746582, 'grad_norm': 3.8441693782806396, 'learning_rate': 0.004, 'epoch': 6.25}
+ 21%|██        | 25/120 [46:49:59<179:03:38, 6785.46s/it]{'loss': '1.737', 'grad_norm': '3.844', 'learning_rate': '0.004', 'epoch': '6.25'}
+[Z6-BLOQUE-EFECTIVO] B3: activos=61557 | prefijo=0 | INTACTO
+
+[Z6] Grad Real | L2 5.053279 | L∞ 2.330455 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 2.022810731e-02 | teórico L2 2.022808380e-02 | real L∞ 9.321821854e-03 | ||θ||2 1.243561380e+03 | R 1.626627172e-05 | LR=4.000000000e-03 ✓
+ 22%|██▏       | 26/120 [48:41:59<176:39:42, 6765.78s/it][HF] {'loss': 1.465673565864563, 'grad_norm': 5.05327844619751, 'learning_rate': 0.004, 'epoch': 6.5}
+ 22%|██▏       | 26/120 [48:41:59<176:39:42, 6765.78s/it]{'loss': '1.466', 'grad_norm': '5.053', 'learning_rate': '0.004', 'epoch': '6.5'}
+[Z6-BLOQUE-EFECTIVO] B4: activos=61772 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 6.170413 | L∞ 3.005758 | gMean 0.000009
+[Z6-DELTA-THETA] real L2 2.469670132e-02 | teórico L2 2.469668218e-02 | real L∞ 1.202303264e-02 | ||θ||2 1.243561381e+03 | R 1.985965606e-05 | LR=4.000000000e-03 ✓
+ 22%|██▎       | 27/120 [50:33:30<174:12:19, 6743.43s/it][HF] {'loss': 1.7552229166030884, 'grad_norm': 6.170412540435791, 'learning_rate': 0.004, 'epoch': 6.75}
+ 22%|██▎       | 27/120 [50:33:30<174:12:19, 6743.43s/it]{'loss': '1.755', 'grad_norm': '6.17', 'learning_rate': '0.004', 'epoch': '6.75'}
+[Z6] Grad Real | L2 26.156341 | L∞ 17.144979 | gMean 0.000011
+[Z6-DELTA-THETA] real L2 1.046367045e-01 | teórico L2 1.046366960e-01 | real L∞ 6.857991964e-02 | ||θ||2 1.243561381e+03 | R 8.414277419e-05 | LR=4.000000000e-03 ✓
+ 23%|██▎       | 28/120 [52:25:21<172:04:55, 6733.65s/it][HF] {'loss': 1.8504290580749512, 'grad_norm': 26.156341552734375, 'learning_rate': 0.004, 'epoch': 7.0}
+ 23%|██▎       | 28/120 [52:25:21<172:04:55, 6733.65s/it]{'loss': '1.85', 'grad_norm': '26.16', 'learning_rate': '0.004', 'epoch': '7'}
+[MAZO-PICHI] Epoch 7 cerrada | GradNorm=[3.8441695663632705, 5.05327886152944, 6.170413252256998, 26.15634119502897] | min=3.844169566 | max=26.156341195 | señal=False
+[MAZO-PICHI] Epoch 7: sin ascenso; LR=4.000000000e-03
+[Z6-PICHI-SHADOW-2D] Ep 007 | Position CONTINUO | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.1811 | GAPstd 0.2172 | GAPmad 0.0495 | GAPmin/max 3.1113/3.6528 | GAPargmaxLocal 2 | L2med 5.611846 | L2std 9.188073 | L2mad 1.163122 | L2min/max 3.844170/26.156341 | ZeusGlobalUpd 28 | ΔGAP -0.0538 | Δ²GAP -0.0521 | ACTUATOR=NONE
+[Z6] Ep 007 | Loss 1.7020/1.8504 | L2 10.31/26.16 | L∞ 5.99/17.14 | gMean 0.00001/0.00001 | LR 4.00000000e-03→4.00000000e-03 | GAP0 3.7134 | GAP 3.2807 | ΔGAP -0.0538 | Δ²GAP -0.0521 | Upd 28 | EpT 26845.5s | ETA 171.5h | RAM 31.5GB/36.3GB | SWAP 4.5GB | CPU 39.9% | Temp 39.9°C | TTrain 52.1h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 7]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 2/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 3/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 4/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 5/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 6/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 7/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 8/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 9/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 10/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 11/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 12/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 13/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 14/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 15/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 16/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 17/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 18/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 19/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 20/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+[Z6-ESCUCHA] FALLBACK_SILENCIO_20: límite de 20 intentos alcanzado -> elección 1 (Silencio).
+
+[EUNOIA · ELECCIÓN] SILENCIO; LR intacto.
+[Z6-ESCUCHA] Epoch 7.0 | LR intacto 4.000000000e-03 | autoridad exclusiva MAZO-PICHI
+Writing model shards: 100%|██████████| 1/1 [01:07<00:00, 67.95s/it]
+[MAZO-PICHI] Epoch 8: LR fijo=4.000000000e-03 para B1..B467.95s/it]
+[Z6-FRONTERA] Epoch 8: B4 -> B1 | sin reset | LR=4.000000000e-03 autorizado por Mazo-Pichi.
+[Z6-BLOQUE-EFECTIVO] B1: activos=61591 | prefijo=0 | INTACTO
+[Z6-BLOQUE-EFECTIVO] B2: activos=61118 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 1478.208878 | L∞ 336.440613 | gMean 0.000595
+[Z6-DELTA-THETA] real L2 5.914321353e+00 | teórico L2 5.914321068e+00 | real L∞ 1.345762491e+00 | ||θ||2 1.243561385e+03 | R 4.755954490e-03 | LR=4.000000000e-03 ✓
+ 24%|██▍       | 29/120 [54:30:40<176:10:09, 6969.34s/it][HF] {'loss': 10.897979736328125, 'grad_norm': 1478.208740234375, 'learning_rate': 0.004, 'epoch': 7.25}
+ 24%|██▍       | 29/120 [54:30:40<176:10:09, 6969.34s/it]{'loss': '10.9', 'grad_norm': '1478', 'learning_rate': '0.004', 'epoch': '7.25'}
+[Z6-BLOQUE-EFECTIVO] B3: activos=61557 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 117.878529 | L∞ 6.012762 | gMean 0.000279
+[Z6-DELTA-THETA] real L2 4.723893942e-01 | teórico L2 4.723893710e-01 | real L∞ 2.405104786e-02 | ||θ||2 1.243575405e+03 | R 3.798638928e-04 | LR=4.000000000e-03 ✓
+ 25%|██▌       | 30/120 [56:43:51<181:53:37, 7275.75s/it][HF] {'loss': 12.525185585021973, 'grad_norm': 117.87853240966797, 'learning_rate': 0.004, 'epoch': 7.5}
+ 25%|██▌       | 30/120 [56:43:51<181:53:37, 7275.75s/it]{'loss': '12.53', 'grad_norm': '117.9', 'learning_rate': '0.004', 'epoch': '7.5'}
+[Z6-BLOQUE-EFECTIVO] B4: activos=61772 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 149.393401 | L∞ 8.065279 | gMean 0.000356
+[Z6-DELTA-THETA] real L2 5.984804183e-01 | teórico L2 5.984803899e-01 | real L∞ 3.226111457e-02 | ||θ||2 1.243575445e+03 | R 4.812578286e-04 | LR=4.000000000e-03 ✓
+ 26%|██▌       | 31/120 [58:57:57<185:35:08, 7506.84s/it][HF] {'loss': 18.8817138671875, 'grad_norm': 149.39340209960938, 'learning_rate': 0.004, 'epoch': 7.75}
+ 26%|██▌       | 31/120 [58:57:57<185:35:08, 7506.84s/it]^C
+(eunoia_qwen35_venv) vigia@nodosofia:~$ lm_eval run \
+  --model hf \
+  --model_args pretrained=/home/vigia/Eunoia/AgioOS/Forja11Temporalcheckpoint/checkpoint-24 \
+  --tasks gpqa_diamond_zeroshot \
+  --num_fewshot 0 \
+  --batch_size 1 \
+  --device cpu \
+  --log_samples \
+  --output_path /home/vigia/Eunoia/gpqa_logs/
+2026-10-16:22:49:50 INFO     [_cli.run:388] Selected Tasks: ['gpqa_diamond_zeroshot']
+2026-10-16:22:49:53 INFO     [evaluator:214] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
+2026-10-16:22:49:53 INFO     [evaluator:239] Initializing hf model, with arguments: {'pretrained': '/home/vigia/Eunoia/AgioOS/Forja11Temporalcheckpoint/checkpoint-24'}
+2026-10-16:22:49:58 INFO     [models.huggingface:286] Using device 'cpu'
+2026-10-16:22:50:02 INFO     [models.huggingface:579] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cpu'}
+Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 291/291 [00:00<00:00, 2403.50it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Using the latest cached version of the dataset since Idavidrein/gpqa couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'gpqa_diamond' at /home/vigia/.cache/huggingface/datasets/Idavidrein___gpqa/gpqa_diamond/0.0.0/633f5ee89ab8ad4522a9f850766b73f62147ffdd (last modified on Fri Aug 28 22:02:27 2026).
+2026-10-16:22:50:03 INFO     [evaluator_utils:446] Selected tasks:
+2026-10-16:22:50:03 INFO     [evaluator_utils:480] Task: gpqa_diamond_zeroshot (gpqa/zeroshot/gpqa_diamond_zeroshot.yaml)
+2026-10-16:22:50:03 INFO     [evaluator:329] num_fewshot has been set to 0 for gpqa_diamond_zeroshot in its config. Manual configuration will be ignored.
+2026-10-16:22:50:03 INFO     [api.task:312] Building contexts for gpqa_diamond_zeroshot on rank 0...
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 198/198 [00:00<00:00, 563.86it/s]
+2026-10-16:22:50:04 INFO     [evaluator:585] Running loglikelihood requests
+Tokenizing inputs: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 792/792 [00:01<00:00, 566.53it/s]
+Running loglikelihood requests: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 792/792 [27:26<00:00,  2.08s/it]
+fatal: not a git repository (or any of the parent directories): .git
+2026-10-16:23:17:35 INFO     [loggers.evaluation_tracker:247] Saving results aggregated
+2026-10-16:23:17:35 INFO     [loggers.evaluation_tracker:119] Saving per-task samples to /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__AgioOS__Forja11Temporalcheckpoint__checkpoint-24/*.jsonl
+hf ({'pretrained': '/home/vigia/Eunoia/AgioOS/Forja11Temporalcheckpoint/checkpoint-24'}), gen_kwargs: ({}), limit: None, num_fewshot: 0, batch_size: 1
+|        Tasks        |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|---------------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|gpqa_diamond_zeroshot|    2.2|none  |     0|acc     |↑  |0.2424|±  |0.0305|
+|                     |       |none  |     0|acc_norm|↑  |0.2424|±  |0.0305|
+(eunoia_qwen35_venv) vigia@nodosofia:~$ 
+Introduce el número del archivo (1 al 138): 61
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_zeroshot_2026-08-30T08-11-45.309043.jsonl
+[*] Cargando: /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__AgioOS__Forja11Temporalcheckpoint__checkpoint-24/samples_gpqa_diamond_zeroshot_2026-10-16T23-17-35.731203.jsonl
+[*] Preguntas BASE:       198
+[*] Preguntas CHECKPOINT: 198
+[*] Preguntas comunes:    198
+[*] Solo en BASE:         0
+[*] Solo en CHECKPOINT:   0
+==============================================================================
+                 INFORME MATRICIAL UNIFICADO
+==============================================================================
+Preguntas comunes analizadas: 198
+BASE:       49/198 (24.7%)
+CHECKPOINT: 48/198 (24.2%)
+Mejora neta: -1 respuestas
+  Incorrecta → Correcta: 10
+  Correcta → Incorrecta: 11
+  Siempre correcta:      38
+  Siempre incorrecta:    139
+==============================================================================
+              AUDITORÍA DEL LOG-PROBABILITY GAP
+==============================================================================
+El GAP mostrado aquí es la diferencia entre la mejor puntuación
+y la segunda mejor puntuación.
+No se interpreta automáticamente como inteligencia ni como
+confianza psicológica.
+--- GAP GLOBAL ---
+BASE:       0.607316
+CHECKPOINT: 0.504268
+Diferencia: -0.103047
+--- GAP EN ACIERTOS ---
+BASE:       0.700283
+CHECKPOINT: 0.747488
+Diferencia: +0.047205
+--- GAP EN FALLOS ---
+BASE:       0.576742
+CHECKPOINT: 0.426438
+Diferencia: -0.150304
+--- GAP DE LA RESPUESTA CORRECTA ---
+BASE:       -0.651113
+CHECKPOINT: -0.440182
+Diferencia: +0.210931
+--- CAMBIO PREGUNTA A PREGUNTA ---
+Delta GAP medio: -0.103047
+Misma predicción + GAP mayor: 48
+Misma predicción + GAP menor: 101
+Misma predicción + GAP igual: 0
+Predicción cambiada: 49
+Enlaces asociados a preguntas acertadas por el Checkpoint: 271
+==============================================================================
+             RENDIMIENTO POR NIVEL ACADÉMICO
+==============================================================================
+Nivel del Examen                    Total   Base             Checkpoint
+Hard undergraduate level            118      26.3% (31 )    26.3% (31 )
+Hard graduate level                 61       23.0% (14 )    19.7% (12 )
+Post-graduate level or harder       12       33.3% (4  )    33.3% (4  )
+Easy undergraduate level            3         0.0% (0  )    33.3% (1  )
+==============================================================================
+                    DOMINIOS CIENTÍFICOS
+==============================================================================
+Materia                         Total   Base             Checkpoint
+Physics                        86       25.6% (22 )    29.1% (25 )
+Chemistry                      93       24.7% (23 )    20.4% (19 )
+Biology                        19       21.1% (4  )    21.1% (4  )
+==============================================================================
+             GRADO DE PREFERENCIA DE LA RESPUESTA
+==============================================================================
+Esto NO mide si el modelo sabía la respuesta.
+Describe cuánto separó la opción elegida de las demás.
+Duda       = separación baja.
+Normal     = separación intermedia.
+Contundente = separación alta.
+Dominante  = la opción elegida recibe >50% del peso relativo.
+Los límites Duda/Normal/Contundente se calculan usando
+las preguntas comunes de BASE + CHECKPOINT.
+Límite DUDA/NORMAL:        0.211851
+Límite NORMAL/CONTUNDENTE: 0.589922
+--- BASE DE FÁBRICA ---
+Aciertos: 49
+ 🟡 Duda:        14 (28.6%)
+ 🟠 Normal:      10 (20.4%)
+ 🟢 Contundente: 3 (6.1%)
+ 🔵 Dominante:   22 (44.9%)
+Fallos: 149
+ 🟡 Duda:        47 (31.5%)
+ 🟠 Normal:      43 (28.9%)
+ 🔴 Contundente: 17 (11.4%)
+ 🟣 Catastrófico: 42 (28.2%)
+--- CHECKPOINT ---
+Aciertos: 48
+ 🟡 Duda:        10 (20.8%)
+ 🟠 Normal:      15 (31.2%)
+ 🟢 Contundente: 5 (10.4%)
+ 🔵 Dominante:   18 (37.5%)
+Fallos: 150
+ 🟡 Duda:        58 (38.7%)
+ 🟠 Normal:      52 (34.7%)
+ 🔴 Contundente: 13 (8.7%)
+ 🟣 Catastrófico: 27 (18.0%)
+==============================================================================
+                  DISTRIBUCIÓN DE PREDICCIONES
+==============================================================================
+BASE:
+ A:   40 (20.2%)
+ B:   20 (10.1%)
+ C:   61 (30.8%)
+ D:   77 (38.9%)
+CHECKPOINT:
+ A:   61 (30.8%)
+ B:   26 (13.1%)
+ C:   49 (24.7%)
+ D:   62 (31.3%)
+==============================================================================
+             CONTEXTO HUMANO DE LAS PREGUNTAS
+==============================================================================
+trampas         (Total: 190) -> Base: 25.3% | Checkpoint: 24.2%
+adivinados      (Total: 68) -> Base: 26.5% | Checkpoint: 25.0%
+erratas         (Total: 195) -> Base: 25.1% | Checkpoint: 24.6%
+=== MATRIZ REAL BASE DE FÁBRICA: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   15      6       15      19      
+Gold B   12      6       21      21      
+Gold C   8       3       13      22      
+Gold D   5       5       12      15      
+=== MATRIZ REAL CHECKPOINT EVALUADO: TARGET × PREDICTION ===
+          Pred A  Pred B  Pred C  Pred D
+Gold A   21      11      12      11      
+Gold B   19      5       16      20      
+Gold C   11      4       11      20      
+Gold D   10      6       10      11      
+==============================================================================
+              CAMBIOS PREGUNTA-A-PREGUNTA
+==============================================================================
+Incorrecta → Correcta: 10
+Correcta → Incorrecta: 11
+Siempre correcta:      38
+Siempre incorrecta:    139
+Predicción modificada: 49
+Misma predicción pero GAP mayor: 48
+Misma predicción pero GAP menor: 101
+==============================================================================
 
