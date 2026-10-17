@@ -1054,35 +1054,12 @@ Writing model shards: 100%|██████████| 1/1 [01:07<00:00, 67.
 [Z6-DELTA-THETA] real L2 5.984804183e-01 | teórico L2 5.984803899e-01 | real L∞ 3.226111457e-02 | ||θ||2 1.243575445e+03 | R 4.812578286e-04 | LR=4.000000000e-03 ✓
  26%|██▌       | 31/120 [58:57:57<185:35:08, 7506.84s/it][HF] {'loss': 18.8817138671875, 'grad_norm': 149.39340209960938, 'learning_rate': 0.004, 'epoch': 7.75}
  26%|██▌       | 31/120 [58:57:57<185:35:08, 7506.84s/it]^C
-(eunoia_qwen35_venv) vigia@nodosofia:~$ lm_eval run \
-  --model hf \
-  --model_args pretrained=/home/vigia/Eunoia/AgioOS/Forja11Temporalcheckpoint/checkpoint-24 \
-  --tasks gpqa_diamond_zeroshot \
-  --num_fewshot 0 \
-  --batch_size 1 \
-  --device cpu \
-  --log_samples \
-  --output_path /home/vigia/Eunoia/gpqa_logs/
-2026-10-16:22:49:50 INFO     [_cli.run:388] Selected Tasks: ['gpqa_diamond_zeroshot']
-2026-10-16:22:49:53 INFO     [evaluator:214] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234 | Setting fewshot manual seed to 1234
-2026-10-16:22:49:53 INFO     [evaluator:239] Initializing hf model, with arguments: {'pretrained': '/home/vigia/Eunoia/AgioOS/Forja11Temporalcheckpoint/checkpoint-24'}
-2026-10-16:22:49:58 INFO     [models.huggingface:286] Using device 'cpu'
-2026-10-16:22:50:02 INFO     [models.huggingface:579] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cpu'}
-Loading weights: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 291/291 [00:00<00:00, 2403.50it/s]
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Using the latest cached version of the dataset since Idavidrein/gpqa couldn't be found on the Hugging Face Hub
-Found the latest cached dataset configuration 'gpqa_diamond' at /home/vigia/.cache/huggingface/datasets/Idavidrein___gpqa/gpqa_diamond/0.0.0/633f5ee89ab8ad4522a9f850766b73f62147ffdd (last modified on Fri Aug 28 22:02:27 2026).
-2026-10-16:22:50:03 INFO     [evaluator_utils:446] Selected tasks:
-2026-10-16:22:50:03 INFO     [evaluator_utils:480] Task: gpqa_diamond_zeroshot (gpqa/zeroshot/gpqa_diamond_zeroshot.yaml)
-2026-10-16:22:50:03 INFO     [evaluator:329] num_fewshot has been set to 0 for gpqa_diamond_zeroshot in its config. Manual configuration will be ignored.
-2026-10-16:22:50:03 INFO     [api.task:312] Building contexts for gpqa_diamond_zeroshot on rank 0...
-100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 198/198 [00:00<00:00, 563.86it/s]
-2026-10-16:22:50:04 INFO     [evaluator:585] Running loglikelihood requests
-Tokenizing inputs: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 792/792 [00:01<00:00, 566.53it/s]
-Running loglikelihood requests: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 792/792 [27:26<00:00,  2.08s/it]
-fatal: not a git repository (or any of the parent directories): .git
-2026-10-16:23:17:35 INFO     [loggers.evaluation_tracker:247] Saving results aggregated
-2026-10-16:23:17:35 INFO     [loggers.evaluation_tracker:119] Saving per-task samples to /home/vigia/Eunoia/gpqa_logs/__home__vigia__Eunoia__AgioOS__Forja11Temporalcheckpoint__checkpoint-24/*.jsonl
+
+
+
+
+
+__home__vigia__Eunoia__AgioOS__Forja11Temporalcheckpoint__checkpoint-24/*.jsonl
 hf ({'pretrained': '/home/vigia/Eunoia/AgioOS/Forja11Temporalcheckpoint/checkpoint-24'}), gen_kwargs: ({}), limit: None, num_fewshot: 0, batch_size: 1
 |        Tasks        |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
 |---------------------|------:|------|-----:|--------|---|-----:|---|-----:|
