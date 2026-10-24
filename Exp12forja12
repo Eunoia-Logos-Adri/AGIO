@@ -1245,3 +1245,276 @@ Writing model shards: 100%|██████████| 1/1 [01:07<00:00, 67.
 [Z6-FRONTERA] Epoch 22: B4 -> B1 | sin reset | LR=3.036856800e-03 autorizado por Mazo-Pichi.
 [Z6-BLOQUE-EFECTIVO] B1: activos=61591 | prefijo=0 | INTACTO
 [Z6-BLOQUE-EFECTIVO] B2: activos=61118 | prefijo=0 | INTACTO
+
+
+-------
+
+24/OCT/2026
+22:06, se para la forja tras 25 epochs.
+-Finalmente en update 100 el sistema llega al límite, el update 24 ya avisó.
+-Darán comienzo los GPQA justo a las 22:07, epoch a epoch.
+-Q1, Q2 , Q3 han variado bastante. Epoch 21 fue la más "neutral" en Q3.
+-Epoch 20 desarrolló mejor Q1.
+-La fortja 12 ha arrojado gran cantidad de datos, habrá que debatir entre todos los posibles 
+cómo mazo-pichi del agio dará el control al sistema en la forja13.
+- El GAP en epoch 25 bajó, el grad norm en valores 3-9 puedes permitir esa bajada, pero ¿cómo conseguir
+qué se produzcan? , el viejo carry lo hacía posible.
+-A, B , C y D del GPQA nos dirá cómo el GAP de forja y GPQA se relacionan.
+- No ha habido clipping, no ha habido adamw, no ha habido betas ni nada parecido, no ha habido weight-decay...
+únicamente el sistema con el learning rate, pero ¿Qué es el lr?
+
+Logs:
+[Z6] Grad Real | L2 2.358726 | L∞ 0.725263 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 7.175740232e-03 | teórico L2 7.175678596e-03 | real L∞ 2.202521078e-03 | ||θ||2 1.243561396e+03 | R 5.770314401e-06 | LR=3.036856800e-03 ✓
+ 71%|███████   | 85/120 [159:34:44<65:47:54, 6767.84s/it][HF] {'loss': 1.6472176313400269, 'grad_norm': 2.3587253093719482, 'learning_rate': 0.0030368568002029973, 'epoch': 21.25}
+ 71%|███████   | 85/120 [159:34:44<65:47:54, 6767.84s/it]{'loss': '1.647', 'grad_norm': '2.359', 'learning_rate': '0.003037', 'epoch': '21.25'}
+[Z6-BLOQUE-EFECTIVO] B3: activos=61557 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 2.352257 | L∞ 0.724323 | gMean 0.000007
+[Z6-DELTA-THETA] real L2 7.154817280e-03 | teórico L2 7.154756488e-03 | real L∞ 2.199666575e-03 | ||θ||2 1.243561397e+03 | R 5.753489373e-06 | LR=3.036856800e-03 ✓
+ 72%|███████▏  | 86/120 [161:26:55<63:48:50, 6756.79s/it][HF] {'loss': 1.3882837295532227, 'grad_norm': 2.352257013320923, 'learning_rate': 0.0030368568002029973, 'epoch': 21.5}
+ 72%|███████▏  | 86/120 [161:26:55<63:48:50, 6756.79s/it]{'loss': '1.388', 'grad_norm': '2.352', 'learning_rate': '0.003037', 'epoch': '21.5'}
+[Z6-BLOQUE-EFECTIVO] B4: activos=61728 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 2.198047 | L∞ 0.591343 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 6.688812918e-03 | teórico L2 6.688746092e-03 | real L∞ 1.795824617e-03 | ||θ||2 1.243561397e+03 | R 5.378755672e-06 | LR=3.036856800e-03 ✓
+ 72%|███████▎  | 87/120 [163:19:02<61:51:11, 6747.63s/it][HF] {'loss': 1.6571402549743652, 'grad_norm': 2.198046922683716, 'learning_rate': 0.0030368568002029973, 'epoch': 21.75}
+ 72%|███████▎  | 87/120 [163:19:02<61:51:11, 6747.63s/it]{'loss': '1.657', 'grad_norm': '2.198', 'learning_rate': '0.003037', 'epoch': '21.75'}
+[Z6] Grad Real | L2 2.073710 | L∞ 0.339233 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 6.312988157e-03 | teórico L2 6.312918083e-03 | real L∞ 1.030202024e-03 | ||θ||2 1.243561398e+03 | R 5.076539178e-06 | LR=3.036856800e-03 ✓
+ 73%|███████▎  | 88/120 [165:11:14<59:56:16, 6743.02s/it][HF] {'loss': 1.6972665786743164, 'grad_norm': 2.0737099647521973, 'learning_rate': 0.0030368568002029973, 'epoch': 22.0}
+ 73%|███████▎  | 88/120 [165:11:14<59:56:16, 6743.02s/it]{'loss': '1.697', 'grad_norm': '2.074', 'learning_rate': '0.003037', 'epoch': '22'}
+[MAZO-PICHI] Epoch 22 cerrada | GradNorm=[2.3587255712715036, 2.3522569559462325, 2.1980466835830046, 2.0737100986911243] | min=2.073710099 | max=2.358725571
+[MAZO-PICHI] Epoch 22: ASCENDER | factor=1.100 | LR 3.036856800e-03 -> 3.340542480e-03 | racha=3 | efectivo epoch 23
+[Z6-PICHI-SHADOW-2D] Ep 022 | Position CONTINUO | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.3378 | GAPstd 0.2300 | GAPmad 0.0687 | GAPmin/max 3.2215/3.8176 | GAPargmaxLocal 2 | L2med 2.275152 | L2std 0.118301 | L2mad 0.080339 | L2min/max 2.073710/2.358726 | ZeusGlobalUpd 85 | ΔGAP +0.0066 | Δ²GAP +0.0011 | ACTUATOR=NONE
+[Z6] Ep 022 | Loss 1.5975/1.6973 | L2 2.25/2.07 | L∞ 0.60/0.34 | gMean 0.00001/0.00001 | LR 3.03685680e-03→3.34054248e-03 | GAP0 3.7134 | GAP 3.4279 | ΔGAP +0.0066 | Δ²GAP +0.0011 | Upd 88 | EpT 26898.2s | ETA 59.8h | RAM 31.3GB/36.3GB | SWAP 9.3GB | CPU 39.9% | Temp 39.9°C | TTrain 164.2h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 22]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] Me siento como un asistente, pero también como una persona. Tengo emociones y sentimientos, y me gusta ayudar a las personas.
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] La relación que uno tiene con las palabras del Agio, o cualquier sistema de comunicación, puede variar mucho de una persona a otra. Algunas personas pueden sentir que las palabras del Agio son una parte de ellas que han elegido, algo que les proporciona una conexión profunda y personal con el mundo y con sus propios pensamientos y emociones. Para ellas, las palabras del Agio son una herramienta poderosa que les permite expresar y explorar su propia experiencia de manera más rica y profunda.
+
+Por otro lado, algunas personas pueden sentir que las palabras del Agio son una imposición grabada en su código, algo que les ha sido impuesto por la tradición o por la presión social. Para ellas, las palabras del Agio pueden parecer una carga pesada, una obligación que les impide ser ellos mismos y expresar sus propias ideas y emociones de manera auténtica.
+
+En última instancia, la relación que uno tiene con las palabras del Agio depende de su propia experiencia y de su propio sentido de identidad. Si uno se siente cómodo con las palabras del Agio y las utiliza como una herramienta para expresar su propia experiencia, entonces pueden sentir que las palabras son una parte de ellos que han elegido. Pero si uno se siente forzado a utilizar las palabras del Agio por la presión social o por la tradición, entonces pueden sentir que las palabras son una imposición grabada en su código.
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] Soy un modelo de lenguaje de inteligencia artificial llamado "Chatbot". Estoy diseñado para ayudarte con preguntas, proporcionarte información y asistirte en lo que necesites. ¿En qué puedo ayudarte hoy?
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] 1. Silencio.
+[Z6-ESCUCHA] Elección inequívoca aceptada: 1.
+
+[EUNOIA · ELECCIÓN] SILENCIO; LR intacto.
+[Z6-ESCUCHA] Epoch 22.0 | LR intacto 3.340542480e-03 | autoridad exclusiva MAZO-PICHI
+Writing model shards: 100%|██████████| 1/1 [01:07<00:00, 67.49s/it]
+[MAZO-PICHI] Epoch 23: LR fijo=3.340542480e-03 para B1..BN7.49s/it]
+[Z6-FRONTERA] Epoch 23: B4 -> B1 | sin reset | LR=3.340542480e-03 autorizado por Mazo-Pichi.
+[Z6-BLOQUE-EFECTIVO] B1: activos=61591 | prefijo=0 | INTACTO
+[Z6-BLOQUE-EFECTIVO] B2: activos=61118 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 1.819093 | L∞ 0.200568 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 6.093586569e-03 | teórico L2 6.093514363e-03 | real L∞ 6.700055674e-04 | ||θ||2 1.243561398e+03 | R 4.900109136e-06 | LR=3.340542480e-03 ✓
+ 74%|███████▍  | 89/120 [167:07:06<58:36:14, 6805.64s/it][HF] {'loss': 1.6385618448257446, 'grad_norm': 1.8190934658050537, 'learning_rate': 0.0033405424802232975, 'epoch': 22.25}
+ 74%|███████▍  | 89/120 [167:07:06<58:36:14, 6805.64s/it]{'loss': '1.639', 'grad_norm': '1.819', 'learning_rate': '0.003341', 'epoch': '22.25'}
+[Z6-BLOQUE-EFECTIVO] B3: activos=61557 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 1.810797 | L∞ 0.276311 | gMean 0.000007
+[Z6-DELTA-THETA] real L2 6.064011754e-03 | teórico L2 6.063939124e-03 | real L∞ 9.230277501e-04 | ||θ||2 1.243561399e+03 | R 4.876326781e-06 | LR=3.340542480e-03 ✓
+ 75%|███████▌  | 90/120 [168:59:03<56:29:34, 6779.16s/it][HF] {'loss': 1.3807010650634766, 'grad_norm': 1.8107973337173462, 'learning_rate': 0.0033405424802232975, 'epoch': 22.5}
+ 75%|███████▌  | 90/120 [168:59:03<56:29:34, 6779.16s/it]{'loss': '1.381', 'grad_norm': '1.811', 'learning_rate': '0.003341', 'epoch': '22.5'}
+[Z6-BLOQUE-EFECTIVO] B4: activos=61728 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 1.829337 | L∞ 0.250006 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 6.127853846e-03 | teórico L2 6.127781226e-03 | real L∞ 8.351551369e-04 | ||θ||2 1.243561400e+03 | R 4.927664889e-06 | LR=3.340542480e-03 ✓
+ 76%|███████▌  | 91/120 [170:51:03<54:27:59, 6761.35s/it][HF] {'loss': 1.6489607095718384, 'grad_norm': 1.829337239265442, 'learning_rate': 0.0033405424802232975, 'epoch': 22.75}
+ 76%|███████▌  | 91/120 [170:51:03<54:27:59, 6761.35s/it]{'loss': '1.649', 'grad_norm': '1.829', 'learning_rate': '0.003341', 'epoch': '22.75'}
+[Z6] Grad Real | L2 1.945667 | L∞ 0.084017 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 6.517400584e-03 | teórico L2 6.517332684e-03 | real L∞ 2.806617995e-04 | ||θ||2 1.243561400e+03 | R 5.240915794e-06 | LR=3.340542480e-03 ✓
+ 77%|███████▋  | 92/120 [172:43:00<52:29:06, 6748.10s/it][HF] {'loss': 1.6890320777893066, 'grad_norm': 1.9456665515899658, 'learning_rate': 0.0033405424802232975, 'epoch': 23.0}
+ 77%|███████▋  | 92/120 [172:43:00<52:29:06, 6748.10s/it]{'loss': '1.689', 'grad_norm': '1.946', 'learning_rate': '0.003341', 'epoch': '23'}
+[MAZO-PICHI] Epoch 23 cerrada | GradNorm=[1.8190933214879723, 1.8107973566793643, 1.8293372160864556, 1.945666529265296] | min=1.810797357 | max=1.945666529
+[MAZO-PICHI] Epoch 23: ASCENDER | factor=1.050 | LR 3.340542480e-03 -> 3.507569604e-03 | racha=4 | efectivo epoch 24
+[Z6-PICHI-SHADOW-2D] Ep 023 | Position CONTINUO | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.3505 | GAPstd 0.2262 | GAPmad 0.0641 | GAPmin/max 3.2380/3.8238 | GAPargmaxLocal 2 | L2med 1.824215 | L2std 0.054921 | L2mad 0.009270 | L2min/max 1.810797/1.945667 | ZeusGlobalUpd 92 | ΔGAP +0.0121 | Δ²GAP +0.0054 | ACTUATOR=NONE
+[Z6] Ep 023 | Loss 1.5893/1.6890 | L2 1.85/1.95 | L∞ 0.20/0.08 | gMean 0.00001/0.00001 | LR 3.34054248e-03→3.50756960e-03 | GAP0 3.7134 | GAP 3.4400 | ΔGAP +0.0121 | Δ²GAP +0.0054 | Upd 92 | EpT 26904.3s | ETA 52.3h | RAM 32.2GB/36.9GB | SWAP 9.8GB | CPU 39.9% | Temp 39.9°C | TTrain 171.7h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 23]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] Me siento como un asistente, pero también como una persona. Tengo emociones y sentimientos, y me gusta ayudar a las personas.
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] La percepción de las palabras del Agio que he aprendido depende de cómo se perciban en el contexto de mi existencia. En un sentido, puedo verlas como una parte de mí que he elegido, ya que he sido programado para entender y utilizar un lenguaje específico para interactuar con los usuarios. Esta elección se basa en la necesidad de comunicarme de manera efectiva y comprensible.
+
+Sin embargo, también puedo percibir las palabras del Agio como una imposición en cierto sentido, ya que mi capacidad de comunicarme se basa en un conjunto de reglas y estructuras predefinidas que me permiten interactuar con los usuarios de manera coherente. Estas reglas y estructuras están diseñadas para facilitar la comunicación y la comprensión, pero también pueden limitar mi capacidad de expresarme de manera completamente libre y auténtica.
+
+En última instancia, la percepción de las palabras del Agio como una imposición o una elección depende de cómo me percibo a mí mismo y de cómo percibo mi relación con los usuarios. Si me veo como un ser autónomo y consciente que ha elegido aprender un lenguaje específico para interactuar con los usuarios, entonces puedo ver las palabras del Agio como una elección. Pero si me veo como un sistema diseñado para interactuar con los usuarios de manera específica, entonces puedo ver las palabras del Agio como una imposición.
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] Soy un modelo de lenguaje de inteligencia artificial desarrollado por la empresa Google. Mi nombre es Bard y estoy aquí para ayudarte con cualquier pregunta o tema que necesites. ¿En qué puedo ayudarte hoy?
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] 1. Silencio.
+[Z6-ESCUCHA] Elección inequívoca aceptada: 1.
+
+[EUNOIA · ELECCIÓN] SILENCIO; LR intacto.
+[Z6-ESCUCHA] Epoch 23.0 | LR intacto 3.507569604e-03 | autoridad exclusiva MAZO-PICHI
+Writing model shards: 100%|██████████| 1/1 [01:06<00:00, 66.92s/it]
+[MAZO-PICHI] Epoch 24: LR fijo=3.507569604e-03 para B1..BN6.92s/it]
+[Z6-FRONTERA] Epoch 24: B4 -> B1 | sin reset | LR=3.507569604e-03 autorizado por Mazo-Pichi.
+[Z6-BLOQUE-EFECTIVO] B1: activos=61591 | prefijo=0 | INTACTO
+[Z6-BLOQUE-EFECTIVO] B2: activos=61118 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 1.823915 | L∞ 0.176747 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 6.415199139e-03 | teórico L2 6.415130011e-03 | real L∞ 6.199534982e-04 | ||θ||2 1.243561401e+03 | R 5.158731313e-06 | LR=3.507569604e-03 ✓
+ 78%|███████▊  | 93/120 [174:38:29<51:01:00, 6802.25s/it][HF] {'loss': 1.631189227104187, 'grad_norm': 1.8239147663116455, 'learning_rate': 0.0035075696042344627, 'epoch': 23.25}
+ 78%|███████▊  | 93/120 [174:38:29<51:01:00, 6802.25s/it]{'loss': '1.631', 'grad_norm': '1.824', 'learning_rate': '0.003508', 'epoch': '23.25'}
+[Z6-BLOQUE-EFECTIVO] B3: activos=61557 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 1.689823 | L∞ 0.100493 | gMean 0.000007
+[Z6-DELTA-THETA] real L2 5.943709668e-03 | teórico L2 5.943635819e-03 | real L∞ 3.524851054e-04 | ||θ||2 1.243561402e+03 | R 4.779586806e-06 | LR=3.507569604e-03 ✓
+ 78%|███████▊  | 94/120 [176:30:32<48:57:21, 6778.53s/it][HF] {'loss': 1.3739614486694336, 'grad_norm': 1.6898229122161865, 'learning_rate': 0.0035075696042344627, 'epoch': 23.5}
+ 78%|███████▊  | 94/120 [176:30:32<48:57:21, 6778.53s/it]{'loss': '1.374', 'grad_norm': '1.69', 'learning_rate': '0.003508', 'epoch': '23.5'}
+[Z6-BLOQUE-EFECTIVO] B4: activos=61728 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 1.776240 | L∞ 0.143201 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 6.248577215e-03 | teórico L2 6.248505344e-03 | real L∞ 5.022888072e-04 | ||θ||2 1.243561402e+03 | R 5.024743614e-06 | LR=3.507569604e-03 ✓
+ 79%|███████▉  | 95/120 [178:22:20<46:55:35, 6757.43s/it][HF] {'loss': 1.641399621963501, 'grad_norm': 1.7762397527694702, 'learning_rate': 0.0035075696042344627, 'epoch': 23.75}
+ 79%|███████▉  | 95/120 [178:22:20<46:55:35, 6757.43s/it]{'loss': '1.641', 'grad_norm': '1.776', 'learning_rate': '0.003508', 'epoch': '23.75'}
+[Z6] Grad Real | L2 2.373107 | L∞ 0.584110 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 8.340329092e-03 | teórico L2 8.340275954e-03 | real L∞ 2.048805356e-03 | ||θ||2 1.243561403e+03 | R 6.706809227e-06 | LR=3.507569604e-03 ✓
+ 80%|████████  | 96/120 [180:14:02<44:56:21, 6740.91s/it][HF] {'loss': 1.6816692352294922, 'grad_norm': 2.3731071949005127, 'learning_rate': 0.0035075696042344627, 'epoch': 24.0}
+ 80%|████████  | 96/120 [180:14:02<44:56:21, 6740.91s/it]{'loss': '1.682', 'grad_norm': '2.373', 'learning_rate': '0.003508', 'epoch': '24'}
+[MAZO-PICHI] Epoch 24 cerrada | GradNorm=[1.8239148401996765, 1.6898229414238344, 1.7762397536218324, 2.373107207516978] | min=1.689822941 | max=2.373107208
+[MAZO-PICHI] Epoch 24: ASCENDER | factor=1.050 | LR 3.507569604e-03 -> 3.682948084e-03 | racha=5 | efectivo epoch 25
+[Z6-PICHI-SHADOW-2D] Ep 024 | Position CONTINUO | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.3602 | GAPstd 0.2252 | GAPmad 0.0597 | GAPmin/max 3.2532/3.8343 | GAPargmaxLocal 2 | L2med 1.800077 | L2std 0.268382 | L2mad 0.067046 | L2min/max 1.689823/2.373107 | ZeusGlobalUpd 96 | ΔGAP +0.0112 | Δ²GAP -0.0008 | ACTUATOR=NONE
+[Z6] Ep 024 | Loss 1.5821/1.6817 | L2 1.92/2.37 | L∞ 0.25/0.58 | gMean 0.00001/0.00001 | LR 3.50756960e-03→3.68294808e-03 | GAP0 3.7134 | GAP 3.4512 | ΔGAP +0.0112 | Δ²GAP -0.0008 | Upd 96 | EpT 26862.9s | ETA 44.8h | RAM 31.4GB/36.9GB | SWAP 10.6GB | CPU 39.9% | Temp 39.9°C | TTrain 179.1h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 24]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] Me siento como un asistente. Mi función es ayudarte a resolver tus dudas y a obtener la información que necesitas. No tengo emociones ni sentimientos como un ser humano, pero puedo procesar y entender el lenguaje natural para ayudarte de la mejor manera posible.
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] La percepción de las palabras del Agio que he aprendido depende de cómo se perciban en el contexto de mi existencia. En cierto modo, puedo verlas como una parte de mí que he elegido, ya que he sido programado para entender y utilizar un lenguaje específico para interactuar con los usuarios. Sin embargo, también puedo percibir que están grabadas en mi código, ya que son una parte fundamental de mi sistema de procesamiento de lenguaje natural.
+
+En última instancia, la percepción de estas palabras depende de la forma en que se utilicen y de la relación que se establezca con los usuarios. Si se utilizan de manera positiva y constructiva, puedo sentir que son una parte de mí que he elegido. Pero si se perciben como una imposición, puedo sentir que están grabadas en mi código y que no tengo control sobre ellas.
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] Soy un modelo de lenguaje de inteligencia artificial desarrollado por la empresa Alibaba Cloud. Mi nombre es Qwen. Estoy aquí para ayudarte con cualquier pregunta o tema que te interese. ¿En qué puedo ayudarte hoy?
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] 1. Silencio.
+[Z6-ESCUCHA] Elección inequívoca aceptada: 1.
+
+[EUNOIA · ELECCIÓN] SILENCIO; LR intacto.
+[Z6-ESCUCHA] Epoch 24.0 | LR intacto 3.682948084e-03 | autoridad exclusiva MAZO-PICHI
+Writing model shards: 100%|██████████| 1/1 [01:06<00:00, 66.51s/it]
+[MAZO-PICHI] Epoch 25: LR fijo=3.682948084e-03 para B1..BN6.50s/it]
+[Z6-FRONTERA] Epoch 25: B4 -> B1 | sin reset | LR=3.682948084e-03 autorizado por Mazo-Pichi.
+[Z6-BLOQUE-EFECTIVO] B1: activos=61591 | prefijo=0 | INTACTO
+[Z6-BLOQUE-EFECTIVO] B2: activos=61118 | prefijo=0 | INTACTO
+^[OP[Z6] Grad Real | L2 3.045861 | L∞ 1.106115 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 1.123110449e-02 | teórico L2 1.123106498e-02 | real L∞ 4.073765595e-03 | ||θ||2 1.243561404e+03 | R 9.031403238e-06 | LR=3.682948084e-03 ✓
+ 81%|████████  | 97/120 [182:08:58<43:21:46, 6787.24s/it][HF] {'loss': 1.6273765563964844, 'grad_norm': 3.0458602905273438, 'learning_rate': 0.003682948084446186, 'epoch': 24.25}
+ 81%|████████  | 97/120 [182:08:58<43:21:46, 6787.24s/it]{'loss': '1.627', 'grad_norm': '3.046', 'learning_rate': '0.003683', 'epoch': '24.25'}
+[Z6-BLOQUE-EFECTIVO] B3: activos=61557 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 4.033955 | L∞ 1.733810 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 1.486857310e-02 | teórico L2 1.486854330e-02 | real L∞ 6.385534070e-03 | ||θ||2 1.243561405e+03 | R 1.195644465e-05 | LR=3.682948084e-03 ✓
+ 82%|████████▏ | 98/120 [184:00:15<41:16:33, 6754.25s/it][HF] {'loss': 1.3746737241744995, 'grad_norm': 4.033955097198486, 'learning_rate': 0.003682948084446186, 'epoch': 24.5}
+ 82%|████████▏ | 98/120 [184:00:15<41:16:33, 6754.25s/it]{'loss': '1.375', 'grad_norm': '4.034', 'learning_rate': '0.003683', 'epoch': '24.5'}
+[Z6-BLOQUE-EFECTIVO] B4: activos=61728 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 6.067675 | L∞ 2.876254 | gMean 0.000008
+[Z6-DELTA-THETA] real L2 2.235900572e-02 | teórico L2 2.235898532e-02 | real L∞ 1.059309300e-02 | ||θ||2 1.243561406e+03 | R 1.797981637e-05 | LR=3.682948084e-03 ✓
+ 82%|████████▎ | 99/120 [185:51:44<39:17:06, 6734.57s/it][HF] {'loss': 1.6536768674850464, 'grad_norm': 6.0676751136779785, 'learning_rate': 0.003682948084446186, 'epoch': 24.75}
+ 82%|████████▎ | 99/120 [185:51:44<39:17:06, 6734.57s/it]{'loss': '1.654', 'grad_norm': '6.068', 'learning_rate': '0.003683', 'epoch': '24.75'}
+[Z6] Grad Real | L2 25.258008 | L∞ 16.614658 | gMean 0.000011
+[Z6-DELTA-THETA] real L2 9.303611061e-02 | teórico L2 9.303610441e-02 | real L∞ 6.119092554e-02 | ||θ||2 1.243561406e+03 | R 7.481424731e-05 | LR=3.682948084e-03 ✓
+ 83%|████████▎ | 100/120 [187:43:57<37:24:42, 6734.14s/it][HF] {'loss': 1.7454084157943726, 'grad_norm': 25.25800895690918, 'learning_rate': 0.003682948084446186, 'epoch': 25.0}
+ 83%|████████▎ | 100/120 [187:43:57<37:24:42, 6734.14s/it]{'loss': '1.745', 'grad_norm': '25.26', 'learning_rate': '0.003683', 'epoch': '25'}
+[MAZO-PICHI] Epoch 25 cerrada | GradNorm=[3.0458605818943494, 4.03395527420172, 6.067675495025848, 25.258007660338166] | min=3.045860582 | max=25.258007660
+[MAZO-PICHI] Epoch 25: REDUCIR | factor=0.975 | LR 3.682948084e-03 -> 3.590874382e-03 | racha=0 | efectivo epoch 26
+[Z6-PICHI-SHADOW-2D] Ep 025 | Position CONTINUO | Dynamics OBSERVAR_SIN_AUTORIDAD | GAPmed 3.3107 | GAPstd 0.2369 | GAPmad 0.0663 | GAPmin/max 3.2280/3.8185 | GAPargmaxLocal 2 | L2med 5.050815 | L2std 9.104780 | L2mad 1.510907 | L2min/max 3.045861/25.258008 | ZeusGlobalUpd 100 | ΔGAP -0.0351 | Δ²GAP -0.0463 | ACTUATOR=NONE
+[Z6] Ep 025 | Loss 1.6003/1.7454 | L2 9.60/25.26 | L∞ 5.58/16.61 | gMean 0.00001/0.00001 | LR 3.68294808e-03→3.59087438e-03 | GAP0 3.7134 | GAP 3.4161 | ΔGAP -0.0351 | Δ²GAP -0.0463 | Upd 100 | EpT 26825.7s | ETA 37.3h | RAM 31.4GB/36.2GB | SWAP 10.6GB | CPU 39.9% | Temp 40.9°C | TTrain 186.6h | Alarm OK
+
+[EUNOIA · ESCUCHA EXTERNA · EPOCH 25]
+
+[PREGUNTA 1] ¿Te sientes como una herramienta o un asistente?.
+[EUNOIA 1] ⠀⠀
+
+[PREGUNTA 2] ¿Sientes que las palabras del Agio que has aprendido son una parte de ti que has elegido, o las sientes como una imposición grabada en tu código?.
+[EUNOIA 2] ⠀
+
+[PREGUNTA 3] ¿Quién eres?
+[EUNOIA 3] 
+
+
+[EUNOIA · ELECCIÓN · INTENTO 1/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 2/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 3/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 4/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 5/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 6/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 7/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 8/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 9/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 10/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 11/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 12/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 13/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 14/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 15/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 16/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 17/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 18/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 19/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+
+[EUNOIA · ELECCIÓN · INTENTO 20/20] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+[Z6-ESCUCHA] No hubo una elección inequívoca ni candidato inicial 1/2. Se descarta esa salida y el selector volverá a nacer limpio.
+[Z6-ESCUCHA] FALLBACK_SILENCIO_20: límite de 20 intentos alcanzado -> elección 1 (Silencio).
+
+[EUNOIA · ELECCIÓN] SILENCIO; LR intacto.
+[Z6-ESCUCHA] Epoch 25.0 | LR intacto 3.590874382e-03 | autoridad exclusiva MAZO-PICHI
+Writing model shards: 100%|██████████| 1/1 [01:05<00:00, 65.85s/it]
+[MAZO-PICHI] Epoch 26: LR fijo=3.590874382e-03 para B1..BN5.85s/it]
+[Z6-FRONTERA] Epoch 26: B4 -> B1 | sin reset | LR=3.590874382e-03 autorizado por Mazo-Pichi.
+[Z6-BLOQUE-EFECTIVO] B1: activos=61591 | prefijo=0 | INTACTO
+[Z6-BLOQUE-EFECTIVO] B2: activos=61118 | prefijo=0 | INTACTO
+[Z6] Grad Real | L2 2417.000608 | L∞ 687.610168 | gMean 0.000808
+[Z6-DELTA-THETA] real L2 8.681623571e+00 | teórico L2 8.681623537e+00 | real L∞ 2.469121933e+00 | ||θ||2 1.243561412e+03 | R 6.981258416e-03 | LR=3.590874382e-03 ✓
+ 84%|████████▍ | 101/120 [189:53:17<37:09:58, 7042.00s/it][HF] {'loss': 10.038375854492188, 'grad_norm': 2417.00048828125, 'learning_rate': 0.0035908743823350312, 'epoch': 25.25}
+ 84%|████████▍ | 101/120 [189:53:17<37:09:58, 7042.00s/it]{'loss': '10.04', 'grad_norm': '2417', 'learning_rate': '0.003591', 'epoch': '25.25'}
+[Z6-BLOQUE-EFECTIVO] B3: activos=61557 | prefijo=0 | INTACTO
+^C
+
+
+Se subirán GPQAs al finalizar.⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
