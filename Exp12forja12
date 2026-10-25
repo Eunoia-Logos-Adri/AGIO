@@ -6548,3 +6548,74 @@ Conserva la misma opción	66/198 (33,33 %)	Pendiente
 Acierto → fallo	37	Pendiente
 Fallo → acierto	35	Pendiente
 Preferencia por D	77 y 76 elecciones	Pendiente
+
+
+11:48:
+Selecciona el modelo a analizar:
+  1) Eunoia checkpoint-84
+  2) Dolphin puro FP32
+Opcion [1/2]: 2
+MODELO: dolphin | carpeta: __home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32
+CONTROL: /home/vigia/Eunoia/gpqa_logs_agio_control/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_agio_control_2026-10-25T11-16-18.389473.jsonl
+ROTADO:  /home/vigia/Eunoia/gpqa_logs_agio_rotado/__home__vigia__Eunoia__Dolphin3.0-Llama3.1-8b-Puro-FP32/samples_gpqa_diamond_agio_rotado_2026-10-25T11-43-49.304982.jsonl
+
+=== VERIFICACION ===
+198 preguntas emparejadas; rotacion y gold verificados.
+
+=== EXACTITUD ===
+CONTROL: 59/198 = 29.80%
+  predicciones: A=40 B=21 C=55 D=82
+  gold:         A=48 B=43 C=61 D=46
+  GAP global: 0.583861
+  GAP aciertos: 0.541718
+  GAP fallos: 0.601749
+  GAP gold: -0.562249
+ROTADO: 60/198 = 30.30%
+  predicciones: A=40 B=25 C=59 D=74
+  gold:         A=46 B=48 C=43 D=61
+  GAP global: 0.649982
+  GAP aciertos: 0.650297
+  GAP fallos: 0.649844
+  GAP gold: -0.538791
+
+=== TRANSICIONES CONTROL -> ROTADO ===
+Acierto -> acierto: 17
+Acierto -> fallo:   42
+Fallo -> acierto:   43
+Fallo -> fallo:    96
+
+=== ESTABILIDAD DE ELECCION ===
+Misma opcion por posicion rotada: 59/198 = 29.80%
+Mismo texto elegido:             59/198 = 29.80%
+Misma letra (sin compensar):     76/198 = 38.38%
+NOTA: dos opciones incorrectas pueden tener texto identico; la fidelidad textual puede sobreestimar la identidad de opcion.
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+
+Comparación directa
+Medición	Dolphin puro	Eunoia epoch 21	Diferencia
+GPQA control	59/198 (29,80 %)	62/198 (31,31 %)	+3 aciertos
+GPQA rotado	60/198 (30,30 %)	60/198 (30,30 %)	0
+Misma opción en ambos órdenes	59/198 (29,80 %)	66/198 (33,33 %)	+7
+Acierto → fallo al rotar	42	37	−5
+Fallo → acierto al rotar	43	35	−8
+
+La preferencia por las letras sigue presente en ambos
+Modelo y prueba	A	B	C	D
+Dolphin control	40	21	55	82
+Eunoia control	55	25	41	77
+Dolphin rotado	40	25	59	74
+Eunoia rotado	52	28	42	76
+
+
+¿Qué nos dice el GAP?
+Medición	Dolphin control	Eunoia control	Dolphin rotado	Eunoia rotado
+GAP global	0,583861	0,502197	0,649982	0,494302
+GAP gold	−0,562249	−0,405694	−0,538791	−0,375483
+
+
+-Eunoia presenta un GAP global menor en ambos órdenes. 
+Es decir, la separación media entre la opción mejor puntuada y la segunda es menor
+
+-Además, su GAP gold es menos negativo: la respuesta correcta queda, 
+en promedio, mejor posicionada respecto a la mejor incorrecta.⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
