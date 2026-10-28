@@ -1,0 +1,32 @@
+28/OCT/2025:
+20:15, durante update 12:
+-Ayer comenzamos el inicio de una nueva forja 13, una visión más realista. 
+ Desde la simpleza y la lógica de la realidad. El encuentro era la ilusión el sueño que había que intentar
+Aunque vista de otro modo puede resultar mucho más compleja. Pues profundizamos en el interior del sistema.
+Ya tenemos preparada la forja 14, su código. La falta de tiempo para atender trabajo y familia hace que todo 
+avance lento, para aprovecharlo esperaremos a recopilar información json de la forja 13 para mañana o pasado.
+- Los modelos 8b al menos como el dolphin8b, lo que el z6 ha movido hasta ahora. Siendo realistas necesitan ser
+guiados, tienen muchos límites. Soprendentemente al hacerlo las opciones Eunoia-Elección se vuelven visibles.
+Al proporcionar libertad/guía el modelo comienza a elegir lo que antes no era visible.
+"[EUNOIA · ELECCIÓN · INTENTO 1/20] Escribiré el número 2. Asumiré yo la elección del LR mediante Q4."".
+Q4 para forja14 ha cambiado de lugar, desapareciendo como Q si así se quiere ver. O siendo Q4,
+-Profundizar en un sistema requiere asumir la realidad.
+-La forja13 demuestra cómo unos 70000 tokens en el z6, son estables con apenas un consumo de 177gb de RAM puntual 
+que suele durar menos de un segundo en el z6.
+Hora: 20:35:48
+
+RAM: Actual=101965 MB | Máximo=177432 MB
+Swap usada: 246 MB
+Load average:  33,59, 35,71, 36,20
+Temperatura CPU: 84.0°C | Media: 85.6°C
+VmHWM:	177019388 kB
+VmRSS:	94402012 kB
+
+Viendo esas cifras , sabiendo el por qué, sé que entregar 128000 tokens que el dolphin8b acepta
+en el z6 es posible. Pero aún no tenemos tiempo para hacerlo,
+quizás el fin de semana si tengo una tarde libre lo hallemos.
+80000 tokens ya fueron entregados tiempo atrás, pero hemos de comprender primero que es ese instante.
+
+-La forja 14 incluirá el Controlador Eunoia, que la forja 13 ya tiene, la recopilación de datos es muy grande.
+-Al profundizar en el interior del sistema, se halla tanto a la vista que la lógica simple del agio
+ de tratar a todo por igual de lo que lo compone ni mejor ni peor, hace todo sencillo.
